@@ -5,7 +5,7 @@
 
 [/col]
 [col span=1/2]
-<img src="http://dunk.site/wp-content/uploads/2013/12/le-dunk-death.gif" alt="le-dunk-death" width="240" height="180" class="alignnone size-full wp-image-815" />
+<img src="http://dunk.site/wp-content/uploads/2013/12/le-dunk-death.gif" alt="le-dunk-death" width="240" height="180" class="aligncenter size-full wp-image-815" />
 [/col]
 [col span=1/4]
 all day son
