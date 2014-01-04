@@ -12,6 +12,7 @@
 - product viewer on item pages
 - main shop layout (rows of 2 or 3)
 - shop page footer (orange color)?
+- remove sidebar on privacy page
 
 ### Copy
 - Returns page copy
