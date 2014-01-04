@@ -14,7 +14,8 @@ function remove_parent_theme_blocks() {
 
 function dunk_shortcode($atts, $content = null) {	
 	 extract( shortcode_atts( array(
-    	'id' => ''
+    	'id' => '',
+    	'class' => ''
   	 ), $atts ) );
 
 	// get content by slug
@@ -35,7 +36,7 @@ function dunk_shortcode($atts, $content = null) {
 		
 		
 		
-		$html = '<div id='.$id.' class="ux_block">'.$html.'</div>';
+		$html = '<div id='.$id.' class="ux_block ' .$class. '">'.$html.'</div>';
 		
 
 	} else{
