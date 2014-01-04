@@ -49,7 +49,7 @@ include_once('inc/dunk-ajax.php');
 // SHORTCODES /////////////////////////////
 
 include_once('inc/shortcodes/dunk-blocks.php');
-include_once('inc/shortcodes/dunk-row.php');
+include_once('inc/shortcodes/dunk-grid.php');
 include_once('inc/shortcodes/dunk-banners.php');
 include_once('inc/shortcodes/dunk-slider.php');
 
