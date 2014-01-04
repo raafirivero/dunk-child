@@ -29,7 +29,7 @@ global $flatsome_opt;
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class("ld-menu"); ?>>
+<body <?php body_class(); ?>>
 	<div id="wrapper">
 
 		<?php do_action( 'before' ); ?>

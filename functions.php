@@ -26,6 +26,23 @@ function remove_woo_ajax() {
 }
 
 
+function dunk_body_classes($classes) {  
+	// add class to <body> tag
+	
+	global $wp_query;
+	$page = '';
+	if (is_front_page() ) {
+			$classes[] = 'home';
+	} elseif (is_page()) {
+   	   $page = $wp_query->query_vars["pagename"];
+   	   $classes[] = $page;
+	}	
+	return $classes;
+}
+
+add_filter( 'body_class', 'dunk_body_classes' );
+
+
 // AJAX   /// /////////////////////////////
 include_once('inc/dunk-ajax.php');
 
