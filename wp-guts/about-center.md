@@ -26,7 +26,7 @@
 
 <h5 class="bodytext">How it Works</h5>
 <p>
-All releases are limited runs. Pre-orders and minimal stock until the cup runs dry. We fight, drink, sex, and do windsprints and shit till we come up with the best ideas. Then pump them out on the streets. Dig? Then we move on to better ideas. We live in Brooklyn. One love.
+All releases are limited runs. Pre-orders and minimal stock until the cup runs dry. We fight, drink, sex, and run windsprints till we come up with the best ideas. Then pump them out on the streets. Dig? Then we move on to better ideas. We live in Brooklyn. One love.
 </p>
 
 <p class="midtext">Oh, and we like donuts. And chicken wings.</p>
