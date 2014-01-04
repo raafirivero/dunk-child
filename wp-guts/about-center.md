@@ -1,6 +1,6 @@
 [row class="about-top"]
 [col span=1/4  class="share-gif"]
-<a href="#">share this gif</a>
+[ninja_forms_modal_form id=5 text_link="share this gif"]
 [/col]
 
 [col span=1/2]
