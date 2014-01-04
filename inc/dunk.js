@@ -20,10 +20,11 @@ $('.ux_banner').has('.hover-reveal').hover(
 $('#homepage-slides').fadeTo(1800,1);
 $('#banner-1st-3rd').delay(900).fadeTo(800,1).slideDown(1800);
 $('#hardwood-poets').delay(1600).fadeTo(700,1);
-$('#slider-le-mid').delay(2200).animate(
+$('#slider-le-mid').css( "height", "0" ).delay(2200).animate(
 	{"height" : "400px"},
 700,"swing");
 
+$('.footer-wrapper').hide().css({'opacity':'0' , 'background-color':'yellow !important' }).delay(1600).fadeTo(1800,1);
 
 
 $(".about .tennis").attr("src", "http://dunk.site/wp-content/uploads/2014/01/ledunk-tennis-blk.png");
