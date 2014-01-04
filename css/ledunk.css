@@ -1,0 +1,549 @@
+.ld-menu .right-links #site-navigation {
+	/* float: left; */
+	}
+
+#logo {
+	display: table-cell;
+	/* min-width: 150px; */
+	}
+
+form[role] {
+	display: table-cell;
+	border: 1px solid transparent;
+	box-image-width: 0; 
+	font-family: 'Pontano Sans';
+	
+	}
+	
+#yith-ajaxsearchform, #yith-ajaxsearchform input, #yith-ajaxsearchform button {
+	border: 1px solid transparent;
+	background: transparent;
+	box-shadow: inset 0 0 0 0 transparent;
+	-moz-box-shadow:    inset 0 0 0 0 transparent;
+   -webkit-box-shadow: inset 0 0 0 0 transparent;  
+   font-family: 'Pontano Sans';
+   font-size: 13px;
+   letter-spacing: 1px;
+   
+	}
+
+#yith-ajaxsearchform {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 20px;
+	}
+	
+#yith-ajaxsearchform input {
+	font-size: 16px;
+	font-weight: normal;
+	}
+
+
+a.nav-top-link, ul.header-nav li a {
+/* font-family: "questrial" !important; */
+/* 	font-family: "Monda" !important; */
+	text-transform: uppercase;
+/* 	font-weight: 700; */
+	font-size: 100%;
+	
+	color: #222 !important;
+	}
+	
+.ux_banner:not(.aboutbanner) h1, .dunk_banner h1{
+	font-family: "matchup" !important;	
+	text-transform: uppercase;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+font-family: "haymaker",helvetica,arial,sans-serif!important;
+}
+
+body p{
+	font-size: 1.25em;
+}
+
+.price {
+	font-family: "Pontano Sans" !important;
+	}
+
+
+.custom-cart-icon {
+/*
+position: absolute;
+left: 14px;
+bottom: -12px;
+max-width: 128px;
+*/
+}
+
+.cart-icon {
+	vertical-align: middle;
+	/* border: 1px solid green; */
+	}
+
+.custom-cart-inner {
+	padding-left: 16px;
+	width: 48px;
+	}
+
+.cart-icon-sprite {
+	/* border: 1px solid red; */
+	overflow: hidden;
+	height: 32px;
+	width: 32px;
+	display: block;
+	position: relative
+	}
+.custom-cart-count {
+	top: -4px;
+	}
+.cart-icon-sprite img {
+	position: absolute;
+	max-width: 128px;
+	top: 0;
+	left: 0;
+	right: auto;
+	}
+
+.cart-icon-sprite img.1item {
+	left: -32px;
+	}
+
+
+.cart-icon-sprite img.2item {
+	left: -64px !important;
+	}
+
+.cart-icon-sprite img.3item {
+	left: -96px;
+	}
+
+.cart-icon-sprite img.emptycart {
+	left: 0;
+	}
+
+
+.jPanelMenu-panel .right-links li.menu-item {
+	display: none !important;
+	}
+.jPanelMenu-panel .right-links li.mini-cart {
+	position: relative;
+	top: -4px;
+	}
+
+.cart .loading {
+	left: 0;
+	border-radius: 0;
+	}
+
+#homepage-slides, #banner-1st-3rd, #hardwood-poets {
+	opacity: 0;
+	}
+
+
+
+/********************************************* ABOUT ROW  ****************/
+
+
+#banner-1st-3rd {
+	padding-top: 20px;
+	}
+
+#aboutrow {
+	/* margin-bottom: 0 !important; */
+	height: 280px;
+	
+	}
+
+.jPanelMenu #aboutrow {
+	height: auto;
+	margin-bottom: 30px !important;
+	}
+
+.thanks {
+	display:  inline-block;
+	font-size: 2em;
+	font-weight: bold;
+	color: #555;
+	margin-right: .25em;
+	}
+
+.donut-thanks img {
+	display:block;
+	margin: 2em auto;	
+	}
+.aboutbanner h1 {
+	border-bottom: 3px solid #555;
+	padding: 6px 0 4px;
+
+	}
+
+div.aboutbanner ~ div.social-icons {
+	text-align: center;
+	}
+
+	
+.newsbutton {
+	font-size: .85em !important;
+	}
+	
+input.wpcf7-text {
+	color : #999;
+	font-size: .75em !important;
+	}
+	
+.cf7-resp {
+	opacity: 0;
+	font-size: 1.1em;
+	}
+	
+.wpcf7-not-valid-tip {
+	margin: .75em 0;
+	}
+	
+.wpcf7-response-output {
+	opacity: 0;
+	}
+
+/********************************************* HARDWOOD POETS *************/
+
+
+#hardwood-poets {
+	clear: both;
+	border-bottom: 9px solid white;
+	background: #eee;
+	
+	}
+
+#hardwood-poets .banner-bg {
+	box-shadow: inset 0px 10px 60px -8px #999,
+                0px -0px 0px -4px #333;
+    background: #bbb;
+	}
+
+#hardwood-poets .inner.center {
+	width: 100% !important;
+	left: 0;
+	right: 0;
+	}
+
+#hardwood-poets p {
+	padding: 4px 0;
+	margin-top: 20px;
+	font-size: 1.35em !important;
+	display: inline-block;
+	border-bottom: 9px solid #fff !important;
+	text-align: center;
+	color: #fff;
+/* 	text-transform: uppercase; */
+	}
+
+
+/********************************************* MID SLIDER  ****************/
+
+#slider-le-mid {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+	}
+
+#slider-le-mid .lemidslider {
+	overflow: hidden;
+	height: 400px;
+	
+	}
+.lemidslider {
+	margin-bottom: 0 !important;
+	position: relative;
+	}
+
+.slider h1.lemid {
+	font-size: 650%;
+	font-family: "Haymaker" !important;
+	}
+
+.le-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	}
+
+.le-big {
+	/* z-index: 1; */
+	top: -62px;
+	left: -45%;
+	position: absolute;
+	}
+
+.jPanelMenu .le-big, .jPanelMenu .text-right .le-big {
+	width: 50%;
+	height: auto;
+	}
+
+.text-right .le-big {
+	left: -20%;
+	float: right;
+	}
+
+
+.jolly-roger {
+	position: relative;
+	left: -34px;
+	}
+
+.text-right .jolly-roger {
+	left: 48px;
+	}
+
+.jolly-roger.alignright {
+	position: relative;
+	left: 12px;
+	top: -36px;
+	}
+
+.jolly-roger + .midcredit {
+	display: inline-block;
+	position: absolute;
+	top: 276px;
+	left: 16px;
+	font-size: 1em;
+	font-weight: bold;
+	}
+
+.midgrad {
+	vertical-align: top;
+	opacity: .2;
+	width: 100%;
+	height: 50%;
+	}
+
+.saymini {
+	position: relative;
+	left: -6px;
+	}
+
+
+
+/********************************************* FOOTER ROW  ****************/
+
+.footer-wrapper {
+	background-image: url('/img/footer-pattern-trans.png');
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background-color: #3382be !important;
+
+	
+	display: block;
+	position: relative;
+	}
+
+.footer-wrapper:after {
+/*
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/img/fades/white-90); 
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    opacity : 0.8;
+*/
+}
+
+.footer {
+	border-top: 9px solid white;
+	background: transparent !important;
+	color: white !important;
+	}
+
+
+.footer h3.widget-title {
+	color: white;
+	font-weight: bold;
+	margin-top: 64px;
+	font-family: "Pontano Sans" !important;
+	font-size: 1.1em;
+	}
+
+
+.footer .tx-div {	
+	background: white;
+	width: 100%;
+	opacity: 1;
+	height: 2px;
+	}
+
+
+.footer ul li {
+	list-style-type: none;
+	margin: 4px 0;
+	line-height: 1.5em;
+	}
+
+.footer ul li.empty {
+	}
+
+.footer ul li a {
+	color: white;
+	/* display: block; */
+	padding: 4px 6px;
+	margin: -4px -6px;
+	font-weight: bold;
+
+	}
+
+.footer ul li a:hover {
+	background: #3382be;
+	color: #fff;
+	text-decoration: underline;
+	}
+	
+
+.footer .get-yours {
+	position: absolute;
+	top: -50px;
+	right: -25%;
+	}
+
+.jPanelMenu .get-yours {
+	
+	}
+.jPanelMenu .footer .logocont {
+	min-height: 80px;
+	}
+
+.footer .logocont {
+	min-height: 400px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;    
+	box-sizing: border-box;
+	}
+	
+.logocont .social-icons {
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+	}
+
+.logocont .social-icons .icon.icon_twitter:hover {
+	border-color: white;
+	background-color: dodgerblue;
+	}
+
+.social-icons .icon.icon_email:hover {
+	border-color: white;
+	background-color: #3340A0;
+	}
+
+.footer .tennis {
+	float: left;
+	position: absolute;
+	bottom: 0;
+	
+	padding: 8px;
+	}
+
+.footer .tennis:hover {
+	background: #3382be;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.absolute-footer {
+	background: transparent !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************* FOOTER ROW  ****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+/*
+Theme Name: LeDunk Flatsome
+Theme URI: http://www.ledunk.com
+Description: This is a child theme for Flatsome
+Author: UX Themes
+Author URI: http://www.ledunk.fom
+Template: flatsome
+Version: 1.3
+*/
+
+@import url("../flatsome/css/foundation.css");
+
+/*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
+
+@import url("css/ledunk.css");
+
+
+@import url("fonts/matchup.css"); /* Matchup Font */
+/* @import url("fonts/skyhookmono.css"); */
+@import url("fonts/haymaker.css");
+/* @import url("fonts/often.css"); */
