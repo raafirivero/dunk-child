@@ -31,7 +31,6 @@ $('#slider-le-mid').delay(2200).animate(
 
 
 
-
 ///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 
 

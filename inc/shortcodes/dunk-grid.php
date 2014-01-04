@@ -64,6 +64,6 @@ function dunk_colShortcode($atts, $content = null) {
     ), $atts ) );
 
 	$content = do_shortcode($content);
-	$column = '<div class="large-'.$span.' columns' .$class. '">'.$content.'</div>';
+	$column = '<div class="large-'.$span.' columns ' .$class. '">'.$content.'</div>';
 	return $column;
 }

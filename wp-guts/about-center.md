@@ -1,14 +1,14 @@
-[row]
-[col span=1/4]
-
+[row class="about-top"]
+[col span=1/4  class="share-gif"]
 <a href="#">share this gif</a>
-
 [/col]
+
 [col span=1/2]
 <img src="http://dunk.site/wp-content/uploads/2013/12/le-dunk-death.gif" alt="le-dunk-death" width="240" height="180" class="aligncenter size-full wp-image-815" />
 [/col]
-[col span=1/4]
-all day son
+
+[col span=1/4 class="alt-font"]
+"all day son."
 [/col]
 
 [/row]
@@ -37,4 +37,4 @@ All releases are limited runs. Pre-orders and minimal stock until the cup runs d
 [/col]
 [/row]
 
-<img src="http://dunk.site/wp-content/uploads/2013/12/donut.png" alt="donut" width="144" height="144" class="aligncenter size-full wp-image-765" />
+<img src="http://dunk.site/wp-content/uploads/2013/12/donut-shadow-clean.png" alt="donut-shadow-clean" width="144" height="144" class="aligncenter size-full wp-image-1280" />
