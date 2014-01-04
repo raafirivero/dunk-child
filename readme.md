@@ -1,11 +1,11 @@
-** Dunk
+## Dunk
 
 
 Child theme with RR edits to enable passing unique class and ID variables to almost any shortcode
 
 ---
 
-Roadmap:
+### Roadmap:
 - confirm form submission
 - easypost int'l shipments
 - cart sprite animation on add
@@ -22,7 +22,7 @@ Roadmap:
 - Returns page copy
 - Privacy Policy copy
 
-*** General Questions
+#### General Questions
 - blog vs tumblr?
 
 - Light colored footer on all pages except home/signup.
