@@ -26,10 +26,7 @@ $('#slider-le-mid').delay(2200).animate(
 
 
 
-
-
-
-
+$(".about .tennis").attr("src", "http://dunk.site/wp-content/uploads/2014/01/ledunk-tennis-blk.png");
 
 ///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 
