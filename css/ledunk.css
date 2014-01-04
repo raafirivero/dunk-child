@@ -1,7 +1,3 @@
-.ld-menu .right-links #site-navigation {
-	/* float: left; */
-	}
-
 #logo {
 	display: table-cell;
 	/* min-width: 150px; */
@@ -335,6 +331,9 @@ input.wpcf7-text {
 	
 	display: block;
 	position: relative;
+	
+	/* opacity zero for jquery animation */
+	opacity: 0;
 	}
 
 .footer-wrapper:after {
@@ -423,7 +422,7 @@ input.wpcf7-text {
 	
 .logocont .social-icons {
 	position: absolute;
-	bottom: 5px;
+	bottom: 7px;
 	right: 0;
 	}
 
@@ -451,19 +450,6 @@ input.wpcf7-text {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .absolute-footer {
 	background: transparent !important;
 	}
@@ -471,20 +457,176 @@ input.wpcf7-text {
 
 
 
+/* From Foundation CSS */
+/*
+.woocommerce-checkout .footer-1, .woocommerce-checkout .footer-2 {
+	display: none !important;
+	}
+
+*/
+
+.woocommerce-cart .footer-1, .woocommerce-cart .footer-2 {
+	display: none !important;
+	}
+
+.woocommerce-page .footer-wrapper {
+	
+	/*
+background-image: url('/img/footer-pattern-extratrans.png');
+	background-color: steelblue !important;
+*/
+}
 
 
 
 
 
+/********************************************* ABOUT PAGE  ****************/
+
+.about p, .about .bodytext, .about #content, .about #content a {
+	font-family: "Pontano Sans", sans-serif !important;
+	color: #222;
+	}
+
+.about #content { margin-bottom: -50px; }
+
+.about p.bigtext {
+	font-size: 220%;
+	line-height: 1.5em;
+	}
+.about p.midtext  {
+	margin-top: 2em;
+	font-size: 175%;
+	text-align: center;
+	}
+
+.about .bodytext {
+	font-size: 150%;
+	}
+
+.about .about-top .aligncenter {
+	width: 100%;
+	}
+
+.about .about-top {
+	position: relative;
+	font-size: 100%;
+	width: 100%;
+	white-space: nowrap;
+	}
 
 
+.about .about-top .columns {
+	display: inline-block;
+    vertical-align: bottom;
+    white-space: normal;
+	float: none;
+	
+	}
+
+.about .about-top .large-3 {
+	padding: 0 3em;
+	}
+
+.jPanelMenu-panel .about-top {
+	width: auto;
+	}
+
+.jPanelMenu-panel .about-top .columns {
+	float: left;
+	padding: 1em;
+	}
+
+.jPanelMenu-panel .about-top .share-gif {
+	display: none;
+	}
+
+.about .share-gif a {
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 6px;
+	margin: -6px;
+	letter-spacing: .5px;
+	}
 
 
+.about .about-top .columns:last-child {
+	text-align: right;
+	top: -10px;
+	font-size: 125%;
+	}
+
+.about .footer-wrapper {
+	background: transparent !important;
+	}
 
 
+.about .get-yours {
+	display: none;
+	}
 
+
+.about .footer-1.light, .about .footer-1.light a, .about .widget-title, .about .absolute-footer {
+	color: #444 !important;
+	}
+
+.about .footer .social-icons .icon { 
+	border-color: #444 !important;
+	}
+
+.about .footer .social-icons .icon:hover {
+	background: #eee;
+	}
+
+.about .footer-1.light a:hover, .about #content a:hover, .about .footer .tennis:hover {
+	background: #eee;
+	color: #000 !important;
+	text-decoration: underline;
+	}
+
+
+.about .footer .tx-div {
+	background: #444;
+	}
+
+
+.about .ninja-forms-form {
+	padding: 2em;
+	font-family: "Arimo" !important;
+	}
+
+
+.about div.ninja-forms-field-description p {
+	font-size: .85em;
+	font-family: "Arimo" !important;
+	}
+
+
+.about .ninja-forms-required-items {
+	margin: 1.5em 0;
+	text-align: right;
+	font-size: .85em;
+	position: absolute;
+	bottom: 36px;
+}
+
+.about .logo-field {
+	position: relative;
+	top: -20px;
+	
+	}
+
+.about #ninja_forms_form_5_response_msg p {
+	font-family: Haymaker !important;
+	font-size: 3em;
+	color: #222;
+	text-align: center;
+	padding: 4em 3em;
+	}
 
 /********************************************* FOOTER ROW  ****************/
+
+
 
 
 
