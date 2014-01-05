@@ -24,10 +24,22 @@ $('#slider-le-mid').css( "height", "0" ).delay(2200).animate(
 	{"height" : "400px"},
 700,"swing");
 
-$('.footer-wrapper').hide().css({'opacity':'0' , 'background-color':'yellow !important' }).delay(1600).fadeTo(1800,1);
+$('.home .footer-wrapper').hide().css({'opacity':'0' , 'background-color':'yellow !important' }).delay(1600).fadeTo(1800,1);
+$('.footer-wrapper').not('.home .footer-wrapper').hide().css({'opacity':'0' , 'background-color':'yellow !important' }).delay(600).fadeTo(1800,1);
 
 
 $(".about .tennis").attr("src", "http://dunk.site/wp-content/uploads/2014/01/ledunk-tennis-blk.png");
+
+
+/*
+$(".donutcenter a").hover(function(){
+    $(this).filter(':not(:animated)').animate({ width: "160px", height: "160px", padding: "8px" });
+    $(".donutcenter a").vAlign();
+}, function() {
+    $(this).animate({ width: "144px", height: "144px", padding: "-8px" });
+});
+*/
+
 
 ///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 

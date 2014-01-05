@@ -16,12 +16,15 @@ function dunk_add_scripts() {
 }
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
 
-add_action( 'init', 'remove_woo_ajax');
+add_action( 'init', 'unhook_woo_stuff');
  
-function remove_woo_ajax() {
+function unhook_woo_stuff() {
+
     // remove woocommerce ajax functions, replace with dunk ajax functions in dunk-ajax.php
     remove_action('wp_ajax_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	remove_action('wp_ajax_nopriv_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
+	
+	
     
 }
 
