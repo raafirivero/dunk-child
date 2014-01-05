@@ -468,14 +468,14 @@ input.wpcf7-text {
 	line-height: .8em;
 	}
 
-.footer-compact .widget-title {
+.footer-compact.footer-wrapper .widget-title {
 	margin-top: 12px !important;
 	color: #bbb !important;
 	letter-spacing: 1px;
 	border-bottom: 0px solid #ddd;
 	padding-bottom: .5em;
 	font-weight: bold !important;
-
+	font-family: "Arimo" !important;
 		
 	}
 
@@ -497,14 +497,14 @@ input.wpcf7-text {
 	display: block;
 	width: 132px;
 	height: 36px;
-	border: 4px solid transparent;
+	border: 6px solid transparent;
 	opacity: .9;
 	/* float: right; */
 	}
 
 .footer-compact .footer-1.light .blklogo:hover {
-	height: 43px;
-	border: 4px solid #eee;
+	height: 46px;
+	border: 6px solid #eee;
 	}
 .footer-compact .absolute-footer {
 	color: #bbb;
@@ -749,9 +749,15 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	text-align: center;
 	position: relative;
 	height: 220px;
-	
-/* 	border: 1px solid red; */
+	}
 
+.about .nf-modal-content, .about .nf-modal, .about a.close-modal {
+	border-radius: 0 !important;
+	}
+
+.about a.close-modal {
+	top: 25px !important;
+	right: 25px !important;
 	}
 
 .about .ninja-forms-form {
@@ -785,7 +791,7 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	font-size: 3em;
 	color: #222;
 	text-align: center;
-	padding: 4em 3em;
+	padding: 2em 2em 1em 2em;
 	}
 
 /********************************************* SHOP PAGE  ****************/
