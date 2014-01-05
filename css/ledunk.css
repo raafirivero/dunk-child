@@ -363,16 +363,16 @@ input.wpcf7-text {
 	background-color: #49B1EB !important;	
 	}
 
-.footer-orange ul li a:hover, .footer-orange .tennis:hover {
+.footer-wrapper.footer-orange ul li a:hover, .footer-wrapper.footer-orange.tennis:hover {
 	background-color: #fff;
 	color: #444 !important;
 	}
 
-.footer-orange .tennis {
+.footer-wrapper.footer-orange .tennis {
 	background: url(/img/ledunk-tennis-white.png) no-repeat;
 	background-position: 6px 6px;
 	}
-.footer-orange .tennis:hover {
+.footer-wrapper.footer-orange .tennis:hover {
 	background: #fff url(/img/ledunk-tennis-blk.png) no-repeat;
 	background-position: 6px 6px;
 	}
