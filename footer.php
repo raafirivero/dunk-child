@@ -11,7 +11,7 @@ global $flatsome_opt;
 </div><!-- #main-content -->
 
 <?php 
-	if(is_page(array( 'homepage-rows', 'sign-up'))) {
+	if(is_page(array( 'homepage-rows'))) {
 		$footerclass = "footer-orange";
 			} else if (is_page('about')) {
 		$footerclass = "footer-white";

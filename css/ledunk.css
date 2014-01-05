@@ -320,46 +320,212 @@ input.wpcf7-text {
 
 
 
-/********************************************* FOOTER ROW  ****************/
-
-.footer-wrapper {
-	background-image: url('/img/footer-pattern-trans.png');
-	background-repeat: repeat-x;
-	background-size: 100% 100%;
-	background-color: #3382be !important;
-
-	
-	display: block;
-	position: relative;
-	
-	/* opacity zero for jquery animation */
-	opacity: 0;
-	}
-
-.footer-wrapper:after {
-/*
-    content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/img/fades/white-90); 
-    width: 100%;
-    height: 100%;
-    background-size: 100% 100%;
-    opacity : 0.8;
-*/
-}
-
-.footer {
-	border-top: 9px solid white;
-	background: transparent !important;
-	color: white !important;
-	}
+/********************************************* FOOTER COLORS  ****************/
+/***************************  dark colors   ****************/
 
 
 .footer h3.widget-title {
 	color: white;
+	}
+
+
+.footer .tx-div {	
+	background: white;
+	}
+
+.footer ul li a:hover {
+	background-color: #49B1EB;
+	color: #fff;
+	}
+	
+.footer ul li a {
+	color: white;
+	}
+	
+.footer .tennis {
+	background: url(/img/ledunk-tennis.png) no-repeat;
+	display: block;
+	width: 188px;
+	height: 60px;
+	background-position: 6px 6px;
+	}
+	
+.footer .tennis:hover {
+	text-indent: -10000px;
+	background: url(/img/ledunk-tennis.png) no-repeat;
+	background-position: 6px 6px;
+	}
+	
+/***************************  ORANGE 49B1EB  ****************/
+
+.footer-wrapper.footer-orange {
+	background-image: url('/img/footer-pattern-orange.png');
+	background-color: #49B1EB !important;	
+	}
+
+.footer-orange ul li a:hover, .footer-orange .tennis:hover {
+	background-color: #fff;
+	color: #444 !important;
+	}
+
+.footer-orange .tennis {
+	background: url(/img/ledunk-tennis-white.png) no-repeat;
+	background-position: 6px 6px;
+	}
+.footer-orange .tennis:hover {
+	background: #fff url(/img/ledunk-tennis-blk.png) no-repeat;
+	background-position: 6px 6px;
+	}
+
+.footer-orange .footer .social-icons .icon { 
+	border-color: #fff !important;
+	color: #fff;
+	}
+.footer-orange .absolute-footer {
+	color: white !important;
+	}
+/***************************  BLUE  3382be ****************/
+
+.footer-wrapper.footer-blue {
+	background-image: url('/img/footer-pattern-trans.png');
+	background-color: #3382be !important;	
+	}
+.footer-blue ul li a:hover, .footer-blue .tennis:hover {
+	background-color: #3382be;
+	}
+
+/***************************  WHITE   ****************/
+
+.footer-wrapper.footer-white {
+	background: transparent !important;
+	}
+
+.footer-white .get-yours {
+	display: none;
+	}
+
+.footer-white .footer-1.light, .footer-white .widget-title, .footer-white .absolute-footer, .footer-white ul li a {
+	color: #444 !important;
+	}
+
+.footer-white .footer .social-icons .icon { 
+	border-color: #444 !important;
+	color: #444;
+	}
+
+.footer-white .footer .social-icons .icon:hover {
+	background: #eee !important;
+	text-decoration: none;
+	}
+
+.footer-white .footer-1.light a:hover {
+	background: #eee;
+	color: #000 !important;
+	text-decoration: underline;
+	}
+
+.footer-white .tennis {
+	background: url(/img/ledunk-tennis-blk.png) no-repeat;
+	background-position: 6px 6px;
+	}
+
+.footer-white .footer-1.light .tennis:hover {
+	color: red;
+	background: #eee url(/img/ledunk-tennis-blk.png) no-repeat;
+	background-position: 6px 6px;
+	}
+
+.footer-white .footer .tx-div {
+	background: #444;
+	}
+
+/******************** COMPACT FOOTER  ****************/
+
+.footer-wrapper.footer-compact {
+	/* border-top: 1px solid #ddd; */
+	background: white !important;
+	/* padding: 0; */
+	}
+
+.post-type-archive-product .category-page {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 30px;
+	}
+
+.footer-compact .logocont {
+	/* min-height: 60px; */
+	}
+
+.footer-compact .tx-div {
+	background: #666;
+	margin: 6px 0;
+	}
+
+.footer-compact ul li a, .footer-compact .widget-title {
+	color: #666 !important;
+	font-weight: normal !important;
+	font-size: .8em !important;
+	line-height: .8em;
+	}
+
+.footer-compact .widget-title {
+	margin-top: 12px !important;
+	color: #bbb !important;
+	letter-spacing: 1px;
+	border-bottom: 0px solid #ddd;
+	padding-bottom: .5em;
+	font-weight: bold !important;
+
+		
+	}
+
+.footer-compact .footer-1.light a:hover {
+	background: #eee;
+	color: #444 !important;
+	text-decoration: underline;
+	}
+
+	
+.footer .tennis:hover {
+	text-indent: -10000px;
+	background: url(/img/ledunk-tennis.png) no-repeat;
+	background-position: 6px 6px;
+	}
+
+
+.footer-compact .blklogo {
+	display: block;
+	width: 132px;
+	height: 36px;
+	border: 4px solid transparent;
+	opacity: .9;
+	/* float: right; */
+	}
+
+.footer-compact .footer-1.light .blklogo:hover {
+	height: 43px;
+	border: 4px solid #eee;
+	}
+.footer-compact .absolute-footer {
+	color: #bbb;
+	
+	}
+	
+/********************************************* FOOTER ROW  ****************/
+
+.footer-wrapper {
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background-color: #999 !important;
+	display: block;
+	position: relative;
+
+	/* opacity zero for jquery animation */
+	opacity: 0;
+	}
+
+
+.footer h3.widget-title {
 	font-weight: bold;
 	margin-top: 64px;
 	font-family: "Pontano Sans" !important;
@@ -368,37 +534,37 @@ input.wpcf7-text {
 
 
 .footer .tx-div {	
-	background: white;
 	width: 100%;
 	opacity: 1;
 	height: 2px;
+	}
+
+.footer ul li a:hover {
+	text-decoration: underline;
+	}
+	
+.footer ul li a {
+	padding: 4px 6px;
+	margin: -4px -6px;
+	font-weight: bold;
+	}
+
+
+.footer {
+	border-top: 9px solid white;
+	background: transparent !important;
+	color: white !important;
 	}
 
 
 .footer ul li {
 	list-style-type: none;
 	margin: 4px 0;
-	line-height: 1.5em;
+	line-height: 1.6em;
 	}
 
 .footer ul li.empty {
 	}
-
-.footer ul li a {
-	color: white;
-	/* display: block; */
-	padding: 4px 6px;
-	margin: -4px -6px;
-	font-weight: bold;
-
-	}
-
-.footer ul li a:hover {
-	background: #3382be;
-	color: #fff;
-	text-decoration: underline;
-	}
-	
 
 .footer .get-yours {
 	position: absolute;
@@ -444,11 +610,6 @@ input.wpcf7-text {
 	padding: 8px;
 	}
 
-.footer .tennis:hover {
-	background: #3382be;
-	}
-
-
 
 .absolute-footer {
 	background: transparent !important;
@@ -478,9 +639,6 @@ background-image: url('/img/footer-pattern-extratrans.png');
 }
 
 
-
-
-
 /********************************************* ABOUT PAGE  ****************/
 
 .about p, .about .bodytext, .about #content, .about #content a {
@@ -488,7 +646,7 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	color: #222;
 	}
 
-.about #content { margin-bottom: -50px; }
+.about #content { margin-bottom: -30px; }
 
 .about p.bigtext {
 	font-size: 220%;
@@ -549,6 +707,9 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	letter-spacing: .5px;
 	}
 
+.about .share-gif a:hover {
+	background: #eee;
+	}
 
 .about .about-top .columns:last-child {
 	text-align: right;
@@ -556,39 +717,42 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	font-size: 125%;
 	}
 
-.about .footer-wrapper {
+.about p img:before {
+		content: "\e002";
+	}
+
+
+.about p a {
+	font-size: 16px;
+	border: 3px solid transparent;
+	display: inline-block;
+	padding: -8px;
+/*
+	margin-right: 5px;
+	margin-bottom: 5px;
+*/
+	color: #ccc;
+	-webkit-border-radius: 99px;
+	border-radius: 99px;
+	-webkit-transition: "background-color" 200ms ease-out;
+	-moz-transition: "background-color" 200ms ease-out;
+	transition: "background-color" 200ms ease-out;
+	
+	}
+
+.about p a:hover {
+	border-color: #bbb;
 	background: transparent !important;
 	}
 
+.about .donutcenter {
+	text-align: center;
+	position: relative;
+	height: 220px;
+	
+/* 	border: 1px solid red; */
 
-.about .get-yours {
-	display: none;
 	}
-
-
-.about .footer-1.light, .about .footer-1.light a, .about .widget-title, .about .absolute-footer {
-	color: #444 !important;
-	}
-
-.about .footer .social-icons .icon { 
-	border-color: #444 !important;
-	}
-
-.about .footer .social-icons .icon:hover {
-	background: #eee;
-	}
-
-.about .footer-1.light a:hover, .about #content a:hover, .about .footer .tennis:hover {
-	background: #eee;
-	color: #000 !important;
-	text-decoration: underline;
-	}
-
-
-.about .footer .tx-div {
-	background: #444;
-	}
-
 
 .about .ninja-forms-form {
 	padding: 2em;
@@ -624,43 +788,46 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	padding: 4em 3em;
 	}
 
+/********************************************* SHOP PAGE  ****************/
+
+
+.post-type-archive-product .product-image img {
+	width: 100% !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 /********************************************* FOOTER ROW  ****************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

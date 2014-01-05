@@ -8,4 +8,4 @@
 global $flatsome_opt;
 ?>
 <!-- // use a content block inside WP for the footer -->
-<?php echo do_shortcode( '[block id="dunk-footer"]' ) ?>
+<?php echo do_shortcode( '[block id="compact-footer"]' ) ?>
