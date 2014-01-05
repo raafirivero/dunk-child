@@ -803,9 +803,12 @@ background-image: url('/img/footer-pattern-extratrans.png');
 
 
 
+	
+/********************************************* CHECKOUT FIX  ****************/
 
-
-
+.payment_method_Striper .input-text {
+width: 100% !important;
+}
 
 
 
