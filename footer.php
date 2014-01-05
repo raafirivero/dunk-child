@@ -10,14 +10,32 @@ global $flatsome_opt;
 
 </div><!-- #main-content -->
 
-<footer class="footer-wrapper" role="contentinfo">
+<?php 
+	if(is_page(array( 'homepage-rows', 'sign-up'))) {
+		$footerclass = "footer-orange";
+			} else if (is_page('about')) {
+		$footerclass = "footer-white";
+			} else {
+		$footerclass = "footer-compact";
+		}
+		$thispage = $wp_query->query_vars["pagename"];
+
+?>
+
+<footer class="footer-wrapper <?php echo($footerclass .' '. $thispage); ?>" role="contentinfo">
 <div class="footer footer-1 light">	<div class="row">
    		<?php
 					/* Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content-footer', get_post_format() );
+					 
+					/* set smaller footer for footer-compact group */ 
+					if($footerclass != "footer-compact") {
+							get_template_part( 'content-footer', get_post_format() );
+						} else {
+							get_template_part( 'compact-footer', get_post_format() );
+					}
 				?>
 				   
 	</div><!-- end row -->
