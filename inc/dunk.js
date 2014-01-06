@@ -15,7 +15,7 @@ $('.ux_banner').has('.hover-reveal').hover(
 
 );
 
-
+/* Ladda.bind( 'input[type=submit]' ); */
 
 $('#homepage-slides').fadeTo(1800,1);
 $('#banner-1st-3rd').delay(900).fadeTo(800,1).slideDown(1800);
@@ -150,3 +150,4 @@ $('input.wpcf7-text').focus(function() {
 
 });
 
+Ladda.bind( 'input[type=submit]' );

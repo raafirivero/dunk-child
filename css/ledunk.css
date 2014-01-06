@@ -807,10 +807,14 @@ background-image: url('/img/footer-pattern-extratrans.png');
 /********************************************* CHECKOUT FIX  ****************/
 
 .payment_method_Striper .input-text {
-width: 100% !important;
+	width: 100% !important;
 }
 
-
+.payment-errors {
+	color: red;
+	display: inline-block;
+	margin: 1em 0;
+	}
 
 
 

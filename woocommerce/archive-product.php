@@ -87,6 +87,7 @@ if(function_exists('get_term_meta')){
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
+
 				<?php endwhile; // end of the loop. ?>
 
 			<?php woocommerce_product_loop_end(); ?>
