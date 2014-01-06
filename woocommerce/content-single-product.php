@@ -20,7 +20,80 @@
 			 do_action( 'woocommerce_before_single_product' );
 		?>    
         <div class="large-6 columns product-gallery">        
-        
+<?php
+		global $woocommerce;
+		
+		$signature = "Raafi Rivero";
+		
+    	$cart_group = $woocommerce->cart->cart_contents;
+		$totaldesc = '';
+		$tariff = '';
+		$customs_item = array();
+		
+		foreach($cart_group as $c)
+			{
+				$itemid = $c['product_id'];
+				$itemdesc = get_post_meta($itemid, 'contents_description');
+				$totaldesc .= $itemdesc[0]. '. ';				
+				$tariff = get_post_meta($itemid, 'tariff_number');
+				$tariff = (string) $tariff[0];
+				
+				$cart_howmany = $c['quantity'];
+				$weight = get_post_meta( $itemid, '_weight', true);
+				$price = get_post_meta( $itemid, '_price', true);
+				
+				// create a customs item array for each item in the cart.					
+
+				$params = array(
+					"description"      => $itemdesc[0],
+					"quantity"         => $cart_howmany,
+					"value"            => $price,
+					"weight"           => $weight,
+					"hs_tariff_number" => $tariff,
+					"origin_country"   => 'US',
+					);
+	
+					array_push($customs_item, $params);				
+			}
+				
+				$infoparams = array(
+				  "eel_pfc" => 'NOEEI 30.37(a)',
+				  "customs_certify" => true,
+				  "customs_signer" => $signature,
+				  "contents_type" => 'merchandise',
+				  "contents_explanation" => '', // only necessary for contents_type=other
+				  "restriction_type" => 'none',
+				  "non_delivery_option" => 'return',
+				  "customs_items" => $customs_item
+			 	);
+		 		
+		
+		var_export($infoparams);
+		
+		echo('<p>blooks</p>');
+		echo ("\n");
+		
+		
+		$bustoms_info = array(
+			  "eel_pfc" => 'NOEEI 30.37(a)',
+			  "customs_certify" => true,
+			  "customs_signer" => 'Raafi Rivero',
+			  "contents_type" => 'merchandise',
+			  "contents_explanation" => '',
+			  "restriction_type" => 'none',
+			  "non_delivery_option" => 'return',
+			  "customs_items" => array( array(
+			    "description" => 'Sweet shirts',
+			    "quantity" => 2,
+			    "weight" => 11,
+			    "value" => 23,
+			    "hs_tariff_number" => 610910,
+			    "origin_country" => 'US'
+			  	))
+			 );
+		
+		var_export($bustoms_info);
+			?>
             <?php
                 /**
                  * woocommerce_show_product_images hook
@@ -55,11 +128,11 @@
     
     <div class="next-prev-nav">
         <?php // edit this in inc/template-tags.php // ?>
-        <?php next_post_link_product('%link', 'icon-angle-left next', true); ?>
-        <?php previous_post_link_product('%link', 'icon-angle-right prev', true); ?>
+        <?php /* next_post_link_product('%link', 'icon-angle-left next', true); */ ?>
+        <?php /* previous_post_link_product('%link', 'icon-angle-right prev', true); */ ?>
     </div>
 
-     <?php  woocommerce_get_template('single-product/up-sells.php');?> 
+     <?php  /* woocommerce_get_template('single-product/up-sells.php'); */ ?> 
 
 </div><!-- .product-page-aside -->
      
