@@ -842,7 +842,9 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	
 /********************************************* FOOTER ROW  ****************/
 
-
+#logo {
+	display: none;
+	}
 
 
 

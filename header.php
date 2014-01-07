@@ -16,6 +16,21 @@ global $flatsome_opt;
 	
 <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 
+<?php 
+//logging
+
+require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
+$handler = PhpConsole\Handler::getInstance();
+/* You can override default Handler behavior:
+    $handler->setHandleErrors(false);  // disable errors handling
+    $handler->setHandleExceptions(false); // disable exceptions handling
+    $handler->setCallOldHandlers(false); // disable passing errors & exceptions to prviously defined handlers
+*/
+$handler->setHandleErrors(false);  // disable errors handling
+$handler->start();
+PhpConsole\Helper::register();
+
+?>
 
 
 	<!-- Custom favicon-->

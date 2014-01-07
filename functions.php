@@ -6,12 +6,6 @@ require( get_stylesheet_directory() . '/inc/dunk-tags.php' );
 @ini_set( 'max_execution_time', '300' );
 	
 function dunk_add_scripts() {
-	wp_register_script('dunk', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk.js', array('jquery'));
-    wp_enqueue_script('dunk');
-    
-    wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
-    wp_enqueue_script('dunk-cart');
-    
     
     // Ladda for submit button
     wp_register_script('ladda', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda.min.js', array());
@@ -22,7 +16,15 @@ function dunk_add_scripts() {
     
     wp_register_style('laddastyle', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda-themeless.min.css', array());
     wp_enqueue_style('laddastyle');
-
+    
+    
+    // Dunk styles
+	wp_register_script('dunk', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk.js', array('jquery'));
+    wp_enqueue_script('dunk');
+    
+    wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
+    wp_enqueue_script('dunk-cart');
+    
 
 }
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
@@ -32,11 +34,9 @@ add_action( 'init', 'unhook_woo_stuff');
 function unhook_woo_stuff() {
 
     // remove woocommerce ajax functions, replace with dunk ajax functions in dunk-ajax.php
-/*
     remove_action('wp_ajax_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	remove_action('wp_ajax_nopriv_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	
-*/
 	
     
 }
