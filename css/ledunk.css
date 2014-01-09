@@ -363,7 +363,7 @@ input.wpcf7-text {
 	background-color: #49B1EB !important;	
 	}
 
-.footer-wrapper.footer-orange ul li a:hover, .footer-wrapper.footer-orange.tennis:hover {
+.footer-wrapper.footer-orange ul li a:hover {
 	background-color: #fff;
 	color: #444 !important;
 	}
@@ -373,7 +373,7 @@ input.wpcf7-text {
 	background-position: 6px 6px;
 	}
 .footer-wrapper.footer-orange .tennis:hover {
-	background: #fff url(/img/ledunk-tennis-blk.png) no-repeat;
+	background: transparent url(/img/ledunk-tennis-blk.png) no-repeat;
 	background-position: 6px 6px;
 	}
 
@@ -822,6 +822,14 @@ background-image: url('/img/footer-pattern-extratrans.png');
 
 
 
+/********************************************* SIGNUP PAGE  ****************/
+
+
+img.fatty {
+	border: 1px solid #999;
+	width: 75%;
+	}
+
 
 
 
@@ -841,11 +849,13 @@ background-image: url('/img/footer-pattern-extratrans.png');
 
 	
 /********************************************* FOOTER ROW  ****************/
+/*
 
 #logo {
 	display: none;
 	}
 
+*/
 
 
 

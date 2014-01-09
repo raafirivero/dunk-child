@@ -3,6 +3,21 @@ global $woo_options;
 global $woocommerce;
 global $flatsome_opt;
 ?>
+<?php 
+/*
+	// PHP logging console
+	require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
+
+	$handler = PhpConsole\Handler::getInstance();
+    // You can override default Handler behavior:
+    // $handler->setHandleExceptions(false); // disable exceptions handling
+    // $handler->setCallOldHandlers(false); // disable passing errors & exceptions to prviously defined handlers
+	$handler->setHandleErrors(false);  // disable errors handling
+	$handler->start(); // initialize handlers
+	PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
+*/
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 9 ]><html class="ie lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes(); ?>> <!--<![endif]-->
@@ -15,22 +30,6 @@ global $flatsome_opt;
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	
 <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
-
-<?php 
-//logging
-
-require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
-$handler = PhpConsole\Handler::getInstance();
-/* You can override default Handler behavior:
-    $handler->setHandleErrors(false);  // disable errors handling
-    $handler->setHandleExceptions(false); // disable exceptions handling
-    $handler->setCallOldHandlers(false); // disable passing errors & exceptions to prviously defined handlers
-*/
-$handler->setHandleErrors(false);  // disable errors handling
-$handler->start();
-PhpConsole\Helper::register();
-
-?>
 
 
 	<!-- Custom favicon-->
