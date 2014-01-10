@@ -1,8 +1,8 @@
 ## Roadmap:
 
 ### Backend
-- confirm form submission
-- easypost int'l shipments
+- confirm form submission *
+- easypost int'l shipments *
 - cart sprite animation on add
 - confirm ajax cart submission
 - unhook account functions
