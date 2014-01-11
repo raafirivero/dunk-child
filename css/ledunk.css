@@ -363,21 +363,21 @@ input.wpcf7-text {
 	background-color: #49B1EB !important;	
 	}
 
-.footer-wrapper.footer-orange ul li a:hover {
+.footer-wrapper.footer-orange ul li a:hover, .footer-wrapper.footer-gray ul li a:hover  {
 	background-color: #fff;
 	color: #444 !important;
 	}
 
-.footer-wrapper.footer-orange .tennis {
+.footer-wrapper.footer-orange .tennis, .footer-wrapper.footer-gray .tennis  {
 	background: url(/img/ledunk-tennis-white.png) no-repeat;
 	background-position: 6px 6px;
 	}
-.footer-wrapper.footer-orange .tennis:hover {
-	background: transparent url(/img/ledunk-tennis-blk.png) no-repeat;
+.footer-wrapper.footer-orange .tennis:hover, .footer-wrapper.footer-gray .tennis:hover {
+	background: #eee url(/img/ledunk-tennis-blk.png) no-repeat;
 	background-position: 6px 6px;
 	}
 
-.footer-orange .footer .social-icons .icon { 
+.footer-orange .footer .social-icons .icon, .footer-gray .footer .social-icons .icon { 
 	border-color: #fff !important;
 	color: #fff;
 	}
@@ -392,6 +392,24 @@ input.wpcf7-text {
 	}
 .footer-blue ul li a:hover, .footer-blue .tennis:hover {
 	background-color: #3382be;
+	}
+
+/***************************  Gray  3382be ****************/
+
+.footer-wrapper.footer-gray {
+	background-image: url('/img/footer-pattern-gray.png');
+	background-size: 100% 60px !important; 
+	background-color: #A8B4BD !important;	
+	}
+
+.footer-wrapper.footer-gray .tennis  {
+	background: url(/img/ledunk-tennis-white.png) no-repeat;
+	background-position: 6px 6px;
+	}
+
+.footer-wrapper.footer-gray .tennis:hover {
+	background-color: #fff;
+	opacity: .9;
 	}
 
 /***************************  WHITE   ****************/
@@ -570,6 +588,8 @@ input.wpcf7-text {
 	position: absolute;
 	top: -50px;
 	right: -25%;
+	
+	display: none !important;
 	}
 
 .jPanelMenu .get-yours {

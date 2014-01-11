@@ -12,7 +12,7 @@ global $flatsome_opt;
 
 <?php 
 	if(is_page(array( 'homepage-rows'))) {
-		$footerclass = "footer-orange";
+		$footerclass = "footer-gray";
 			} else if (is_page('about')) {
 		$footerclass = "footer-white";
 			} else {
