@@ -194,7 +194,7 @@ $available_methods = $woocommerce->shipping->get_available_shipping_methods();
 			<?php
 			$order_button_text = apply_filters('woocommerce_order_button_text', __( 'Place order', 'woocommerce' ));
 
-			echo apply_filters('woocommerce_order_button_html', '<input type="submit" class="button ladda-button secondary large expand" data-style="expand-right" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" />' );
+			echo apply_filters('woocommerce_order_button_html', '<section class="progress-demo"><input type="submit" class="button ladda-button secondary large expand" data-style="zoom-out" name="woocommerce_checkout_place_order" id="place_order" value="' . $order_button_text . '" /><span class="ladda-label">Submit</span></button></section>' );
 			?>
 
 			<?php if (woocommerce_get_page_id('terms')>0) : ?>

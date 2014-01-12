@@ -72,9 +72,7 @@ if ( $order ) : ?>
 		<div class="hide-for-medium-up">
 		<?php echo do_shortcode( '[divider width="full"]' ); ?>
 		</div>
-		<img src="/img/donut-shadow-clean.png" alt="le dunk donut" />
-		
-
+		<a href="/shop/"><img src="http://dunk.site/wp-content/uploads/2013/12/donut-shadow-clean.png" alt="donut-shadow-clean" width="144" height="144" class="aligncenter size-full wp-image-1280" /></a>
 	</div>
 
 <?php else : ?>

@@ -8,13 +8,23 @@ require( get_stylesheet_directory() . '/inc/dunk-tags.php' );
 function dunk_add_scripts() {
     
     // Ladda for submit button
-    wp_register_script('ladda', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda.min.js', array());
-    wp_enqueue_script('ladda');
-    
-    wp_register_script('laddaspin', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/spin.min.js', array());
+    wp_register_script('laddaspin', 
+	    get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/spin.min.js', 
+	    false,
+	    '1.0',
+	    true
+    );
     wp_enqueue_script('laddaspin');
     
-    wp_register_style('laddastyle', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda-themeless.min.css', array());
+    wp_register_script('ladda', 
+	    get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda.jquery.min.js', 
+	    false,
+	    '0.6.0',
+	    false
+    );
+    wp_enqueue_script('ladda');
+    
+    wp_register_style('laddastyle', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda.min.css', array());
     wp_enqueue_style('laddastyle');
     
     
@@ -24,7 +34,6 @@ function dunk_add_scripts() {
     
     wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
     wp_enqueue_script('dunk-cart');
-    
 
 }
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
@@ -37,7 +46,8 @@ function unhook_woo_stuff() {
     remove_action('wp_ajax_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	remove_action('wp_ajax_nopriv_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	
-	
+
+	/* wp_deregister_script( 'chosen' ); */
     
 }
 

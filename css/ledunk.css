@@ -6,7 +6,7 @@
 form[role] {
 	display: table-cell;
 	border: 1px solid transparent;
-	box-image-width: 0; 
+	/* box-image-width: 0;  */
 	font-family: 'Pontano Sans';
 	
 	}
@@ -87,7 +87,7 @@ max-width: 128px;
 	height: 32px;
 	width: 32px;
 	display: block;
-	position: relative
+	position: relative;
 	}
 .custom-cart-count {
 	top: -4px;
@@ -163,10 +163,13 @@ max-width: 128px;
 	margin-right: .25em;
 	}
 
-.donut-thanks img {
-	display:block;
-	margin: 2em auto;	
+.donut-thanks a {
+	display: block;
+	position: absolute;
+	left: 80px;
+	top: 70px;
 	}
+	
 .aboutbanner h1 {
 	border-bottom: 3px solid #555;
 	padding: 6px 0 4px;
@@ -742,7 +745,7 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	}
 
 
-.about p a {
+.about p a{
 	font-size: 16px;
 	border: 3px solid transparent;
 	display: inline-block;
@@ -760,7 +763,7 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	
 	}
 
-.about p a:hover {
+.about p a:hover, .order-received a:hover {
 	border-color: #bbb;
 	background: transparent !important;
 	}
@@ -837,10 +840,45 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	}
 
 
+label[for=payment_method_stripe] img {
+	display: block;
+	margin: 1em 0;
+	}
 
+.payment_box.payment_method_stripe fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0px transparent;
+	}
 
+.payment_box.payment_method_stripe select {
+	height: 1.5em;
+	}
+.payment_box.payment_method_stripe select option {
+	font-size: 5em;
+	}
 
+input#stripe_card_csc {
+	width: 100% !important;
+	}
 
+.payment_methods .form-row-last{
+
+	}
+.payment_methods li {
+	padding: 10px 0 5px !important;
+	}
+
+.ladda-button[data-style=zoom-out] .ladda-spinner {
+
+	}
+
+.ladda-button[data-style=zoom-out] .ladda-spinner div {
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	}
 
 /********************************************* SIGNUP PAGE  ****************/
 
@@ -853,9 +891,58 @@ img.fatty {
 
 
 
+/********************************************* MY ACCOUNT PAGE  ****************/
+
+.my-account .woocommerce {
+	padding-bottom: 2em;
+	}
+
+#dunk-avatar {
+	position: initial !important;
+	}
+
+.avatar {
+	border-radius: 0;
+	}
+
+
+.my-account h2 {
+	margin-top: 3em !important;
+	clear: both;
+	color: #777;
+	}
+
+.col2-set.addresses {
+ 	display: flex;
+	}
+
+.my-account h3 {
+	color: #555;
+	font-family: 'Pontano-Sans', sans-serif !important;
+	text-transform: uppercase;
+	font-size: 100%;
+	}
+
+.shop_table tbody {
+	padding-bottom: 8em;	
+	}
+
+
+.shop_table input {
+	position: relative;
+	top: 1.2em;
+	}
+	
+/********************************************* ORDER RECEIVED  ****************/
 
 
 
+.donut-thanks a {
+	border: 3px solid transparent;
+	display: inline-block;
+	-webkit-border-radius: 199px;
+	border-radius: 199px;
+	}
 
 
 
@@ -871,11 +958,23 @@ img.fatty {
 /********************************************* FOOTER ROW  ****************/
 /*
 
-#logo {
-	display: none;
-	}
 
-*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
