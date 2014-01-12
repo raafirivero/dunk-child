@@ -46,8 +46,6 @@ function unhook_woo_stuff() {
     remove_action('wp_ajax_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	remove_action('wp_ajax_nopriv_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
 	
-
-	/* wp_deregister_script( 'chosen' ); */
     
 }
 

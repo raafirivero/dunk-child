@@ -90,15 +90,9 @@ $(".donutcenter a").hover(function(){
 	});
 	
 	
-	// Bind normal buttons
-	$('section:not(.progress-demo) button').ladda({
-		timeout: 2000
-	});
+	// Ladda functions
 	// Bind progress buttons and simulate loading progress
-	$('section.progress-demo p button, 
-	section.progress-demo input,
-	a.minicart_total_checkout
-	').ladda({
+	$('section.progress-demo p button, section.progress-demo input').ladda({
 		timeout: 5000,
 		callback: function($el) {
 			var progress = 0;
@@ -121,4 +115,7 @@ $(".donutcenter a").hover(function(){
 	// $l.ladda( 'setProgress', 0-1 );
 	// $l.ladda( 'isLoading' ); // WARNING: Returns a boolean, will not chain.
 	///////////////// NO TOCAR  /////////////////////////////////
+	
+	
+	
 });
