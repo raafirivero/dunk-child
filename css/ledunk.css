@@ -914,6 +914,7 @@ img.fatty {
 
 .col2-set.addresses {
  	display: flex;
+ 	line-height: 1.25em
 	}
 
 .my-account h3 {
@@ -956,10 +957,10 @@ img.fatty {
 
 	
 /********************************************* FOOTER ROW  ****************/
-/*
 
-
-
+#logo {
+	display: none !important;
+	}
 
 
 
