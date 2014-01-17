@@ -5,7 +5,7 @@
 - easypost int'l shipments *
 - cart sprite animation on add
 - confirm ajax cart submission
-- unhook account functions
+- unhook account functions -x
 
 ### Design
 - finish design on item pages
