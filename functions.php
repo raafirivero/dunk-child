@@ -34,6 +34,26 @@ function dunk_add_scripts() {
     
     wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
     wp_enqueue_script('dunk-cart');
+    
+    // Landing Page
+    if ( is_page_template('page-landing.php') ) {
+    
+    	wp_dequeue_script('ladda');
+    	wp_dequeue_script('dunk');
+    	wp_dequeue_script('dunk-cart');
+    	
+    	wp_dequeue_style('laddastyle');
+    	/* wp_dequeue_style('flatsome'); */
+    
+	    wp_register_script('landing', get_stylesheet_directory_uri('stylesheet_directory').'/inc/landing/machine.js', array('jquery'));
+	    wp_enqueue_script('landing');
+	    
+	    wp_register_style('landingstyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/landing.css', array());
+	    wp_enqueue_style('landingstyle');
+	    
+    
+    }
+    
 
 }
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
