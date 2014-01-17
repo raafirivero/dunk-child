@@ -2,30 +2,22 @@
 /*
 Template name: Landing Page
 */
-/* get_header();  */ ?>
+get_header();  ?>
 
-<html>
-    <head>
-        <title>Le Dunk account setup</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="description" content="Le Dunk, the only place for people like us" />
+
+        <!--
+<meta name="description" content="Le Dunk, the only place for people like us" />
         <meta name="keywords" content="snapbacks, fitteds, campers, fitted caps, baseball caps, snapback caps, headwear"/>
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" type="text/css" href="/wp-content/themes/dunk-child/css/landing.css" />
+-->
+        <!-- <link rel="stylesheet" type="text/css" href="/wp-content/themes/dunk-child/css/landing.css" /> -->
         
         		<!-- The JavaScript -->
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script src="/wp-content/themes/dunk-child/inc/landing/machine.js" charset="utf-8"></script> </script>
-<style type="text/css">
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="/wp-content/themes/dunk-child/inc/landing/machine.js" charset="utf-8"></script> </script> -->
 
+ADD ZURB COLUMNS CONTENT
 
-</style>
-    </head>
-<body>
-
-	<div class="wrapper">
-
-		<div class="content">
 			<form  id="form_wrapper" class="form_wrapper" action="process.php" method="post">
 			
 				<div class="bigtxt active">
