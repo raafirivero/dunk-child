@@ -18,11 +18,12 @@
 
 [col span=1/6]
 <div class="text_widget">
-<h3 class="widget-title">Help</h3>
+<h3 class="widget-title">Info</h3>
 
 <ul>
-	<li><a href="#">Returns Policy</a></li>
+	<li><a href="/returns/">Returns Policy</a></li>
 	<li><a href="/privacy/">Privacy</a></li>
+	<li><a href="/jobs/">Jobs</a></li>
 </ul>
 
 </div>
