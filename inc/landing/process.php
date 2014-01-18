@@ -37,7 +37,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     	}
     	
     if(!empty($_POST["cursename"])){ 
-    	//$yourname = mysql_real_escape_string($_POST['cursename']); 
     	$yourname = mysql_real_escape_string($_POST['cursename']); 
     	// pass empty name parameter if they've been cursin';
     	}

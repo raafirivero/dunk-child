@@ -1,4 +1,4 @@
-$(function() {
+jQuery(document).ready(function($) {
 
 $('#arttypeform input:radio').addClass('input_hidden');
 //use to remove default selection on dropdown
@@ -22,16 +22,20 @@ $("#hatsize").attr("selectedIndex", -1);
 			//solve the inline display none problem when using fadeIn fadeOut
 			if(!$theForm.hasClass('active'))
 				$theForm.hide();
+			
+			// turn off setting form width
+			/*
 			$theForm.data({
 				width	: $theForm.width(),
 				height	: $theForm.height()
 			});
+			*/
 		});
 		
 		//set width and height of wrapper (same of current form)
 		setWrapperWidth();
 
-// console.log (  )		
+		// console.log (  )		
 	
 		/*
 		clicking a link (change form event) in the form
@@ -101,6 +105,10 @@ $("#hatsize").attr("selectedIndex", -1);
 						target = "emailform";
 						return;	
 					}
+			}
+			
+			if (target == "firsttry") {
+				$('#bg').fadeOut();
 			}
 
 			$currentForm.fadeOut(400,function(){
@@ -221,15 +229,18 @@ $("#hatsize").attr("selectedIndex", -1);
 		//hover mouse
 		
 		$('.retreat').bind('mouseover', function(e){
-		   $('.fanga').fadeIn(400);
+		   $(this).children('.fanga').fadeIn(400);
+		   e.preventDefault();
 		}); 
 		
 		$('.retreat').bind('mousemove', function(e){
-		   $('.fanga').css({'top':e.pageY+25,'left':e.pageX-84, 'z-index':'-1'});
+		   $('.retreat .fanga').css({'top':e.pageY+25,'left':e.pageX-84, 'z-index':'-1'});
+		   e.preventDefault();
 		}); 
 				
 		$('.retreat').bind('mouseleave', function(e){
-		   $('.fanga').fadeOut("fast");
+		   $('.retreat .fanga').fadeOut("fast");
+		   e.preventDefault();
 		}); 
 		
 		
@@ -257,11 +268,37 @@ $("#hatsize").attr("selectedIndex", -1);
 		$form_wrapper.find('input[type="submit"]')
 					 .click(function(e){
 						e.preventDefault();
+
 					 });	
 					 
-		
-		
-				 
+	/// Window Resize functions
+/* 	$("#bg").css({'position':'fixed','z-index':'-1','top':'0','left':'0'}) */
+
+
+	$(window).load(function() {    
+	
+		var theWindow        = $(window),
+		    $bg              = $("#bg"),
+		    aspectRatio      = $bg.width() / $bg.height();
+		    			    		
+		function resizeBg() {
+			
+			if ( (theWindow.width() / theWindow.height()) < aspectRatio ) {
+			    $bg
+			    	.removeClass()
+			    	.addClass('bgheight');
+			} else {
+			    $bg
+			    	.removeClass()
+			    	.addClass('bgwidth');
+			}
+						
+		}
+		                   			
+		theWindow.resize(resizeBg).trigger("resize");
+	
+	});
+					 
 					 
 	//////////// No Tocar
 	});

@@ -2,23 +2,18 @@
 /*
 Template name: Landing Page
 */
-get_header();  ?>
+/* get_header(); */  
+get_template_part('header','landing');
 
+?>
+	<div id="wrapper">
+	<img id="bg" src="/img/nuns-balling-sq.jpg" class="nuns" alt="nuns balling le dunk" />
+		<div id="main-content" class="site-main light">
+		<div class="content">
 
-        <!--
-<meta name="description" content="Le Dunk, the only place for people like us" />
-        <meta name="keywords" content="snapbacks, fitteds, campers, fitted caps, baseball caps, snapback caps, headwear"/>
-		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
--->
-        <!-- <link rel="stylesheet" type="text/css" href="/wp-content/themes/dunk-child/css/landing.css" /> -->
-        
-        		<!-- The JavaScript -->
-		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script src="/wp-content/themes/dunk-child/inc/landing/machine.js" charset="utf-8"></script> </script> -->
+	
 
-ADD ZURB COLUMNS CONTENT
-
-			<form  id="form_wrapper" class="form_wrapper" action="process.php" method="post">
+			<form  id="form_wrapper" class="form_wrapper" action="<?php echo get_stylesheet_directory_uri(); ?>/inc/landing/process.php" method="post">
 			
 				<div class="bigtxt active">
 					<h1><a href="#" class="linkform advance" rel="firsttry" >Advance</a> or <a href="#" class="retreat">Retreat<img src="/img/fanga.png" class="fanga" alt="pixelated middle finger" /></a></h1>
@@ -117,8 +112,8 @@ ADD ZURB COLUMNS CONTENT
 	</div>
  </div>
 
-		<div id="hide-message"></div>
-	</div>
+		
+</div>
 	
 </body>
 </html>

@@ -4,7 +4,7 @@ require( get_stylesheet_directory() . '/inc/dunk-tags.php' );
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
-	
+
 function dunk_add_scripts() {
     
     // Ladda for submit button
@@ -41,22 +41,23 @@ function dunk_add_scripts() {
     	wp_dequeue_script('ladda');
     	wp_dequeue_script('dunk');
     	wp_dequeue_script('dunk-cart');
-    	
+    	    	
     	wp_dequeue_style('laddastyle');
-    	/* wp_dequeue_style('flatsome'); */
+    	wp_dequeue_style('yith_wcas_frontend');
+    	wp_dequeue_style('contact-form-7');
     
 	    wp_register_script('landing', get_stylesheet_directory_uri('stylesheet_directory').'/inc/landing/machine.js', array('jquery'));
 	    wp_enqueue_script('landing');
 	    
 	    wp_register_style('landingstyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/landing.css', array());
-	    wp_enqueue_style('landingstyle');
-	    
-    
+	    wp_enqueue_style('landingstyle');  	
+	    	    
     }
-    
-
 }
+
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
+
+
 
 add_action( 'init', 'unhook_woo_stuff');
  

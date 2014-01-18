@@ -3,27 +3,25 @@
 	padding:0;
 }
 body{
-	font-family:"Courier", monospace;
+	font-family:"Haymaker", monospace;
 	font-size:14px;
 /* 	background:#f4f4f4; */
-	background: black;
-	color:#999;
+	background: #0d0d0d;
+	color: #bdbdbd;
 	overflow-y:scroll;
 }
 h1{
-	font-size:56px;
+	font-size: 3.5em;
 	font-weight: normal;
 }
 h2{
-	font-size:20px;
-	padding:0px 0px 40px 0px;
-	color:#aaa;
+	font-size: 3em;
 }
-h2 span{
-	color:#ffa800;
+h3 {
+	font-size: 2.5em;
 }
 a{
-	color:#999;
+	color: #bdbdbd;
 }
 a:hover{
 	color:#222;
@@ -31,14 +29,17 @@ a:hover{
 p{
 	padding:5px 0px;
 }
-.wrapper{
+#wrapper{
 	width:100%;
-	margin:20px auto;
-	min-height:550px;
-	padding-top: 100px;
+	min-height:100vh;
 }
+#main-content {
+	min-height: 100vh;
+}
+
 .content {
 	/* width: 960px; */
+	padding-top: 20%;
 	text-align: center;
 }
 .box{
@@ -62,10 +63,8 @@ p{
 	font-size:16px;
 
 }
-.form_wrapper h1, .form_wrapper h1 a {
-	font-size: 2em;
-}
 
+/*
 .form_wrapper h3{
 	padding:20px 30px 20px 30px;
 	font-size:25px;
@@ -110,31 +109,23 @@ form.forgot_password{
 }
 .form_wrapper input[type="text"]:focus,
 .form_wrapper input[type="password"]:focus{
-	/* background:#feffef; */
 }
+*/
 
-.form_wrapper a.forgot:hover{
-	color:#000;
-}
-.form_wrapper div.remember{
-	float:left;
-	width:140px;
-	margin:20px 0px 20px 30px;
-	font-size:11px;
-}
-.form_wrapper div.remember input{
-	float:left;
-	margin:2px 5px 0px 0px;
-}
+
+
 .form_wrapper span.error{
 	visibility:hidden;
 	color:red;
-	font-size:16px;
-	font-style:italic;
+	font-size:1em;
 	display:block;
-	margin:4px 30px;
+	margin:.25em .5em;
 	padding: 1em 0;
+	
+	font-family: "Nitti-Light", monospace;
 }
+
+/*
 .form_wrapper input[type="submit"] {
 	background: #e3e3e3;
 	border: 1px solid #ccc;
@@ -163,10 +154,17 @@ form.forgot_password{
 	box-shadow: 0px 0px 2px #eaeaea inset;
 	color: #222;
 }
+*/
 
 
 
 /* //////////////////////////////////////////////////// dunk STEE // */
+
+#bg { position: fixed; top: 0; left: 0; z-index: -1; }
+.bgwidth { width: 100%; }
+.bgheight { height: 100%; }
+
+
 #arttypeform label {
     display: inline-block;
     cursor: pointer;
@@ -192,14 +190,17 @@ h1 a {
 	display: inline-block;
 }
 
-.advance:hover {
-	text-decoration: underline;
+h1 a:hover {
 	background: #eee;
 }
 
-.retreat:hover {
-	background: #eee;
+.advance:hover {
+	/* text-decoration: underline; */
 }
+
+.retreat {
+	/* text-decoration: none; */
+	}
 
 .fanga {
 		display: none;
@@ -207,7 +208,6 @@ h1 a {
 		width: 160px;
 		height: auto;
 }
-
 
 .fanga.bunny {
 	border-radius: 90px;
