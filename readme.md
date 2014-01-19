@@ -13,20 +13,24 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 - cart sprite animation on add
 - confirm ajax cart submission
 - unhook account functions -x
+- images for tops club
+
 
 
 ### Design
+- interactive on landing pages
+- 
 - finish design on item pages
 - product viewer on item pages
-- main shop layout (rows of 2 or 3) *
-- shop page footer (orange color) *
-- remove sidebar on privacy page
 
 
 ### Copy
 - Returns page copy
-- Privacy Policy copy
+- Sign up page
+- lookbook
+
+### Product
+- tick-tock pics
 
 #### General Questions
 - blog vs tumblr?
-- Light colored footer on all pages except home/signup?
