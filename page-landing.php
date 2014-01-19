@@ -112,7 +112,7 @@ get_template_part('header','landing');
 				
 				<div class="outmsg">
 					<p class="dunkpoints"></p>
-					<h3>configuring site</h3>
+					<h3>configuring site<span id="dots"></span></h3>
 				</div>
 			
 				<div class="clear"></div>

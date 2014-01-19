@@ -272,13 +272,11 @@ p {
 	padding-bottom: 4px;
 	}
 
-/* //////////////////////////////////////////////////// INSERTION POINT // */
-
-
-::selection, ::-moz-selection, -webkit-selection {
-	background: #eee; /* Safari */
+#dots {
+	position: absolute;
 	}
 
+/* //////////////////////////////////////////////////// INSERTION POINT // */
 
 
 

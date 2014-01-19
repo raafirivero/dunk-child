@@ -8,6 +8,7 @@ $("#hatsize").attr("selectedIndex", -1);
 	var pottyMouth = false;
 	}
 
+var dots = 0;
 
 			//the form wrapper (includes all forms)
 		var $form_wrapper	= $('#form_wrapper'),
@@ -72,18 +73,15 @@ $("#hatsize").attr("selectedIndex", -1);
 			$('#nameresp').text($fullname);
 
 
-				if ( ($link.parent().hasClass('emailform')) && (!pottyMouth) ) {	
+				if ( ($link.parent().hasClass('emailform')) ) {	
 						// validate		
 						var testEmail = $link.siblings('input').val();		
 						if (IsEmail(testEmail)) {
-	
-						// submit	
-						var $form = $link.parents('#form_wrapper');							
-						var $messagebox = $('#hide-message');
-						var $successmessage = ""; 
-	
-						// console.log ( $form.serialize() );
-							    $.ajax({
+							
+							if(!pottyMouth) {
+							// submit
+							var $form = $link.parents('#form_wrapper');							
+							$.ajax({
 							    type: 'POST',
 							    url: $form.attr('action'),
 							    data: $form.serialize(),
@@ -92,13 +90,18 @@ $("#hatsize").attr("selectedIndex", -1);
 							            $messagebox.delay(800).fadeIn(550);
 							        }
 							    });
+							  }
 	
-					} else {
-						$('.error').css({"visibility":"visible","opacity":"0"}).fadeTo(400,1);
-						target = "emailform";
-						return;	
+							} else {
+								$('.error').css({"visibility":"visible","opacity":"0"}).fadeTo(400,1);
+								target = "emailform";
+								return;	
+							}
+					
+					
+					// console.log ( $link );
+					
 					}
-			}
 			
 			if (target == "firsttry") {
 				$('#bg').fadeOut();
@@ -165,6 +168,7 @@ $("#hatsize").attr("selectedIndex", -1);
 						
 					} else {
 					
+					
 						$currentForm= $form_wrapper.children('.outmsg');
 						var $cursename = $('.nicetry input').val();
 						var dunktxt = "You have earned 0 Dunk Points " + $cursename;
@@ -197,22 +201,39 @@ $("#hatsize").attr("selectedIndex", -1);
 		
 				
 		function rollForm ( $currentForm ) {				
-		$form_wrapper.stop()
-			 .animate({
-				width	: $currentForm.data('width') + 'px',
-				height	: $currentForm.data('height') + 'px'
-			 },500,function(){
-				//new form gets class active
-				$currentForm.addClass('active');
-				//show the new form
-				$currentForm.fadeIn(400);
-				$currentForm.children('input').focus();
-			 });
+			$form_wrapper.stop()
+				 .animate({
+					width	: $currentForm.data('width') + 'px',
+					height	: $currentForm.data('height') + 'px'
+				 },500,function(){
+					//new form gets class active
+					$currentForm.addClass('active');
+					//show the new form
+					$currentForm.fadeIn(400);
+					$currentForm.children('input').focus();
+				 });
+			
 		
-		if ( $currentForm )
+			if ( $currentForm.hasClass('outmsg') ) {					
+					setInterval (type, 550);
+					setTimeout(function(){ location.href='/manifesto/'}, 2300);
+				}
 		
 		}
 		
+		
+		function type()
+		{
+		    if(dots < 3)
+		    {
+		        $('#dots').append('.');
+		        dots++;
+		    }
+		    else
+		    {
+				// silence
+		    }
+		}
 		
 		//hover mouse		
 		$('.retreat').bind('mouseover', function(e){
@@ -221,7 +242,7 @@ $("#hatsize").attr("selectedIndex", -1);
 		}); 
 		
 		$('.retreat').bind('mousemove', function(e){
-		   $('.retreat .fanga').css({'top':e.pageY+25,'left':e.pageX-84, 'z-index':'-1'});
+		   $('.retreat .fanga').css({'top':e.pageY+70,'left':e.pageX-84, 'z-index':'-1'});
 		   e.preventDefault();
 		}); 
 				
