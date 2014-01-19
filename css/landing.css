@@ -1,3 +1,6 @@
+@import url("../fonts/haymaker.css");
+@import url("../fonts/nitti.css");
+
 *{
 	margin:0;
 	padding:0;
@@ -19,6 +22,11 @@ h2{
 }
 h3 {
 	font-size: 2.5em;
+	margin: 1em 0;
+}
+h4 {
+	font-size: 1.5em;
+	margin: 1em 0;
 }
 a{
 	color: #bdbdbd;
@@ -60,7 +68,7 @@ p{
 /* Form Style */
 .form_wrapper{
 	margin:0 auto;
-	font-size:16px;
+	font-size:18px;
 
 }
 
@@ -97,20 +105,32 @@ form.forgot_password{
 	padding:10px 30px 0px 30px;
 	margin:10px 0px 0px 0px;
 }
+*/
+
 .form_wrapper input[type="text"],
 .form_wrapper input[type="password"]{
-	border: solid 1px #E5E5E5;
-	margin: 8px 36px 0px 36px;
+	font-family: "nittilight", monospace;
+	
+	margin: 24px auto;
 	padding: 1em;
 	display:block;
 	font-size:2em;
-	width:76%;
+	width:60%;
+	max-width: 600px;
+	
+	color: #ccc;
+
+	/* border: 1px solid transparent; */
+/* 	border-bottom: 2px solid #ccc; */
+
+	border: 2px solid #999;
+	background-color: transparent;
 
 }
 .form_wrapper input[type="text"]:focus,
 .form_wrapper input[type="password"]:focus{
 }
-*/
+
 
 
 
@@ -122,7 +142,7 @@ form.forgot_password{
 	margin:.25em .5em;
 	padding: 1em 0;
 	
-	font-family: "Nitti-Light", monospace;
+	font-family: "nittilight", monospace;
 }
 
 /*
@@ -186,12 +206,18 @@ padding: 2em 0;
 }
 
 h1 a {
-	padding: 0 20px;
+/* 	padding: 0 20px; */
 	display: inline-block;
+/* 	padding-top: .1em; */
+	padding: 12px;
 }
 
 h1 a:hover {
 	background: #eee;
+}
+
+p {
+	margin: 1em 0;	
 }
 
 .advance:hover {
@@ -217,21 +243,41 @@ h1 a:hover {
 	box-shadow: 0px 0px 8px #333;
 }
 
+.namlogo {
+	position: absolute;
+	bottom: 4%;
+	width: 168px;
+	height: auto;
+	left:50%;
+    margin-left:-84px;
+	}
+
+#arttypeform {
+	width: 100%;
+	}
+
+#arttype {
+	margin: 0 auto;
+	display: table;
+	padding: 12px;
+	}
+
+#arttype .selection {
+	padding: 4px;
+	float: left;
+	display: table-cell;
+	}
+
+.selection img {
+	padding-bottom: 4px;
+	}
+
+/* //////////////////////////////////////////////////// INSERTION POINT // */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+::selection, ::-moz-selection, -webkit-selection {
+	background: #eee; /* Safari */
+	}
 
 
 

@@ -17,12 +17,14 @@ get_template_part('header','landing');
 			
 				<div class="bigtxt active">
 					<h1><a href="#" class="linkform advance" rel="firsttry" >Advance</a> or <a href="#" class="retreat">Retreat<img src="/img/fanga.png" class="fanga" alt="pixelated middle finger" /></a></h1>
+					
+					<img class="namlogo" src="/img/ledunk-namlogo-blk.png" alt="Le Dunk logo" />
 				</div>
 			
 		
 				<div  class="yourname firsttry" >
 					<h3>What's your name?</h3>
-				
+					
 					<input type="text" name="yourname" rel="welcome" /></input>
 					<span class="error">This is an error</span>
 					
@@ -32,24 +34,28 @@ get_template_part('header','landing');
 				</div>
 					
 				<div class="nicetry yourname">
-						<h3>We know how to curse, too, asshole.</h3>
-						<h3>You alright tho.</h3>
-						<h3>What's your name?</h3>
+						<h4>We know how to curse, too, asshole.</h4>
+						<h4>You alright tho.</h4>
+						<h4>What's your name?</h4>
+						
 						<input type="text" name="cursename" /></input>
 						<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>
 				</div>
 				
 				<div class="doublecurse">
 						<h3>Oh, you fancy, huh?</h3>
+						
 						<input type="text" name="curseresp" /></input>
 						<input type="submit" class="linkform hidden" rel="triplecurse" value="go"></input>
 				</div>
 				
 				<div class="triplecurse emailform">
-						<h3>Mm-hmm</h3>
+						<h3>Mmm-hmm</h3>
 						<img src="http://gifrific.com/wp-content/uploads/2012/09/Samuel-L-Jackson-Drinking-Sprite-Pulp-Fiction.gif" alt="sip" />
 						<h4>Cool. We're gonna call you Stan.</h4>
 						<h4>What's your email?</h4>
+						
+
 						<input type="text" name="pottyemail" rel="welcome" />
 						
 						<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>
@@ -67,6 +73,7 @@ get_template_part('header','landing');
 			
 				<div id="arttypeform" class="arttype" >
 					<div id="arttype">
+						<h4>Choose:</h4>
 						<div class="selection">
 						<label for="tiger"><img src="http://dunk.site/img/products/tiger-icon.jpg" alt="Tiger" /></label>
 						<input type="radio" name="tribe" id="tiger" value="tiger">
@@ -99,11 +106,13 @@ get_template_part('header','landing');
 						<input type="text" name="email"/>
 						<span class="error">email not formatted properly</span>
 						
+
 						<input type="submit" class="linkform hidden" rel="outmsg" value="go"></input>
 				</div>	
 				
 				<div class="outmsg">
-					<h1>configuring site</h1>
+					<p class="dunkpoints"></p>
+					<h3>configuring site</h3>
 				</div>
 			
 				<div class="clear"></div>

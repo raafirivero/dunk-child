@@ -23,13 +23,6 @@ $("#hatsize").attr("selectedIndex", -1);
 			if(!$theForm.hasClass('active'))
 				$theForm.hide();
 			
-			// turn off setting form width
-			/*
-			$theForm.data({
-				width	: $theForm.width(),
-				height	: $theForm.height()
-			});
-			*/
 		});
 		
 		//set width and height of wrapper (same of current form)
@@ -118,22 +111,13 @@ $("#hatsize").attr("selectedIndex", -1);
 				$currentForm= $form_wrapper.children('div.'+target);
 				$('.fanga').hide();
 				//animate the wrapper
-				$form_wrapper.stop()
-							 .animate({
-								width	: $currentForm.data('width') + 'px',
-								height	: $currentForm.data('height') + 'px'
-							 },500,function(){
-								//new form gets class active
-								$currentForm.addClass('active');
-								//show the new form
-								$currentForm.fadeIn(400);
-							 });
-
-			});
-
+				rollForm( $currentForm );
+			});			
+		
 			e.preventDefault();
 		});
 
+			
 		
 		// options for select form
 		$('#hatsizeform').change(function(e){
@@ -147,16 +131,7 @@ $("#hatsize").attr("selectedIndex", -1);
 				$currentForm= $form_wrapper.children('.welcome');
 				$('.fanga').hide();
 				//animate the wrapper
-				$form_wrapper.stop()
-							 .animate({
-								width	: $currentForm.data('width') + 'px',
-								height	: $currentForm.data('height') + 'px'
-							 },500,function(){
-								//new form gets class active
-								$currentForm.addClass('active');
-								//show the new form
-								$currentForm.fadeIn(400);
-							 });
+				rollForm( $currentForm );
 
 			});
 			e.preventDefault();
@@ -175,7 +150,7 @@ $("#hatsize").attr("selectedIndex", -1);
 					// if radio button clicked do nothing
 				} else {
 					// the picture was clicked
-					$('#' + sendVal ).attr('checked', 'checked');
+					$('#' + sendVal ).prop('checked', 'checked');
 				}				
 						
 			$currentForm.fadeOut(400,function(){
@@ -186,10 +161,15 @@ $("#hatsize").attr("selectedIndex", -1);
 				if (pottyMouth == false) {
 				
 						$currentForm= $form_wrapper.children('.emailform.nocurse');
+						$('.dunkpoints').text('You have earned 5 Dunk Points.');
 						
 					} else {
 					
 						$currentForm= $form_wrapper.children('.outmsg');
+						var $cursename = $('.nicetry input').val();
+						var dunktxt = "You have earned 0 Dunk Points " + $cursename;
+						
+						$('.dunkpoints').text(dunktxt);
 						
 						// submit	
 						var $form = $(this).parents('#form_wrapper');							
@@ -209,25 +189,32 @@ $("#hatsize").attr("selectedIndex", -1);
 					
 					}
 				//animate the wrapper
-				$form_wrapper.stop()
-							 .animate({
-								width	: $currentForm.data('width') + 'px',
-								height	: $currentForm.data('height') + 'px'
-							 },500,function(){
-								//new form gets class active
-								$currentForm.addClass('active');
-								//show the new form
-								$currentForm.fadeIn(400);
-							 });
-
+				rollForm( $currentForm );
+							 
 			});
 			e.preventDefault();
 		});
 		
+				
+		function rollForm ( $currentForm ) {				
+		$form_wrapper.stop()
+			 .animate({
+				width	: $currentForm.data('width') + 'px',
+				height	: $currentForm.data('height') + 'px'
+			 },500,function(){
+				//new form gets class active
+				$currentForm.addClass('active');
+				//show the new form
+				$currentForm.fadeIn(400);
+				$currentForm.children('input').focus();
+			 });
+		
+		if ( $currentForm )
+		
+		}
 		
 		
-		//hover mouse
-		
+		//hover mouse		
 		$('.retreat').bind('mouseover', function(e){
 		   $(this).children('.fanga').fadeIn(400);
 		   e.preventDefault();
@@ -270,11 +257,10 @@ $("#hatsize").attr("selectedIndex", -1);
 						e.preventDefault();
 
 					 });	
-					 
+	
+	
+	
 	/// Window Resize functions
-/* 	$("#bg").css({'position':'fixed','z-index':'-1','top':'0','left':'0'}) */
-
-
 	$(window).load(function() {    
 	
 		var theWindow        = $(window),
@@ -298,7 +284,19 @@ $("#hatsize").attr("selectedIndex", -1);
 		theWindow.resize(resizeBg).trigger("resize");
 	
 	});
-					 
-					 
-	//////////// No Tocar
-	});
+
+
+// RR insertion point
+
+
+
+
+/////////////////////////////// No Tocar
+});
+
+
+
+
+
+
+

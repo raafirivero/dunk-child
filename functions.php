@@ -51,6 +51,7 @@ function dunk_add_scripts() {
 	    
 	    wp_register_style('landingstyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/landing.css', array());
 	    wp_enqueue_style('landingstyle');  	
+	    
 	    	    
     }
 }
