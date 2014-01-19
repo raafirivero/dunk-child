@@ -26,7 +26,7 @@ get_template_part('header','landing');
 					<h3>What's your name?</h3>
 					
 					<input type="text" name="yourname" rel="welcome" /></input>
-					<span class="error">This is an error</span>
+					<span class="error">Name, nickname, whatever...</span>
 					
 
 					<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>

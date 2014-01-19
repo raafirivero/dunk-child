@@ -78,6 +78,16 @@ function dunk_add_scripts() {
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
 
 
+// skip cart page on some links
+add_filter ('add_to_cart_redirect', 'woo_redirect_to_checkout');
+ 
+function woo_redirect_to_checkout() {
+  global $woocommerce;
+	$checkout_url = $woocommerce->cart->get_checkout_url();
+	return $checkout_url;
+}
+
+
 
 add_action( 'init', 'unhook_woo_stuff');
  

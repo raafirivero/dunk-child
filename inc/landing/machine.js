@@ -47,19 +47,28 @@ var dots = 0;
 				// validate name for cuss words
 				var sentName = $link.siblings('input').val();
 				
-				if ( !/fuck|fuk|shit|bitch|ass|dick|dik|pussy/.test(sentName) ){
-						// no curses
-						$currentForm.addClass('namepass');
+				if ( !sentName ) {
+				$('.firsttry .error').css({"visibility":"visible","opacity":"0"}).fadeTo(400,1);
+				target = "firsttry";
+				return
+				
 				} else {
-					if ($link.parent().hasClass('nicetry')) {
-						target = "doublecurse";
-						pottyMouth = true;
-						
-						// console.log( 'pottyMouth is '+pottyMouth );
+				
+					if ( !/fuck|fuk|shit|bitch|ass|dick|dik|pussy/.test(sentName) ){
+							// no curses
+							$currentForm.addClass('namepass');
 					} else {
-						target = "nicetry";
-					}
+						if ($link.parent().hasClass('nicetry')) {
+							target = "doublecurse";
+							pottyMouth = true;
+							
+							// console.log( 'pottyMouth is '+pottyMouth );
+						} else {
+							target = "nicetry";
+						}
 					
+				  }
+			
 				}
 			}
 

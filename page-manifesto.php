@@ -21,7 +21,12 @@ get_template_part('header','manifesto');
 				<?php the_content(); ?>
 			
 			<?php endwhile; // end of the loop. ?>
+			
+			<div class="large-12 columns minibot">
+				<a href="/about/">About Le Dunk</a>
 			</div>
+			</div>
+			
 		<div class="large-2 columns">&nbsp;</div>
 		</div>	
 	</div>
