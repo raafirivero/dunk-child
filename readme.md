@@ -14,14 +14,17 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 - confirm ajax cart submission
 - unhook account functions -x
 - images for tops club
+- "per season" on subscription prices
 
 
 
 ### Design
 - interactive on landing pages
-- 
+- ninja form
 - finish design on item pages
 - product viewer on item pages
+- flipping links on landing
+- long-term: terminal style forms
 
 
 ### Copy
