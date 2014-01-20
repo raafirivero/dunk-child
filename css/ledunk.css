@@ -830,7 +830,9 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	width: 100% !important;
 	}
 
-
+.post-type-archive-product h5.category {
+	margin-top: .5em;
+	}
 
 	
 /********************************************* CHECKOUT FIX  ****************/
@@ -886,6 +888,22 @@ input#stripe_card_csc {
 	-o-transform: scale(1.15);
 	}
 
+.checkout .checkout_table_item td {
+	width: 50%;
+	}
+
+.checkout .shipping td {
+	width: 67.5%;	
+	}
+
+.checkout #shipping_method li {
+	width: 100%;
+	}
+
+.checkout #shipping_method li input {
+	margin: 0 7px 0 0 !important;
+	}
+
 /********************************************* SIGNUP PAGE  ****************/
 
 
@@ -918,7 +936,7 @@ img.fatty {
 	color: #777;
 	}
 
-.col2-set.addresses {
+.my-account .col2-set.addresses {
  	display: flex;
  	line-height: 1.25em
 	}
@@ -930,12 +948,12 @@ img.fatty {
 	font-size: 100%;
 	}
 
-.shop_table tbody {
+.my-account .shop_table tbody {
 	padding-bottom: 8em;	
 	}
 
 
-.shop_table input {
+.my-account .shop_table input {
 	position: relative;
 	top: 1.2em;
 	}

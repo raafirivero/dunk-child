@@ -4,7 +4,6 @@ global $woocommerce;
 global $flatsome_opt;
 ?>
 <?php 
-/*
 	// PHP logging console
 	require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
 
@@ -15,7 +14,6 @@ global $flatsome_opt;
 	$handler->setHandleErrors(false);  // disable errors handling
 	$handler->start(); // initialize handlers
 	PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
-*/
 ?>
 
 <!DOCTYPE html>
