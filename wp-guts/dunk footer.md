@@ -41,8 +41,9 @@
 
 	<li class="empty">&nbsp;</li>
 
-	<li><a href="#">Returns Policy</a></li>
+	<li><a href="/returns/">Returns Policy</a></li>
 	<li><a href="/privacy/">Privacy</a></li>
+	<li><a href="/jobs/">Jobs</a></li>
 </ul>
 
 </div>
@@ -53,7 +54,7 @@
 [col span=2/4]
 <img src="http://dunk.site/wp-content/uploads/2013/08/get-yours.png" alt="get-yours" width="526" height="255" class="get-yours hide-for-small" />
 <div class="logocont">
-[share]
+[share class="hide-for-small"]
 <a href="/shop/?bottomlogo" class="tennis">&nbsp;</a>
 </div>
 [/col]
