@@ -7,7 +7,7 @@ get_template_part('header','landing');
 
 ?>
 	<div id="wrapper">
-	<img id="bg" src="/img/nuns-balling-sq.jpg" class="nuns" alt="nuns balling le dunk" />
+	<img id="bg" src="" class="nuns" alt="nuns balling le dunk" />
 		<div id="main-content" class="site-main light">
 		<div class="content">
 
@@ -123,6 +123,6 @@ get_template_part('header','landing');
 
 		
 </div>
-	
+<?php wp_footer(); ?>	
 </body>
 </html>
