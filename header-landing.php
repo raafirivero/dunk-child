@@ -32,6 +32,8 @@ global $flatsome_opt;
 		// turn off parent theme styles
 		remove_action('wp_enqueue_scripts', 'flatsome_scripts');
 		remove_action( 'wp_head', 'flatsome_custom_css', 100 );
+		remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
+		remove_action( 'wp_enqueue_scripts', array( $GLOBALS['woocommerce'], 'frontend_scripts' ) );
 	
 		wp_head();
 	 ?>
