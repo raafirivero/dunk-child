@@ -79,6 +79,10 @@ function dunk_add_scripts() {
 	    wp_register_script('squishy', get_stylesheet_directory_uri('stylesheet_directory').'/inc/jquery.squishy.js', array('jquery'), 1.0, true);
 	    wp_enqueue_script('squishy');
 	    
+	    //background resize in footer
+	    wp_register_script('backgroundresize', get_stylesheet_directory_uri('stylesheet_directory').'/inc/smartBackgroundResize-1.0-jquery-plugin.js', array('jquery'), '1.1', true);
+	    wp_enqueue_script('backgroundresize');
+	    
 	    wp_register_script('manifesto', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manifesto.js', array('jquery'), 1.0, true);
 	    wp_enqueue_script('manifesto');
 	    
