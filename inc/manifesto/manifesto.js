@@ -1,23 +1,16 @@
 jQuery(document).ready(function($) {
 
-/*
-$('.deal').textfill({
-    maxFontPixels: 0
-    
-});
-*/
 
-
+$(window).load(function(){
 $(".deal").squishy({maxSize: 74});
-
-
-
-$('#bg').smartBackgroundResize({
-	image: 'http://dunk.site/img/products/smokeloop-neue.gif' // relative or absolute path to background image file				
 });
 
+	$('#bg').smartBackgroundResize({
+		image: 'http://dunk.site/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
+		// image: 'http://dunk.site/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
+				
+	});
 
-//	$('#bg').delay(2000).fadeOut(2000);
 
 $('.manny-buy').hide().delay(2000).fadeIn(600);
 
@@ -26,12 +19,15 @@ var paras = $('p'),
 
 paras.css("opacity",0).delay(3000);
 
-(function paraFade() {  
-  $(paras[i++] || []).fadeTo	('200', 1, arguments.callee);  
-})();  
-
-
-
+$(function paraFade() {
+	
+	$(paras).each(function(i) 
+	{
+		$(this).delay((i++) * 300).fadeTo(800, 1); 
+	});
+	// console.log('callback');
+	$('#bg').fadeOut(3000);
+});
 
 
 

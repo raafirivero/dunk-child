@@ -7,6 +7,7 @@ get_template_part('header','manifesto');
 
 ?>
 	<div id="wrapper">
+	<img id="bg" src="http://dunk.site/img/products/smokeloop-neue.gif" class="smoke" alt="smoke bg le dunk" />
 		<div id="main-content" class="site-main light">
 		<div class="content">
 

@@ -1,7 +1,10 @@
 @import url("../fonts/nitti.css");
 
 
-
+#bg {
+	z-index: 0 !important;
+	left: 0 !important;
+	}
 
 .logocurve {
 	margin: 70px auto 0 auto;

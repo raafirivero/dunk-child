@@ -39,11 +39,10 @@ function dunk_add_scripts() {
     if ( is_page_template('page-landing.php') ) {
     
     	wp_dequeue_script('ladda');
+    	wp_dequeue_script('laddaspin');
     	wp_dequeue_script('dunk');
     	wp_dequeue_script('dunk-cart');   	
     	wp_dequeue_script('contact-form-7');
-    	wp_dequeue_script('laddaspin');
-
     	    	
     	wp_dequeue_style('laddastyle');
     	wp_dequeue_style('yith_wcas_frontend');
@@ -65,11 +64,10 @@ function dunk_add_scripts() {
     // Manifesto
     if ( is_page_template('page-manifesto.php') ) {
     	wp_dequeue_script('ladda');
+    	wp_dequeue_script('laddaspin');
     	wp_dequeue_script('dunk');
     	wp_dequeue_script('dunk-cart');
     	wp_dequeue_script('contact-form-7');
-    	wp_dequeue_script('laddaspin');
-    	
     	
     	wp_dequeue_style('laddastyle');
     	wp_dequeue_style('yith_wcas_frontend');
