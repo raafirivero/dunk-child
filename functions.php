@@ -40,9 +40,10 @@ function dunk_add_scripts() {
     
     	wp_dequeue_script('ladda');
     	wp_dequeue_script('dunk');
-    	wp_dequeue_script('dunk-cart');
+    	wp_dequeue_script('dunk-cart');   	
     	wp_dequeue_script('contact-form-7');
     	wp_dequeue_script('laddaspin');
+
     	    	
     	wp_dequeue_style('laddastyle');
     	wp_dequeue_style('yith_wcas_frontend');
@@ -50,6 +51,11 @@ function dunk_add_scripts() {
     
 	    wp_register_script('landing', get_stylesheet_directory_uri('stylesheet_directory').'/inc/landing/machine.js', array('jquery'));
 	    wp_enqueue_script('landing');
+	    
+	    //background resize in footer
+	    wp_register_script('backgroundresize', get_stylesheet_directory_uri('stylesheet_directory').'/inc/smartBackgroundResize-1.0-jquery-plugin.js', array('jquery'), '1.1', true);
+	    wp_enqueue_script('backgroundresize');
+	    
 	    
 	    wp_register_style('landingstyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/landing.css', array());
 	    wp_enqueue_style('landingstyle');  		        	    
@@ -60,15 +66,21 @@ function dunk_add_scripts() {
     if ( is_page_template('page-manifesto.php') ) {
     	wp_dequeue_script('ladda');
     	wp_dequeue_script('dunk');
+    	wp_dequeue_script('dunk-cart');
+    	wp_dequeue_script('contact-form-7');
+    	wp_dequeue_script('laddaspin');
+    	
+    	
     	wp_dequeue_style('laddastyle');
     	wp_dequeue_style('yith_wcas_frontend');
     	wp_dequeue_style('contact-form-7');
     	
-	    wp_register_script('manifesto', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manifesto.js', array('jquery'));
-	    wp_enqueue_script('manifesto');
 	    
-	    wp_register_script('textfill', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/jquery.textfill.min.js', array('jquery'));
-	    wp_enqueue_script('textfill');
+	    wp_register_script('squishy', get_stylesheet_directory_uri('stylesheet_directory').'/inc/jquery.squishy.js', array('jquery'), 1.0, true);
+	    wp_enqueue_script('squishy');
+	    
+	    wp_register_script('manifesto', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manifesto.js', array('jquery'), 1.0, true);
+	    wp_enqueue_script('manifesto');
 	    
 	    
 	    wp_register_style('manifeststyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/manifesto.css', array());
