@@ -37,7 +37,12 @@
 .manifesto p {
 	font-family: "nittilight", monospace !important;
 	color: #bdbdbd !important;
+	font-weight: bold;
 	}
+
+.manifesto p strong {
+		border-bottom: 1px solid #bdbdbd;
+}
 
 .manny-buy div {
 	margin: 60px auto 100px auto;
@@ -70,24 +75,6 @@
 	color: #111;
 	text-decoration: underline;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
