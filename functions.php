@@ -27,7 +27,7 @@ function dunk_add_scripts() {
     wp_register_style('laddastyle', get_stylesheet_directory_uri('stylesheet_directory').'/inc/ladda/ladda.min.css', array());
     wp_enqueue_style('laddastyle');
     
-    
+        
     // Dunk styles
 	wp_register_script('dunk', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk.js', array('jquery'));
     wp_enqueue_script('dunk');
@@ -79,6 +79,7 @@ add_action('wp_enqueue_scripts', 'dunk_add_scripts');
 
 
 // skip cart page on some links
+/*
 add_filter ('add_to_cart_redirect', 'woo_redirect_to_checkout');
  
 function woo_redirect_to_checkout() {
@@ -86,6 +87,7 @@ function woo_redirect_to_checkout() {
 	$checkout_url = $woocommerce->cart->get_checkout_url();
 	return $checkout_url;
 }
+*/
 
 
 

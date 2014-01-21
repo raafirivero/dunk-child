@@ -12,9 +12,8 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 - easypost int'l shipments *
 - cart sprite animation on add
 - confirm ajax cart submission
-- unhook account functions -x
 - images for tops club
-- "per season" on subscription prices
+- "per season" on subscription prices *
 
 
 
