@@ -180,9 +180,7 @@ form.forgot_password{
 
 /* //////////////////////////////////////////////////// dunk STEE // */
 
-#bg { position: fixed; top: 0; left: 0; z-index: -1; }
-.bgwidth { width: 100%; }
-.bgheight { height: 100%; }
+#bg { z-index: -1; }
 
 
 #arttypeform label {
