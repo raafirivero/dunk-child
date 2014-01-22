@@ -7,7 +7,7 @@
 	}
 
 .logocurve {
-	margin: 70px auto 0 auto;
+	margin: 80px auto 0 auto;
 	display: table-cell;
 	}
 
@@ -15,7 +15,7 @@
 	width: 100% !important;
 	text-align: center;
 	font-size: 100%;
-	margin-top: 80px;
+	margin-top: 70px;
 	/* margin-bottom: 80px; */
 	color: #fff !important;
 	}
@@ -29,6 +29,23 @@
 	margin-left: -20%;
 	}
 	
+.jPanelMenu-panel {
+	overflow: hidden;
+	}
+
+.jPanelMenu-panel .topsclub {
+	max-width: 100% !important;
+	margin-left: 0;
+	}
+
+
+.jPanelMenu-panel .large-6 {
+	margin: 20px 0;
+	}
+
+.jPanelMenu-panel #manny-buy h4 {
+	font-size: 1.25em;
+	}
 
 .manifesto, .mainfesto #wrapper, .manifesto #main-content {
 	background: #0d0d0d !important;
@@ -79,18 +96,22 @@
 	}
 	
 	
+.eyeproh2 {
+	text-align: center;
+	}
 	
 	
+.eyeproh2 img {
+	width: 140px;
+	margin-top: -10px;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+.topsflat {
+	width: 80%;
+	height: auto;
+	margin: 50px auto;
+	display: table-cell;
+	}	
 	
 	
 	

@@ -16,7 +16,6 @@ get_template_part('header','manifesto');
 			<div class="large-8 columns">
 			
 			<img src="/img/logo-curve.png" class="logocurve" alt="le dunk curve white" />
-			
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php the_content(); ?>

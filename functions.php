@@ -74,6 +74,9 @@ function dunk_add_scripts() {
     	wp_dequeue_style('contact-form-7');
     	
 	    
+	    wp_register_script('transit', get_stylesheet_directory_uri('stylesheet_directory').'/inc/jquery.transit.min.js', array('jquery'), 1.0, false);
+	    wp_enqueue_script('transit');
+	    
 	    wp_register_script('squishy', get_stylesheet_directory_uri('stylesheet_directory').'/inc/jquery.squishy.js', array('jquery'), 1.0, true);
 	    wp_enqueue_script('squishy');
 	    

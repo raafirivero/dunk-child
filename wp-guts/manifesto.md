@@ -1,5 +1,9 @@
 <h1 class="deal"><span>Here's the Deal</span></h1>
 
+<h2 class="eyeproh2"><img src="http://dunk.site/wp-content/uploads/2014/01/eye-pro.png" alt="eye-pro" width="317" height="330" class="eye-pro size-full wp-image-1560" /></h2>
+
+<img src="http://dunk.site/wp-content/uploads/2014/01/topsclub-flat.png" alt="topsclub-flat" width="760" height="140" class="alignnone topsflat size-full wp-image-1557" />
+
 If you hate it when you're on some site and they're like this dope <del datetime="2014-01-21T15:13:01+00:00">-X-</del> is coming out on <del datetime="2014-01-21T15:12:28+00:00">-X-</del>. Only it never comes out. Or it's so "exclusive" it was never really for sale in the first place. Or you click to buy and it's not available. Keep reading.
 
 If you’re anything like us, you visit blogs daily checking out the latest in music, sports, and style. It's not a thing like, "oh I'm the most up-on-shit cat in the world," but it's not the other way either. It's regular.

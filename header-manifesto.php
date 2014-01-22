@@ -44,8 +44,8 @@ global $flatsome_opt;
 			wp_dequeue_script( 'flatsome-magnific-popup' );
 			wp_dequeue_script( 'flatsome-iosslider' );
 			wp_dequeue_script( 'flatsome-modernizer' );
-			wp_dequeue_script( 'flatsome-plugins' );
-			wp_dequeue_script( 'flatsome-theme-js' );
+			// wp_dequeue_script( 'flatsome-plugins' );
+			// wp_dequeue_script( 'flatsome-theme-js' );
 			wp_dequeue_script('smae.js');
     		wp_dequeue_script('retinajs');
    		}
