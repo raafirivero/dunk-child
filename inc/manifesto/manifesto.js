@@ -6,7 +6,7 @@ $(window).load(function(){
                  transform: "rotateX(-180deg)",
                  opacity: 0
             });
-	$(".deal").squishy({maxSize: 74}).delay(50).transition({
+	$(".deal").squishy({maxSize: 74}).delay(150).transition({
 	  perspective: '100px',
 	  rotateX: '0deg',
 	  opacity: 1
@@ -25,7 +25,7 @@ $('.manny-buy').hide().delay(2000).fadeIn(600);
 var paras = $('p'),  
     i = 0;  
 
-paras.css("opacity",0).delay(2600);
+paras.css("opacity",0).delay(2700);
 
 $(function paraFade() {
 	
@@ -50,7 +50,7 @@ $('.topsclub').hover(function(){
 
 $('.logocurve').transition({ scale:.8, opacity: 0},0).transition({ scale: 1, opacity: 1},700);
 
-$('.eyeproh2').css({"opacity":0,"scale":"50%"}).delay(700).transition({ scale: 1.1, opacity: 1 }, 700).transition({ scale: .8 }, 400).transition({ rotate: '90deg', scale: .4, x: -20, y: 00}).fadeOut(400);
+$('.eyeproh2').css({"opacity":0,"scale":"50%"}).delay(700).transition({ scale: 1.1, opacity: 1 }, 700).delay(100).transition({ scale: .8 }, 300).transition({ rotate: '90deg', scale: .4, x: -20, y: 00}).fadeOut(300);
 
 
 
