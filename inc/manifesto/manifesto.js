@@ -3,11 +3,13 @@ jQuery(document).ready(function($) {
 
 $(window).load(function(){
 	$(".deal").css({
-                 transform: "rotateX(-180deg)"
+                 transform: "rotateX(-180deg)",
+                 opacity: 0
             });
 	$(".deal").squishy({maxSize: 74}).delay(50).transition({
 	  perspective: '100px',
-	  rotateX: '0deg'
+	  rotateX: '0deg',
+	  opacity: 1
 	}, 600);
 });
 
