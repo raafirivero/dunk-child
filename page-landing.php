@@ -51,9 +51,9 @@ get_template_part('header','landing');
 				
 				<div class="triplecurse emailform">
 						<h3>Mmm-hmm</h3>
-						<img src="http://gifrific.com/wp-content/uploads/2012/09/Samuel-L-Jackson-Drinking-Sprite-Pulp-Fiction.gif" alt="sip" />
-						<h4>Cool. We're gonna call you Stan.</h4>
-						<h4>What's your email?</h4>
+						<img class="golazy" src="" data-src="http://gifrific.com/wp-content/uploads/2012/09/Samuel-L-Jackson-Drinking-Sprite-Pulp-Fiction.gif" alt="sip" />
+						<p>Cool. We're gonna call you Stan.</p>
+						<p>What's your email?</p>
 						
 
 						<input type="text" name="pottyemail" rel="welcome" />

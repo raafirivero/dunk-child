@@ -1,21 +1,6 @@
 jQuery(document).ready(function($) {
 
 
-$(window).load(function(){
-	$(".deal").css({
-                 transform: "rotateX(-180deg)",
-                 opacity: 0,
-                 scale: .85
-            });
-	$(".deal").squishy({maxSize: 74}).delay(1900).transition({
-	  perspective: '100px',
-	  rotateX: '0deg',
-	  opacity: 1,
-	  scale: 1,
-	  y: -5
-	}, 700);
-});
-
 	$('#bg').smartBackgroundResize({
 		image: 'http://dunk.site/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
 		// image: 'http://dunk.site/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
@@ -37,7 +22,7 @@ $(function paraFade() {
 		$(this).delay((i++) * 300).fadeTo(800, 1); 
 	});
 	// console.log('callback');
-	$('#bg').fadeOut(5500, function(){
+	$('#bg').fadeOut(6500, function(){
 		$(this).remove();
 	});
 	
@@ -51,12 +36,32 @@ $('.topsclub').hover(function(){
     $(this).transition({ scale: 1 });
   });
 
+
 $('.logocurve').transition({ scale:.6, opacity: 0},0).delay(1400).transition({ scale: .9, opacity: 1},1600);
 
-$('.eyeproh2').transition({ scale: .8, opacity: 0 },0).delay(2500).transition({ scale: 1.1, opacity: 1 }, 1000).delay(300).transition({ scale: .8 }, 400).transition({ rotate: '90deg', scale: .3, x: 0, y:0}).fadeOut(300);
+
+$('.topsname').transition({ scale:.75, opacity: 0},0).delay(1700).transition({ scale: 1, opacity: 1},1600);
+
+$(".deal").css({
+	             transform: "rotateX(-180deg)",
+	             opacity: 0,
+	             scale: .8
+	        });
+
+$(window).load(function(){
+	// needs to be on window.load because of squishy plugin
+	
+	$(".deal").squishy({maxSize: 74}).delay(1900).transition({
+	  perspective: '100px',
+	  rotateX: '0deg',
+	  opacity: .9,
+	  scale: 1,
+	  y: -5
+	}, 700).transition({ scale: 1}, 600);
+});
 
 
-// $('.topsflat').delay(7000).transition({ scale: .7, opacity: .8 },800)
+$('.eyeproh2').transition({ scale: .7, opacity: 0 },0).delay(2300).transition({ scale: 1.1, opacity: 1 }, 1200).delay(300).transition({ scale: .8 }, 400).transition({ rotate: '-180deg', scale: .3, x: 0, y:90}).fadeOut(300);
 
 
 

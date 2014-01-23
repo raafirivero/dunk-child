@@ -7,17 +7,39 @@
 	}
 
 .logocurve {
-	margin: 80px auto 0 auto;
+	margin: 70px auto 0 auto;
 	display: table-cell;
 	}
+
+.topsname {
+	font-size: 0;
+	line-height: 0;
+}
+
+.topsflat {
+	width: 70%;
+	height: auto;
+	margin: 30px auto;
+	display: table-cell;
+	}	
+	
 
 .deal {
 	width: 100% !important;
 	text-align: center;
 	font-size: 100%;
-	margin-top: 70px;
-	/* margin-bottom: 80px; */
+	margin: 0 auto 20px auto !important;
 	color: #fff !important;
+	}
+
+.eyeproh2 {
+	text-align: center;
+	}
+	
+	
+.eyeproh2 img {
+	width: 140px;
+	margin-top: -10px;
 	}
 
 .topsclub {
@@ -94,24 +116,6 @@
 	color: #111;
 	text-decoration: underline;
 	}
-	
-	
-.eyeproh2 {
-	text-align: center;
-	}
-	
-	
-.eyeproh2 img {
-	width: 140px;
-	margin-top: -10px;
-	}
-	
-.topsflat {
-	width: 80%;
-	height: auto;
-	margin: 50px auto;
-	display: table-cell;
-	}	
 	
 	
 	

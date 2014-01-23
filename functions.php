@@ -47,7 +47,7 @@ function dunk_add_scripts() {
     	wp_dequeue_style('laddastyle');
     	wp_dequeue_style('yith_wcas_frontend');
     	wp_dequeue_style('contact-form-7');
-    
+	    
 	    wp_register_script('landing', get_stylesheet_directory_uri('stylesheet_directory').'/inc/landing/machine.js', array('jquery'));
 	    wp_enqueue_script('landing');
 	    

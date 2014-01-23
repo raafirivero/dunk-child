@@ -59,12 +59,18 @@ var dots = 0;
 							$currentForm.addClass('namepass');
 					} else {
 						if ($link.parent().hasClass('nicetry')) {
+							// load pottymouth img
+							var getSrc = $("img.golazy").attr("data-src");
+							$("img.golazy").attr("src", getSrc);
+							
 							target = "doublecurse";
 							pottyMouth = true;
 							
 							// console.log( 'pottyMouth is '+pottyMouth );
 						} else {
+							
 							target = "nicetry";
+							
 						}
 					
 				  }
@@ -298,7 +304,49 @@ var dots = 0;
 		});
 	});
 
+/// Load Functions
 
+(function($) {
+	var imgList = [];
+	$.extend({
+		preload: function(imgArr, option) {
+			var setting = $.extend({
+				init: function(loaded, total) {},
+				loaded: function(img, loaded, total) {},
+				loaded_all: function(loaded, total) {}
+			}, option);
+			var total = imgArr.length;
+			var loaded = 0;
+			
+			setting.init(0, total);
+			for(var i in imgArr) {
+				imgList.push($("<img />")
+					.attr("src", imgArr[i])
+					.load(function() {
+						loaded++;
+						setting.loaded(this, loaded, total);
+						if(loaded == total) {
+							setting.loaded_all(loaded, total);
+						}
+					})
+				);
+			}
+			
+		}
+	});
+})(jQuery);
+
+$(function() {
+	
+	$.preload([
+		// url of the smoke image background
+		"http://media.ledunk.com/img/products/smokeloop-neue.gif"
+	], {
+		// don't need the callbacks
+		
+	});
+
+});
 
 /////////////////////////////// No Tocar
 });
