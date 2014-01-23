@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 
 	$('#bg').smartBackgroundResize({
-		image: 'http://dunk.site/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
+		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
 		// image: 'http://dunk.site/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
 				
 	});
@@ -20,10 +20,6 @@ $(function paraFade() {
 	$(paras).each(function(i) 
 	{
 		$(this).delay((i++) * 300).fadeTo(800, 1); 
-	});
-	// console.log('callback');
-	$('#bg').fadeOut(6500, function(){
-		$(this).remove();
 	});
 	
 });
@@ -61,7 +57,21 @@ $(window).load(function(){
 });
 
 
-$('.eyeproh2').transition({ scale: .7, opacity: 0 },0).delay(2300).transition({ scale: 1.1, opacity: 1 }, 1200).delay(300).transition({ scale: .8 }, 400).transition({ rotate: '-180deg', scale: .3, x: 0, y:90}).fadeOut(300);
+$('.eyeproh2')
+	.transition({ scale: .7, opacity: 0 },0)
+	.delay(2300)
+	.transition({ scale: 1.1, opacity: 1 }, 1200, function(){
+			// fade #bg on callback from eye transition
+			$('#bg').fadeOut(2100, function() {
+				// remove bg on callback from fadeOut
+				$('#bg').remove()
+				});	
+				
+		})
+	.delay(300)
+	.transition({ scale: .8 }, 400)
+	.transition({ rotate: '-180deg', scale: .3, x: 0, y:90})
+	.fadeOut(300);
 
 
 
