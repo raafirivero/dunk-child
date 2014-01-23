@@ -3,7 +3,6 @@ jQuery(document).ready(function($) {
 
 	$('#bg').smartBackgroundResize({
 		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
-		// image: 'http://dunk.site/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
 				
 	});
 
