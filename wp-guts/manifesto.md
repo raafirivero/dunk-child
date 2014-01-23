@@ -1,8 +1,8 @@
-<h1 class="deal"><span>Here's the Deal</span></h1>
+<h1 class="topsname"><img src="http://dunk.site/wp-content/uploads/2014/01/topsclub-flat.png" alt="topsclub-flat" width="760" height="140" class="topsflat size-full wp-image-1362" />The Tops Club</h1>
+
+<h2 class="deal"><span>Here's the Deal</span></h2>
 
 <h2 class="eyeproh2"><img src="http://dunk.site/wp-content/uploads/2014/01/eye-pro.png" alt="eye-pro" width="317" height="330" class="eye-pro size-full wp-image-1360" /></h2>
-
-<img src="http://dunk.site/wp-content/uploads/2014/01/topsclub-flat.png" alt="topsclub-flat" width="760" height="140" class="topsflat size-full wp-image-1362" />
 
 If you hate it when you're on some site and they're like this dope <del datetime="2014-01-21T15:13:01+00:00">-X-</del> is coming out on <del datetime="2014-01-21T15:12:28+00:00">-X-</del>. Only it never comes out. Or it's so "exclusive" it was never really for sale in the first place. Or you click to buy and it's not available. Keep reading.
 
