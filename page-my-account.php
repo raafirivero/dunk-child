@@ -57,7 +57,7 @@ get_header();
 				echo do_shortcode( '[block id="dunk-avatar"]' );
 	    ?>
 
-	    <span class="user-name"><?php echo $current_user->display_name?> <em><?php echo '#'.$user_id;?></em></span>
+	    <span class="user-name"><?php echo $current_user->display_name?></span>
 	   	<span class="logout-link"><a href="<?php echo wp_logout_url(); ?>">Log out</a></span>		 
 
 	    <br>
