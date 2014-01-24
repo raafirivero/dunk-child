@@ -22,7 +22,7 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 - ninja form
 - finish design on item pages
 - product viewer on item pages
-- flipping links on landing
+- flipping links on landing -x
 - long-term: terminal style forms
 
 

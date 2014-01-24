@@ -1,8 +1,20 @@
 @import url("../fonts/nitti.css");
 
+.manifesto, .manifesto #wrapper, .manifesto #main-content {
+	background: transparent !important;
+	color: #bdbdbd !important;
+	
+	}
+.manifesto {
+	background: #0d0d0d !important;
+	}
+
+.manifesto #main-content {
+	
+	}
 
 #bg {
-	z-index: 0 !important;
+	z-index: -1 !important;
 	left: 0 !important;
 	}
 
@@ -69,11 +81,6 @@
 	font-size: 1.25em;
 	}
 
-.manifesto, .mainfesto #wrapper, .manifesto #main-content {
-	background: #0d0d0d !important;
-	color: #bdbdbd !important;
-	
-	}
 
 .manifesto p {
 	font-family: "nittilight", monospace !important;

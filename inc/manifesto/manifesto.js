@@ -38,7 +38,7 @@ $('.logocurve').transition({ scale:.6, opacity: 0},0).delay(1400).transition({ s
 $('.topsname').transition({ scale:.75, opacity: 0},0).delay(1700).transition({ scale: 1, opacity: 1},1600);
 
 $(".deal").css({
-	             transform: "rotateX(-180deg)",
+	             /* transform: "rotateX(-180deg)", */
 	             opacity: 0,
 	             scale: .8
 	        });
@@ -47,7 +47,7 @@ $(window).load(function(){
 	// needs to be on window.load because of squishy plugin
 	
 	$(".deal").squishy({maxSize: 74}).delay(1900).transition({
-	  perspective: '100px',
+	 /*  perspective: '100px', */
 	  rotateX: '0deg',
 	  opacity: .9,
 	  scale: 1,
