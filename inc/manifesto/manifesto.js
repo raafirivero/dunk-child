@@ -1,10 +1,10 @@
 jQuery(document).ready(function($) {
 
 
-	$('#bg').smartBackgroundResize({
+	$('#bg').css({opacity: 0}).smartBackgroundResize({
 		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
 				
-	});
+	}).delay(150).transition({ opacity: 1},600);
 
 
 $('.manny-buy').hide().delay(2000).fadeIn(600);
