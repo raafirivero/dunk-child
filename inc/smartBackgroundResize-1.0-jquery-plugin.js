@@ -95,7 +95,7 @@
 	base.loadFirstimageEnd=function () {
 		var imageSource = base.getImageSourceActual();	
 		base.mainimage.attr("src",imageSource);
-		base.$el.fadeIn(1000);
+		base.$el.fadeIn(1500);
 		base.resizeImage();
 	};
 	

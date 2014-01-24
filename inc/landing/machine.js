@@ -346,7 +346,9 @@ $(function() {
 	
 	$.preload([
 		// url of the smoke image background
-		"http://media.ledunk.com/img/products/smokeloop-neue.gif"
+		"http://media.ledunk.com/img/products/smokeloop-neue.gif",
+		"http://media.ledunk.com/img/topsclub-flat.png",
+		"http://media.ledunk.com/img/eye-pro.png"
 	], {
 		// don't need the callbacks
 		

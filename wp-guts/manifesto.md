@@ -1,8 +1,8 @@
-<h1 class="topsname"><img src="http://dunk.site/wp-content/uploads/2014/01/topsclub-flat.png" alt="topsclub-flat" width="760" height="140" class="topsflat size-full wp-image-1362" />The Tops Club</h1>
+<h1 class="topsname"><img src="http://media.ledunk.com/img/topsclub-flat.png" alt="topsclub-flat" width="760" height="140" class="topsflat size-full wp-image-1362" />The Tops Club</h1>
+
+<h2 class="eyeproh2"><img src="http://media.ledunk.com/img/eye-pro.png" alt="eye-pro" width="317" height="330" class="eye-pro size-full wp-image-1360" /></h2>
 
 <h2 class="deal"><span>Here's the Deal</span></h2>
-
-<h2 class="eyeproh2"><img src="http://dunk.site/wp-content/uploads/2014/01/eye-pro.png" alt="eye-pro" width="317" height="330" class="eye-pro size-full wp-image-1360" /></h2>
 
 If you hate it when you're on some site and they're like this dope <del datetime="2014-01-21T15:13:01+00:00">-X-</del> is coming out on <del datetime="2014-01-21T15:12:28+00:00">-X-</del>. Only it never comes out. Or it's so "exclusive" it was never really for sale in the first place. Or you click to buy and it's not available. Keep reading.
 
@@ -10,7 +10,7 @@ If you’re anything like us, you visit blogs daily checking out the latest in m
 
 The problem is that staying up on shit can get in the way of actually <strong>being the shit</strong>. QED.
 
-<img src="http://dunk.site/wp-content/uploads/2014/01/the-tops-club.jpg" alt="the-tops-club" width="960" height="400" class="alignnone topsclub size-full wp-image-1521" />
+<img src="http://media.ledunk.com/img/the-tops-club.jpg" alt="the-tops-club" width="960" height="400" class="alignnone topsclub size-full wp-image-1521" />
 
 We dig snapbacks. And fitteds. And 5-panels. But  we're too busy making money, getting chicks, and generally living our lives to care what came out when and how to be the first dude in line for the dope new <del datetime="2014-01-21T15:15:46+00:00">-X-</del>.
 

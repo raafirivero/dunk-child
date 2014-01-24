@@ -16,16 +16,19 @@
 #bg {
 	z-index: -1 !important;
 	left: 0 !important;
+	/* opacity: 0; */
 	}
 
 .logocurve {
 	margin: 70px auto 0 auto;
 	display: table-cell;
+	opacity: 0;
 	}
 
 .topsname {
 	font-size: 0;
 	line-height: 0;
+	opacity: 0;
 }
 
 .topsflat {
@@ -42,6 +45,7 @@
 	font-size: 100%;
 	margin: 0 auto 20px auto !important;
 	color: #fff !important;
+	opacity: 0;
 	}
 
 .eyeproh2 {
@@ -86,6 +90,7 @@
 	font-family: "nittilight", monospace !important;
 	color: #bdbdbd !important;
 	font-weight: bold;
+	opacity: 0;
 	}
 
 .manifesto p strong {
