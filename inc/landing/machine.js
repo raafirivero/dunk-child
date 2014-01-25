@@ -320,6 +320,7 @@ var dots = 0;
 
 jQuery(window).load(function($) {
 
+
 (function($) {
 	var imgList = [];
 	$.extend({
@@ -350,7 +351,7 @@ jQuery(window).load(function($) {
 	});
 })(jQuery);
 
-$(function() {
+jQuery(function($) {
 	
 	$.preload([
 		// url of the smoke image background
@@ -358,16 +359,11 @@ $(function() {
 		"http://media.ledunk.com/img/topsclub-flat.png",
 		"http://media.ledunk.com/img/eye-pro.png"
 	], {
-		// don't need the callbacks
-		
+		// no callbacks
+
 	});
-	console.log( 'preload' );
-
 });
 
 
 });
-
-
-
 
