@@ -83,15 +83,19 @@ var dots = 0;
 				var $fullname = $('.nicetry input').val();
 			} else {
 				var $fullname = $('.yourname input').val();
+				// $('#bg').attr("src", '/img/products/body-wider.jpg');
 			}
 			
 			$('#nameresp').text($fullname);
 
 
 				if ( ($link.parent().hasClass('emailform')) ) {	
+						// console.log ( 'emailform' );
 						// validate		
 						var testEmail = $link.siblings('input').val();		
 						if (IsEmail(testEmail)) {
+						
+							$('#bg').fadeOut();
 							
 							if(!pottyMouth) {
 							// submit
@@ -120,6 +124,7 @@ var dots = 0;
 			
 			if (target == "firsttry") {
 				$('#bg').fadeOut();
+				
 			}
 
 			$currentForm.fadeOut(400,function(){
@@ -180,6 +185,9 @@ var dots = 0;
 				
 						$currentForm= $form_wrapper.children('.emailform.nocurse');
 						$('.dunkpoints').text('You have earned 5 Dunk Points.');
+						$('#bg').smartBackgroundResize({
+							image: '/img/products/body-dots.jpg' // relative or absolute path to background image file				
+						});
 						
 					} else {
 					
@@ -342,7 +350,7 @@ jQuery(window).load(function($) {
 	});
 })(jQuery);
 
-(function() {
+$(function() {
 	
 	$.preload([
 		// url of the smoke image background

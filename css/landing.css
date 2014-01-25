@@ -199,8 +199,9 @@ p {
 	margin-top: -15%;
 }
 
-
-
+.emailform input {
+	background: #0d0d0d !important;
+	}
 
 
 
