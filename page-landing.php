@@ -16,9 +16,9 @@ get_template_part('header','landing');
 			<form  id="form_wrapper" class="form_wrapper" action="<?php echo get_stylesheet_directory_uri(); ?>/inc/landing/process.php" method="post">
 			
 				<div class="bigtxt active">
-					<h1><a href="#" class="linkform advance" rel="firsttry" >Advance</a> or <a href="#" class="retreat">Retreat<img src="/img/fanga.png" class="fanga" alt="pixelated middle finger" /></a></h1>
+					<h1><a href="#" class="linkform advance" rel="firsttry" >Advance</a> or <a href="#" class="retreat">Retreat<img src="http://media.ledunk.com/img/fanga.png" class="fanga" alt="pixelated middle finger" /></a></h1>
 					
-					<img class="namlogo" src="/img/ledunk-namlogo-blk.png" alt="Le Dunk logo" />
+					<img class="namlogo" src="http://media.ledunk.com/img/ledunk-namlogo-blk.png" alt="Le Dunk logo" />
 				</div>
 			
 		
@@ -66,7 +66,7 @@ get_template_part('header','landing');
 				
 				<div id="welcome" class="welcome" >
 					<p>Welcome to Le Dunk <span id="nameresp"></span></p>
-					<h1><a href="#" class="linkform advance" rel="arttype" >Advance</a> or <a href="#" class="retreat">Retreat<img src="/img/bunny-hiding.jpg" class="fanga bunny" alt="bunny hiding sad little face" /></a></h1>
+					<h1><a href="#" class="linkform advance" rel="arttype" >Advance</a> or <a href="#" class="retreat">Retreat<img src="http://media.ledunk.com/img/bunny-hiding.jpg" class="fanga bunny" alt="bunny hiding sad little face" /></a></h1>
 				</div>
 		
 			
@@ -75,25 +75,25 @@ get_template_part('header','landing');
 					<div id="arttype">
 						<h4>Choose:</h4>
 						<div class="selection">
-						<label for="tiger"><img src="http://dunk.site/img/products/tiger-icon.jpg" alt="Tiger" /></label>
+						<label for="tiger"><img src="http://media.ledunk.com/img/products/tiger-icon.jpg" alt="Tiger" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="tiger" value="tiger">
 						</div>
 						
 <!--
 						<div class="selection">
-						<label for="boobs"><img src="http://dunk.site/img/products/cleave-icon.jpg" alt="Boobs" /></label>
+						<label for="boobs"><img src="http://media.ledunk.com/img/products/cleave-icon.jpg" alt="Boobs" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="boobs" value="boobs">	
 						</div>
-						
 -->
 						
+						
 						<div class="selection">
-						<label for="donut"><img src="http://dunk.site/img/products/donut-icon.jpg" alt="Donut" /></label>
+						<label for="donut"><img src="http://media.ledunk.com/img/products/donut-icon.jpg" alt="Donut" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="donut" value="donut">	
 						</div>
 						
 						<div class="selection">
-						<label for="tesla"><img src="http://dunk.site/img/products/car-icon.jpg" alt="Tesla" /></label>
+						<label for="tesla"><img src="http://media.ledunk.com/img/products/car-icon.jpg" alt="Tesla" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="tesla" value="tesla">
 						</div>
 					</div>

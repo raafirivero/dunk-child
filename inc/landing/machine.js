@@ -300,7 +300,7 @@ var dots = 0;
  
 	$(document).ready(function(){
 		$('#bg').smartBackgroundResize({
-			image: 'http://dunk.site/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
+			image: 'http://media.ledunk.com/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
 		});
 	});
 
@@ -310,7 +310,7 @@ var dots = 0;
 });
 
 
-$(window).load(function() {
+jQuery(window).load(function($) {
 
 (function($) {
 	var imgList = [];
@@ -342,7 +342,7 @@ $(window).load(function() {
 	});
 })(jQuery);
 
-$(function() {
+(function() {
 	
 	$.preload([
 		// url of the smoke image background
@@ -353,6 +353,7 @@ $(function() {
 		// don't need the callbacks
 		
 	});
+	console.log( 'preload' );
 
 });
 
