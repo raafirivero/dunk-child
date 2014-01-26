@@ -30,3 +30,5 @@ We scour the web for the best headwear every season. Then, you get an email from
 [button size="large" style="alt-button alert" text="Subscribe Now" link="http://dunk.site/?add-to-cart=1463"]
 [/col]
 [/row]
+ 
+<h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>

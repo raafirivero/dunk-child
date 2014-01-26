@@ -24,7 +24,7 @@ h3 {
 	font-size: 2.5em;
 	margin: 1em 0;
 }
-.emailform h3, .welcome h1, .welcome p {
+.emailform.nocurse h3, .welcome h1, .welcome p {
 	background: #0d0d0d;
 	padding: .25em;
 	margin: 0 auto;
@@ -34,6 +34,9 @@ h4 {
 	font-size: 1.5em;
 	margin: 1em 0;
 }
+.nicetry h4 {
+	font-family: "nittilight", monospace;
+	}
 a{
 	color: #bdbdbd;
 }
@@ -160,14 +163,10 @@ p {
 	color: #333;
 	background: transparent;
 	}
-.advance:hover {
-	/* text-decoration: underline; */
-}
 
-.retreat {
-	/* text-decoration: none; */
+.welcome hr {
+	border: 0;
 	}
-
 .fanga {
 		display: none;
 		position: absolute;
@@ -200,13 +199,17 @@ p {
 	margin: 0 auto;
 	display: table;
 	padding: 12px;
+	
+	border-top: 1px solid;
+	border-bottom: 1px solid;
 	}
 
 #arttype .selection {
 	padding: 4px;
 	float: left;
 	display: table-cell;
-	}
+	
+	}	
 
 .selection img {
 	padding-bottom: 4px;

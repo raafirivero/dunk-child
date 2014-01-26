@@ -132,10 +132,19 @@
 	text-decoration: underline;
 	}
 	
+.manifesto h5 {
+	text-align: center;
+	padding: .5em;
+	font-size: .8em !important;
+	margin-bottom: 1.2em !important;
+	font-family: "nittilight" !important;
+	color: #4e4e4e;
+	}
 	
-	
-	
-	
-	
-	
-	
+.button.alert.alt-button {
+color: #b20000 !important;
+}	
+
+.button.alert.alt-button:hover {
+	color: white !important;
+}

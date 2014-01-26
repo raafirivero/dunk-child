@@ -22,4 +22,6 @@ CDN deliver js/styles/fonts
 
 
 
-Brooklyn-based, global faced
+Brooklyn-based, global face
+© Le Dunk – Brooklyn, NYC – “All Day Son.”
+

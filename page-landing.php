@@ -35,7 +35,7 @@ get_template_part('header','landing');
 					
 				<div class="nicetry yourname">
 						<h4>We know how to curse, too, asshole.</h4>
-						<h4>You alright tho.</h4>
+						<!-- <h4>You alright tho.</h4> -->
 						<h4>What's your name?</h4>
 						
 						<input type="text" name="cursename" /></input>
@@ -52,7 +52,7 @@ get_template_part('header','landing');
 				<div class="triplecurse emailform">
 						<h3>Mmm-hmm</h3>
 						<img class="golazy" src="" data-src="http://gifrific.com/wp-content/uploads/2012/09/Samuel-L-Jackson-Drinking-Sprite-Pulp-Fiction.gif" alt="sip" />
-						<p>Cool. We're gonna call you Stan.</p>
+						<p>We're gonna call you Stan.</p>
 						<p>What's your email?</p>
 						
 
@@ -66,6 +66,7 @@ get_template_part('header','landing');
 				
 				<div id="welcome" class="welcome" >
 					<p>Welcome to Le Dunk <span id="nameresp"></span></p>
+					<hr />
 					<h1><a href="#" class="linkform advance" rel="arttype" >Advance</a> or <a href="#" class="retreat">Retreat<img src="http://media.ledunk.com/img/bunny-hiding.jpg" class="fanga bunny" alt="bunny hiding sad little face" /></a></h1>
 					<div style="position: absolute; left: 50%;">
 					<p class="credit">photo: Chris Heads</p>
@@ -76,18 +77,17 @@ get_template_part('header','landing');
 			
 				<div id="arttypeform" class="arttype" >
 					<div id="arttype">
-						<h4>Choose:</h4>
+						<h3>Choose:</h3>
+						
 						<div class="selection">
 						<label for="tiger"><img src="http://media.ledunk.com/img/products/tiger-icon.jpg" alt="Tiger" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="tiger" value="tiger">
 						</div>
 						
-<!--
 						<div class="selection">
 						<label for="boobs"><img src="http://media.ledunk.com/img/products/cleave-icon.jpg" alt="Boobs" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="boobs" value="boobs">	
 						</div>
--->
 						
 						
 						<div class="selection">
@@ -99,6 +99,7 @@ get_template_part('header','landing');
 						<label for="tesla"><img src="http://media.ledunk.com/img/products/car-icon.jpg" alt="Tesla" width="144" height="144" /></label>
 						<input type="radio" name="tribe" id="tesla" value="tesla">
 						</div>
+						
 					</div>
 				</div>
 				

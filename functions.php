@@ -109,8 +109,18 @@ function woo_redirect_to_checkout() {
 */
 
 
+// don't automatically add links to images in posts
+function wpb_imagelink_setup() {
+	$image_set = get_option( 'image_default_link_type' );
+	
+	if ($image_set !== 'none') {
+		update_option('image_default_link_type', 'none');
+	}
+}
+add_action('admin_init', 'wpb_imagelink_setup', 10);
 
-add_action( 'init', 'unhook_woo_stuff');
+
+
  
 function unhook_woo_stuff() {
 
@@ -120,6 +130,7 @@ function unhook_woo_stuff() {
 	
     
 }
+add_action( 'init', 'unhook_woo_stuff');
 
 
 function dunk_body_classes($classes) {  
@@ -135,7 +146,6 @@ function dunk_body_classes($classes) {
 	}	
 	return $classes;
 }
-
 add_filter( 'body_class', 'dunk_body_classes' );
 
 

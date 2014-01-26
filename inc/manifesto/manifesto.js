@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 
 $('.manny-buy').hide().delay(2000).fadeIn(600);
 
-var paras = $('p'),  
+var paras = $('p, .manny-buy, .spidertext'),  
     i = 0;  
 
 paras.css("opacity",0).delay(4600);

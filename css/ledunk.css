@@ -3,6 +3,16 @@
 	/* min-width: 150px; */
 	}
 
+a {
+	color: #555 !important;	
+}
+
+a:hover {
+	color: black !important;
+	}
+
+#compact-footer small, #dunk-footer small { font-size: 80%; }
+
 form[role] {
 	display: table-cell;
 	border: 1px solid transparent;
@@ -472,10 +482,16 @@ input.wpcf7-text {
 	margin: 6px 0;
 	}
 
+.footer-compact ul li {
+	color: #888 !important;
+	font-weight: normal !important;
+	font-size: 13px;
+	}
+
 .footer-compact ul li a, .footer-compact .widget-title {
 	color: #666 !important;
 	font-weight: normal !important;
-	font-size: .8em !important;
+	font-size: 13px !important;
 	line-height: .8em;
 	}
 
@@ -1012,6 +1028,23 @@ body.privacy .large-3.right {
 	
 	font-size: .85em;
 	}
+
+/********************************************* FOOTER ROW  ****************/
+
+#secondary.widget-area a {
+	color: #888 !important;
+	}
+
+#secondary.widget-area a:hover {
+	color: black !important;
+	}
+
+
+
+
+
+
+
 
 /********************************************* FOOTER ROW  ****************/
 
