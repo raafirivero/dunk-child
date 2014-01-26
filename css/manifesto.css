@@ -16,7 +16,8 @@
 #bg {
 	z-index: -1 !important;
 	left: 0 !important;
-	/* opacity: 0; */
+	/* hide bg before it loads */
+	height: 0;
 	}
 
 .logocurve {
@@ -50,12 +51,14 @@
 
 .eyeproh2 {
 	text-align: center;
+	opacity: 0;
 	}
 	
 	
 .eyeproh2 img {
 	width: 140px;
 	margin-top: -10px;
+	
 	}
 
 .topsclub {

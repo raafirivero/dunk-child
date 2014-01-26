@@ -67,6 +67,9 @@ get_template_part('header','landing');
 				<div id="welcome" class="welcome" >
 					<p>Welcome to Le Dunk <span id="nameresp"></span></p>
 					<h1><a href="#" class="linkform advance" rel="arttype" >Advance</a> or <a href="#" class="retreat">Retreat<img src="http://media.ledunk.com/img/bunny-hiding.jpg" class="fanga bunny" alt="bunny hiding sad little face" /></a></h1>
+					<div style="position: absolute; left: 50%;">
+					<p class="credit">photo: Chris Heads</p>
+					</div>
 				</div>
 		
 			

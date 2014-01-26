@@ -1,13 +1,9 @@
 jQuery(document).ready(function($) {
 
-
 	$('#bg').smartBackgroundResize({
-		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // relative or absolute path to background image file	
-				
+		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // path to background image file				
 	});
 	
-	$('#bg').transition({ opacity: 0},0).delay(150).transition({ opacity: 1},1500);
-
 
 $('.manny-buy').hide().delay(2000).fadeIn(600);
 
@@ -60,8 +56,7 @@ $('.eyeproh2')
 			$('#bg').fadeOut(2100, function() {
 				// remove bg on callback from fadeOut
 				$('#bg').remove()
-				});	
-				
+				});		
 		})
 	.delay(300)
 	.transition({ scale: .8 }, 400)

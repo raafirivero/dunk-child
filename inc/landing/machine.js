@@ -54,7 +54,7 @@ var dots = 0;
 				
 				} else {
 				
-					if ( !/fuck|fuk|shit|bitch|ass|dick|dik|pussy/.test(sentName) ){
+					if ( !/fuc|fuk|shit|bitch|ass|dick|dik|pussy/.test(sentName) ){
 							// no curses
 							$currentForm.addClass('namepass');
 					} else {
@@ -66,7 +66,6 @@ var dots = 0;
 							target = "doublecurse";
 							pottyMouth = true;
 							
-							// console.log( 'pottyMouth is '+pottyMouth );
 						} else {
 							
 							target = "nicetry";
@@ -83,7 +82,6 @@ var dots = 0;
 				var $fullname = $('.nicetry input').val();
 			} else {
 				var $fullname = $('.yourname input').val();
-				// $('#bg').attr("src", '/img/products/body-wider.jpg');
 			}
 			
 			$('#nameresp').text($fullname);
@@ -122,11 +120,19 @@ var dots = 0;
 					
 					}
 			
-			if (target == "firsttry") {
+			//if (target == "firsttry") {
 				$('#bg').fadeOut();
 				
-			}
-
+			//}
+			
+			if ( target =='welcome' ) {
+				setTimeout(function(){ 
+				$('#bg').smartBackgroundResize({
+							image: '/img/temp/waterbelly.jpg' // relative or absolute path to background image file				
+						});
+				}, 800);
+			};
+			
 			$currentForm.fadeOut(400,function(){
 				//remove class active from current form
 				$currentForm.removeClass('active');
@@ -150,12 +156,11 @@ var dots = 0;
 				//remove class active from current form
 				$currentForm.removeClass('active');
 				//new current form
-				// $currentForm= $form_wrapper.children('.welcome');
 				$currentForm= $form_wrapper.children('.welcome');
 				$('.fanga').hide();
+				
 				//animate the wrapper
 				rollForm( $currentForm );
-
 			});
 			e.preventDefault();
 		});
@@ -186,7 +191,7 @@ var dots = 0;
 						$currentForm= $form_wrapper.children('.emailform.nocurse');
 						$('.dunkpoints').text('You have earned 5 Dunk Points.');
 						$('#bg').smartBackgroundResize({
-							image: '/img/products/body-dots.jpg' // relative or absolute path to background image file				
+							image: '/img/temp/smokebg.jpg' // relative or absolute path to background image file				
 						});
 						
 					} else {
@@ -241,7 +246,7 @@ var dots = 0;
 					setInterval (type, 550);
 					setTimeout(function(){ location.href='/manifesto/'}, 2300);
 				}
-		
+						
 		}
 		
 		
@@ -274,9 +279,7 @@ var dots = 0;
 		   e.preventDefault();
 		}); 
 		
-		
-		
-		
+
 		
 		function IsEmail(email) {
 		  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -290,25 +293,19 @@ var dots = 0;
 			});
 		}
 		
-		/*
-		for the demo we disabled the submit buttons
-		if you submit the form, you need to check the 
-		which form was submited, and give the class active 
-		to the form you want to show
-		*/
+		
+		// Disable the submit buttons, form submitted via ajax
 		$form_wrapper.find('input[type="submit"]')
 					 .click(function(e){
 						e.preventDefault();
 
-					 });	
-	
-	
+					 });
 	
 	/// Window Resize functions
  
 	$(document).ready(function(){
 		$('#bg').smartBackgroundResize({
-			image: 'http://media.ledunk.com/img/nuns-balling-nusq.jpg' // relative or absolute path to background image file				
+			image: 'http://media.ledunk.com/img/nuns-balling-nusq.jpg' // path to background image file				
 		});
 	});
 
@@ -351,19 +348,23 @@ jQuery(window).load(function($) {
 	});
 })(jQuery);
 
-jQuery(function($) {
+
+function firePreload() {
+	jQuery(function($) {	
+		$.preload([
+			// preload images on manifesto page
+			"http://media.ledunk.com/img/products/smokeloop-neue.gif",
+			"http://media.ledunk.com/img/topsclub-flat.png",
+			"http://media.ledunk.com/img/eye-pro.png"
+		], {
+			// no callbacks
 	
-	$.preload([
-		// url of the smoke image background
-		"http://media.ledunk.com/img/products/smokeloop-neue.gif",
-		"http://media.ledunk.com/img/topsclub-flat.png",
-		"http://media.ledunk.com/img/eye-pro.png"
-	], {
-		// no callbacks
-
+		});
 	});
-});
+}
 
+// fire preload a few seconds after the page loads
+setTimeout(firePreload, 5000);
 
 });
 
