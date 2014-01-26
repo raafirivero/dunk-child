@@ -159,6 +159,7 @@ include_once('inc/shortcodes/dunk-grid.php');
 include_once('inc/shortcodes/dunk-banners.php');
 include_once('inc/shortcodes/dunk-slider.php');
 include_once('inc/shortcodes/dunk-share.php');
+include_once('inc/shortcodes/dunk-stars.php');
 
 
 // NO TOCAR /////////////////////////////

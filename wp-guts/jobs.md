@@ -14,6 +14,6 @@ If you spit fire, brook no impostors, and can think on your feet, you're one of 
     [/accordion-item]
 
     [accordion-item title="Intern"]
-    Though we're not formally searching for interns and new talent, we keep our eyes open. If interested in interning with a smart, dynamic team making lots of noise, submit an application to <a href="mailto:jobs@ledunk.com?subject=Intern">jobs@ledunk.com</a>. Include any relevant samples and resume info along with your top 5 favorite products. Applications without a top-5 list will be ignored.
+    We don't formally search for interns and new talent, but we keep our eyes open. If you think you have what it takes to work with a dynamic team making lots of noise, submit an application to <a href="mailto:jobs@ledunk.com?subject=Intern">jobs@ledunk.com</a>. Include any relevant samples and resume info along with your top 5 favorite products. Applications without a top-5 list will be ignored.
     [/accordion-item]
 [/accordion]

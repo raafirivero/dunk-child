@@ -11,6 +11,10 @@ a:hover {
 	color: black !important;
 	}
 
+a.button {
+	color: white !important;
+	}
+
 #compact-footer small, #dunk-footer small { font-size: 80%; }
 
 form[role] {
@@ -899,7 +903,7 @@ input#stripe_card_csc {
 	}
 
 .checkout .shipping td {
-	width: 67.5%;	
+	/* won't accept width since declared as table-cell width: 75%;	 */
 	}
 
 .checkout #shipping_method li {
@@ -1029,7 +1033,7 @@ body.privacy .large-3.right {
 	font-size: .85em;
 	}
 
-/********************************************* FOOTER ROW  ****************/
+/********************************************* BLOG  ****************/
 
 #secondary.widget-area a {
 	color: #888 !important;
@@ -1039,10 +1043,38 @@ body.privacy .large-3.right {
 	color: black !important;
 	}
 
+.star-row {
+	min-width: 260px;
+	height: 36px;
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 0
+	}
+
+.star-title {
+	float: left;
+	padding: 2px 12px;
+	margin-right: 6px;
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+	}
+
+.star-rating {
+	font-size: 18px !important;
+	line-height: 32px !important;
+	height: 100% !important;
+	float: right;
+	background: #eee;
+	display: table-cell;
+	width: 110px;
+	text-indent: 10px;
+	}
 
 
-
-
+div.rating-box:nth-child(3), .lastrating {
+	margin-bottom: 1.6em;
+	}
 
 
 

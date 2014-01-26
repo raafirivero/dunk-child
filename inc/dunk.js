@@ -108,6 +108,14 @@ jQuery(document).ready(function($) {
 	// $l.ladda( 'toggle' );
 	// $l.ladda( 'setProgress', 0-1 );
 	// $l.ladda( 'isLoading' ); // WARNING: Returns a boolean, will not chain.
+	
+	
+	
+	
+	
+	
+	
+	
 	///////////////// NO TOCAR  /////////////////////////////////
 	
 	

@@ -68,11 +68,7 @@ jQuery(document).ready(function($) {
 					$.ajax({
 						type: 'POST',
 						url: $form.attr('action'),
-						data: $form.serialize(),
-						success: function(msg) {
-							$messagebox.append($successmessage);
-							$messagebox.delay(800).fadeIn(550);
-						}
+						data: $form.serialize()
 					});
 				}
 			} else {
@@ -153,11 +149,7 @@ jQuery(document).ready(function($) {
 				$.ajax({
 					type: 'POST',
 					url: $form.attr('action'),
-					data: $form.serialize(),
-					success: function(msg) {
-						$messagebox.append($successmessage);
-						$messagebox.delay(800).fadeIn(550);
-					}
+					data: $form.serialize()
 				});
 			}
 			//animate the wrapper
