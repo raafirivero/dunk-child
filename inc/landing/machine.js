@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 		if (target == 'welcome') {
 			setTimeout(function() {
 				$('#bg').smartBackgroundResize({
-					image: '/img/temp/waterbelly.jpg' // relative or absolute path to background image file				
+					image: 'http://media.ledunk.com/img/temp/waterbelly.jpg' // relative or absolute path to background image file				
 				});
 			}, 800);
 		};
@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 				$currentForm = $form_wrapper.children('.emailform.nocurse');
 				$('.dunkpoints').text('You have earned 5 Dunk Points.');
 				$('#bg').smartBackgroundResize({
-					image: '/img/temp/smokebg.jpg' // relative or absolute path to background image file				
+					image: 'http://media.ledunk.com/img/temp/smokebg.jpg' // relative or absolute path to background image file				
 				});
 			} else {
 				$currentForm = $form_wrapper.children('.outmsg');
@@ -255,7 +255,10 @@ jQuery(window).load(function($) {
 		jQuery(function($) {
 			$.preload([
 			// preload images on manifesto page
-			"http://media.ledunk.com/img/products/smokeloop-neue.gif", "http://media.ledunk.com/img/topsclub-flat.png", "http://media.ledunk.com/img/eye-pro.png"], {
+			"http://media.ledunk.com/img/products/smokeloop-neue.gif", 
+			"http://media.ledunk.com/img/topsclub-flat.png", 
+			"http://media.ledunk.com/img/eye-pro.png"
+			], {
 				// no callbacks
 			});
 		});
