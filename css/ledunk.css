@@ -3,13 +3,17 @@
 	/* min-width: 150px; */
 	}
 
+/*
 a {
 	color: #555 !important;	
 }
+*/
 
+/*
 a:hover {
 	color: black !important;
 	}
+*/
 
 a.button {
 	color: white !important;
@@ -891,6 +895,10 @@ input#stripe_card_csc {
 
 	}
 
+.ladda-label {
+	display: none;
+	}
+
 .ladda-button[data-style=zoom-out] .ladda-spinner div {
 	-webkit-transform: scale(1.15);
 	-moz-transform: scale(1.15);
@@ -1044,7 +1052,7 @@ body.privacy .large-3.right {
 	}
 
 .star-row {
-	min-width: 260px;
+	min-width: 280px;
 	height: 36px;
 	border: 1px solid #ddd;
 	display: inline-block;
@@ -1072,7 +1080,7 @@ body.privacy .large-3.right {
 	}
 
 
-div.rating-box:nth-child(3), .lastrating {
+.lastrating {
 	margin-bottom: 1.6em;
 	}
 
@@ -1083,7 +1091,6 @@ div.rating-box:nth-child(3), .lastrating {
 #logo {
 	/* display: none !important; */
 	}
-
 
 
 
