@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 		'opacity': '0',
 		'background-color': 'yellow !important'
 	}).delay(600).fadeTo(1800, 1);
-	$(".about .tennis").attr("src", "http://dunk.site/wp-content/uploads/2014/01/ledunk-tennis-blk.png");
+	$(".about .tennis").attr("src", "http://media.ledunk.com/img/ledunk-tennis-blk.png");
 
 	///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 	var origlabel = $('input.wpcf7-text').val();
@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 	
 	// Ladda functions
 	// Bind progress buttons and simulate loading progress
-	$('section.progress-demo p button, section.progress-demo input').ladda({
+	$('section.progress-demo .button, section.progress-demo input').ladda({
 		timeout: 5000,
 		callback: function($el) {
 			var progress = 0;
