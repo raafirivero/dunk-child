@@ -61,8 +61,8 @@ function dunk_add_scripts() {
     }
     
     
-    // Manifesto
-    if ( is_page_template('page-manifesto.php') ) {
+    // Manifesto + Manny Bullets
+    if ( is_page_template('page-manifesto.php' || is_page_template('page-manny-bullets.php') ) ) {
     	wp_dequeue_script('ladda');
     	wp_dequeue_script('laddaspin');
     	wp_dequeue_script('dunk');
@@ -82,16 +82,24 @@ function dunk_add_scripts() {
 	    
 	    //background resize in footer
 	    wp_register_script('backgroundresize', get_stylesheet_directory_uri('stylesheet_directory').'/inc/smartBackgroundResize-1.0-jquery-plugin.js', array('jquery'), '1.1', true);
-	    wp_enqueue_script('backgroundresize');
-	    
-	    wp_register_script('manifesto', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manifesto.js', array('jquery'), 1.0, true);
-	    wp_enqueue_script('manifesto');
-	    
+	    wp_enqueue_script('backgroundresize');    
 	    
 	    wp_register_style('manifeststyle', get_stylesheet_directory_uri('stylesheet_directory').'/css/manifesto.css', array());
 	    wp_enqueue_style('manifeststyle');     	
     	
     }
+    
+    // Script for Manifesto
+    if ( is_page_template('page-manifesto.php' )) {
+    wp_register_script('manifesto', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manifesto.js', array('jquery'), 1.0, true);
+	    wp_enqueue_script('manifesto');
+	}
+	
+	// Script for Bullet Point Manifesto
+	if ( is_page_template('page-manny-bullets.php' )) {
+    wp_register_script('manny-bullets', get_stylesheet_directory_uri('stylesheet_directory').'/inc/manifesto/manny-bullets.js', array('jquery'), 1.0, true);
+	    wp_enqueue_script('manny-bullets');
+	}
 }
 
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');
