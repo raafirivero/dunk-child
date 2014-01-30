@@ -9,16 +9,16 @@ console.log ( 'bullets' );
 
 $('.manny-buy').hide().delay(2000).fadeIn(600);
 
-var paras = $('p, .spidertext'),  
+var paras = $('p, .bullet, .spidertext'),  
     i = 0;  
 
-paras.css("opacity",0).delay(4600);
+paras.css("opacity",0).delay(4900);
 
 $(function paraFade() {
 	
 	$(paras).each(function(i) 
 	{
-		$(this).delay((i++) * 300).fadeTo(800, 1); 
+		$(this).delay((i++) * 600).fadeTo(800, 1); 
 	});
 	
 });
