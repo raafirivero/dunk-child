@@ -12,11 +12,7 @@ $('.manny-buy').hide().delay(2000).fadeIn(600);
 var paras = $('p, .bullet, .spidertext'),  
     i = 0;  
 
-<<<<<<< HEAD
-paras.css("opacity",0).delay(4900);
-=======
 paras.css("opacity",0).delay(5000);
->>>>>>> 8a53b27ff108b4816d07e8cafa38fab93a5a826f
 
 $(function paraFade() {
 	
