@@ -12,7 +12,11 @@ $('.manny-buy').hide().delay(2000).fadeIn(600);
 var paras = $('p, .bullet, .spidertext'),  
     i = 0;  
 
+<<<<<<< HEAD
 paras.css("opacity",0).delay(4900);
+=======
+paras.css("opacity",0).delay(5000);
+>>>>>>> 8a53b27ff108b4816d07e8cafa38fab93a5a826f
 
 $(function paraFade() {
 	
@@ -39,10 +43,14 @@ $('.topsname').transition({ scale:.75, opacity: 0},0).delay(1700).transition({ s
 
 $(".deal").css({
 	             opacity: 0,
-	             scale: 1.07
+	             scale: 1.07,
+	             rotateX: -95
 	        })
-$(".deal").delay(4500).transition({opacity: 1,
-  scale: 1}, 800);
+$(".deal").delay(4500).transition({
+	opacity: 1,
+	scale: 1,
+	rotateX: 0
+	}, 800);
 	  
 $(window).load(function(){
 	// squishy plugin needs to be on window.load 
