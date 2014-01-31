@@ -1,0 +1,192 @@
+@import url("../fonts/nitti.css");
+
+.manny-bullets, .manny-bullets #wrapper, .manny-bullets #main-content {
+	background: transparent !important;
+	color: #bdbdbd !important;
+	
+	}
+.manny-bullets {
+	background: #0d0d0d !important;
+	}
+
+.manny-bullets #main-content {
+	
+	}
+
+#bg {
+	z-index: -1 !important;
+	left: 0 !important;
+	/* hide bg before it loads */
+	height: 0;
+	}
+
+.logocurve {
+	margin: 70px auto 0 auto;
+	display: table-cell;
+	opacity: 0;
+	}
+
+.topsname {
+	font-size: 0;
+	line-height: 0;
+	opacity: 0;
+}
+
+.topsflat {
+	width: 70%;
+	height: auto;
+	margin: 30px auto;
+	display: table-cell;
+	}	
+	
+
+.deal {
+	width: 100% !important;
+	text-align: center;
+	font-size: 100%;
+	margin: 0 auto 20px auto !important;
+	color: #fff !important;
+	opacity: 0;
+	}
+
+.eyeproh2 {
+	text-align: center;
+	opacity: 0;
+	}
+	
+	
+.eyeproh2 img {
+	width: 140px;
+	margin-top: -10px;
+	
+	}
+
+.bullet {
+	text-align: center;
+	font-size: 200% !important;
+	color: #bdbdbd !important;
+	font-family: "Nittilight", monospace !important;
+	margin: 1em 0;
+	}
+.bullet span {
+	display: inline-block;
+	padding: 0 8px;
+	background: rgb(22, 22, 22);
+	}
+.bullet a {
+	display: inline-block;
+	color: #d6d6d6;
+	padding: .05em .5em .25em .5em;
+	margin: .5em -.5em -.25em -.5em;
+	background: rgb(22, 22, 22);
+	font-size: 125%;
+	text-decoration: underline;
+	}
+.bullet a:hover {
+	color: white;
+	/* background: #333; */
+	background: #b20000;
+	}
+
+small {
+	display: inline-block;
+	margin-top: 3.5em;
+	font-size: 80% !important;
+	text-align: center;
+	width: 100%;
+	}
+
+.bullet strong {
+	text-decoration: underline;
+	}
+
+.topsclub {
+	margin: 0 0 3em;
+	
+	max-width: 140% !important;
+	width: 140%;
+	
+	margin-left: -20%;
+	}
+	
+.jPanelMenu-panel {
+	overflow: hidden;
+	}
+
+.jPanelMenu-panel .topsclub {
+	max-width: 100% !important;
+	margin-left: 0;
+	}
+
+
+.jPanelMenu-panel .large-6 {
+	margin: 20px 0;
+	}
+
+.jPanelMenu-panel #manny-buy h4 {
+	font-size: 1.25em;
+	}
+
+
+.manny-bullets p {
+	font-family: "nittilight", monospace !important;
+	color: #bdbdbd !important;
+	font-weight: bold;
+	opacity: 0;
+	}
+
+.manny-bullets p strong {
+		border-bottom: 1px solid #bdbdbd;
+}
+
+.manny-buy div {
+	margin: 60px auto 100px auto;
+	text-align: center;
+	}
+
+.manny-buy .price, .manny-buy h4 {
+	color: #bdbdbd !important;
+	}
+
+#manny-buy.row.container {
+	margin-bottom: 0 !important;
+	}
+
+.minibot {
+	padding: 1.5em 0 3em;
+	text-align: center;
+	display: none;
+	}
+
+.minibot a {
+	color: #333 !important;
+	display: inline-block;
+	padding: 2px 4px;
+	margin: -2px -4px;
+	
+	
+	/* font-family: "nittilight", monospace; */
+	}
+
+.minibot a:hover {
+	background: #eee;
+	color: #111;
+	text-decoration: underline;
+	}
+	
+.manny-bullets h5 {
+	text-align: center;
+	padding: .5em;
+	font-size: .8em !important;
+	margin-bottom: 1.2em !important;
+	font-family: "nittilight" !important;
+	color: #4e4e4e;
+	}
+	
+.button.alert.alt-button {
+color: #b20000 !important;
+}	
+
+.button.alert.alt-button:hover {
+	color: white !important;
+}

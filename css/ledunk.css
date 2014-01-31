@@ -943,8 +943,18 @@ img.fatty {
 	position: initial !important;
 	}
 
-.avatar {
+.my-account #dunk-avatar .avatar {
+	width: 120px !important;
 	border-radius: 0;
+	position: relative !important;
+	}
+	
+.my-account .account-user .user-name {
+	margin: .5em 0;
+	}
+
+.my-account .account-user {
+	padding-left: 0 !important;
 	}
 
 
@@ -976,9 +986,6 @@ img.fatty {
 	top: 1.2em;
 	}
 	
-.my-account .account-user .user-name {
-		margin: .5em 0;
-}
 
 /********************************************* ORDER RECEIVED  ****************/
 
