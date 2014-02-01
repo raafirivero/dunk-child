@@ -123,20 +123,20 @@ p{
 #arttypeform label {
     display: inline-block;
     cursor: pointer;
+    margin-bottom: 8px;
+    border-bottom: 4px solid transparent;
 }
 
 
 #arttypeform label:hover {
-    background-color: #efefef;
+    border-bottom: 4px solid #b20000;
 }
 .input_hidden {
 	display: none;
 }
 
 h1 a {
-/* 	padding: 0 20px; */
 	display: inline-block;
-/* 	padding-top: .1em; */
 	padding: 12px;
 }
 
@@ -212,7 +212,7 @@ p {
 	}	
 
 .selection img {
-	padding-bottom: 4px;
+	border-bottom: 4px solid transparent;
 	}
 
 #dots {

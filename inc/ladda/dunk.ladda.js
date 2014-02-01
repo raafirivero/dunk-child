@@ -1,7 +1,8 @@
-jQuery(document).ready(function($) {
+jQuery(window).load(function($) {
 	// Ladda functions
 	// Bind progress buttons and simulate loading progress
-	$('section.progress-demo .button, section.progress-demo input').ladda({
+	/* $('section.progress-demo .button, section.progress-demo input'). */
+	Ladda.bind( 'input[type=submit]', {
 		timeout: 5000,
 		callback: function($el) {
 			var progress = 0;
