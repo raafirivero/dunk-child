@@ -59,7 +59,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		remove_action( 'wp_head', array( $GLOBALS['woocommerce'], 'generator' ) );
 		remove_action( 'wp_enqueue_scripts', array( $GLOBALS['woocommerce'], 'frontend_scripts' ) );
 		
-		//wp_dequeue_script('flatsome-magnific-popup');
 		remove_filter( 'the_content', 'smae_parse' );
 		
 		add_action('wp_print_scripts','dequeue_themescripts');
@@ -68,10 +67,12 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 			wp_dequeue_script( 'flatsome-magnific-popup' );
 			wp_dequeue_script( 'flatsome-iosslider' );
 			wp_dequeue_script( 'flatsome-modernizer' );
-			// wp_dequeue_script( 'flatsome-plugins' );
-			// wp_dequeue_script( 'flatsome-theme-js' );
+			wp_dequeue_script( 'flatsome-plugins' );
+			wp_dequeue_script( 'flatsome-theme-js' );
 			wp_dequeue_script('smae.js');
     		wp_dequeue_script('retinajs');
+    		
+    		wp_dequeue_script('dunk-cart');
    		}
 	
 		wp_head();

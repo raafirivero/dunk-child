@@ -88,7 +88,7 @@ jQuery(document).ready(function($) {
 				$('#bg').smartBackgroundResize({
 					image: 'http://media.ledunk.com/img/temp/waterbelly.jpg' // relative or absolute path to background image file				
 				});
-			}, 800);
+			}, 700);
 		};
 		$currentForm.fadeOut(400, function() {
 			//remove class active from current form

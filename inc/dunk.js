@@ -2,26 +2,23 @@ jQuery(document).ready(function($) {
 	$('.hover-reveal').css("opacity", "0");
 	$('.ux_banner').has('.hover-reveal').css("border-radius", "90px");
 	$('.ux_banner').has('.hover-reveal').hover(
-
-	function() {
-		$('.hover-reveal').fadeTo(400, 1);
-	}, function() {
-		$('.hover-reveal').fadeTo(400, 0);
-	}); /* Ladda.bind( 'input[type=submit]' ); */
+		function() {
+			$('.hover-reveal').fadeTo(400, 1);
+		}, function() {
+			$('.hover-reveal').fadeTo(400, 0);
+	});
 	$('#homepage-slides').fadeTo(1800, 1);
 	$('#banner-1st-3rd').delay(900).fadeTo(800, 1).slideDown(1800);
-	$('#hardwood-poets').delay(1600).fadeTo(700, 1);
+
 	$('#slider-le-mid').css("height", "0").delay(2200).animate({
 		"height": "400px"
 	}, 700, "swing");
 	$('.home .footer-wrapper').hide().css({
-		'opacity': '0',
-		'background-color': 'yellow !important'
+		'opacity': '0'
 	}).delay(1600).fadeTo(1800, 1);
 	$('.footer-wrapper').not('.home .footer-wrapper').hide().css({
-		'opacity': '0',
-		'background-color': 'yellow !important'
-	}).delay(600).fadeTo(1800, 1);
+		'opacity': '0'
+	}).delay(600).fadeTo(1200, 1);
 	$(".about .tennis").attr("src", "http://media.ledunk.com/img/ledunk-tennis-blk.png");
 
 	///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
@@ -82,33 +79,6 @@ jQuery(document).ready(function($) {
 			// Animation complete.
 		});
 	});
-	
-	
-	// Ladda functions
-	// Bind progress buttons and simulate loading progress
-	$('section.progress-demo .button, section.progress-demo input').ladda({
-		timeout: 5000,
-		callback: function($el) {
-			var progress = 0;
-			var interval = setInterval(function() {
-				progress = Math.min(progress + Math.random() * 0.1, 1);
-				$el.ladda('setProgress', progress);
-				if (progress === 1) {
-					$el.ladda('stop');
-					clearInterval(interval);
-				}
-			}, 200);
-		}
-	});
-	// You can control loading explicitly using the JavaScript API
-	// as outlined below:
-	// var $l = $( '<button>Submit</button>' ).ladda();
-	// $l.ladda( 'start' );
-	// $l.ladda( 'stop' );
-	// $l.ladda( 'toggle' );
-	// $l.ladda( 'setProgress', 0-1 );
-	// $l.ladda( 'isLoading' ); // WARNING: Returns a boolean, will not chain.
-	
 	
 	
 	
