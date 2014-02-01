@@ -895,11 +895,15 @@ input#stripe_card_csc {
 	}
 
 .ladda-button[data-style=zoom-out] .ladda-spinner {
-
 	}
 
+.ladda-button {
+
+}
+
 .ladda-label {
-	display: none;
+/* 	display: none; */
+
 	}
 
 .ladda-button[data-style=zoom-out] .ladda-spinner div {

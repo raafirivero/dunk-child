@@ -2,7 +2,7 @@
 	// Bind progress buttons and simulate loading progress
 	 
 
-	Ladda.bind( '.progress-demo button, .progress-demo input', {
+	Ladda.bind( '.progress-demo button, .progress-demo input, .ladda-button', {
 				timeout: 8000,
 				callback: function( instance ) {
 					var progress = 0;
