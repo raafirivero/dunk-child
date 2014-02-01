@@ -50,7 +50,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 <!-- End of Google Analytics Content Experiment code -->
-        
+
+
 	
 	<?php 
 		// turn off parent theme styles
@@ -77,6 +78,11 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	
 		wp_head();
 	 ?>
+	 <script>
+ga('create', 'UA-47654016-2', {
+  'cookieDomain': 'none'
+});
+</script>
     </head>
 <body  <?php body_class(); ?>>
 

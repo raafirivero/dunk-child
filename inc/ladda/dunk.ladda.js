@@ -1,21 +1,24 @@
-jQuery(window).load(function($) {
 	// Ladda functions
 	// Bind progress buttons and simulate loading progress
-	/* $('section.progress-demo .button, section.progress-demo input'). */
-	Ladda.bind( 'input[type=submit]', {
-		timeout: 5000,
-		callback: function($el) {
-			var progress = 0;
-			var interval = setInterval(function() {
-				progress = Math.min(progress + Math.random() * 0.1, 1);
-				$el.ladda('setProgress', progress);
-				if (progress === 1) {
-					$el.ladda('stop');
-					clearInterval(interval);
+	 
+
+	Ladda.bind( '.progress-demo button, .progress-demo input', {
+				timeout: 8000,
+				callback: function( instance ) {
+					var progress = 0;
+					var interval = setInterval( function() {
+						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						instance.setProgress( progress );
+
+						if( progress === 1 ) {
+							instance.stop();
+							clearInterval( interval );
+						}
+					}, 200 );
 				}
-			}, 200);
-		}
-	});
+			} );
+
+
 	// You can control loading explicitly using the JavaScript API
 	// as outlined below:
 	// var $l = $( '<button>Submit</button>' ).ladda();
@@ -25,7 +28,3 @@ jQuery(window).load(function($) {
 	// $l.ladda( 'setProgress', 0-1 );
 	// $l.ladda( 'isLoading' ); // WARNING: Returns a boolean, will not chain.
 	
-	
-		
-	
-});

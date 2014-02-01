@@ -139,10 +139,13 @@ body p{
 	border-radius: 0;
 	}
 
+.jPanelMenu [data-menu-position="open"] .cart-link {
+	pointer-events: auto;
+}
+
 #homepage-slides, #banner-1st-3rd, #hardwood-poets {
 	opacity: 0;
 	}
-
 
 
 /********************************************* ABOUT ROW  ****************/

@@ -80,10 +80,7 @@ jQuery(document).ready(function($) {
 		});
 	});
 	
-	
-	
-	
-	
+
 	
 	
 	///////////////// NO TOCAR  /////////////////////////////////
@@ -91,3 +88,4 @@ jQuery(document).ready(function($) {
 	
 	
 });
+
