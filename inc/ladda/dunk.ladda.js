@@ -3,7 +3,7 @@
 	 
 
 	Ladda.bind( '.progress-demo button, .progress-demo input, .ladda-button', {
-				timeout: 8000,
+				timeout: 15000,
 				callback: function( instance ) {
 					var progress = 0;
 					var interval = setInterval( function() {
@@ -28,3 +28,31 @@
 	// $l.ladda( 'setProgress', 0-1 );
 	// $l.ladda( 'isLoading' ); // WARNING: Returns a boolean, will not chain.
 	
+jQuery(document).ready(function($) {
+
+	$('body').on('updated_checkout', function() {
+				Ladda.bind( '.ladda-button', {
+				timeout: 15000,
+				callback: function( instance ) {
+					var progress = 0;
+					var interval = setInterval( function() {
+						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						instance.setProgress( progress );
+
+						if( progress === 1 ) {
+							instance.stop();
+							clearInterval( interval );
+						}
+					}, 200 );
+				}
+			} );
+	
+	});
+
+
+
+	///////////////// NO TOCAR  /////////////////////////////////
+	
+	
+	
+});

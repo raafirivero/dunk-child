@@ -51,20 +51,19 @@ jQuery(document).ready(function($) {
 	});
 	cartClasses = false;
 	$('body').on('added_to_cart', function(e, data) {
-		if (cartClasses) { /* console.log(cartClasses); */
+		if (cartClasses) { 
 		}
 		// AFTER AJAX CART IS INITIATED, MOVE THE CART ICON AND FADE UP THE MINI-CART
 		/* console.log("shuks"); */
 		$.magnificPopup.close(); /* DROPDOWN SCRIPT */
 		if ($('.nav-dropdown').hasClass('active')) {
 			// do nothing if mini-cart is active
-			/* console.log('cart hasclass active'); */
 			/* $('.nav-dropdown').addClass('active'); */
 		} else {
 			$('.add_to_cart_button').trigger("blur");
 			$('.nav-dropdown').delay(200).css("opacity", "0").addClass('active').fadeTo('400', '1');
 		}
-		cartClasses = $('.nav-dropdown').hasClass('active'); /* console.log(cartClasses); */
+		cartClasses = $('.nav-dropdown').hasClass('active');
 		var cartVal = $('.custom-cart-count').text();
 		//change cart value to a number and add 1
 		cartVal = eval(cartVal);
@@ -81,24 +80,6 @@ jQuery(document).ready(function($) {
 		});
 	});
 	
-	$('body').on('updated_checkout', function() {
-				Ladda.bind( '.ladda-button', {
-				timeout: 9000,
-				callback: function( instance ) {
-					var progress = 0;
-					var interval = setInterval( function() {
-						progress = Math.min( progress + Math.random() * 0.1, 1 );
-						instance.setProgress( progress );
-
-						if( progress === 1 ) {
-							instance.stop();
-							clearInterval( interval );
-						}
-					}, 200 );
-				}
-			} );
-	
-	});
 	
 	
 	///////////////// NO TOCAR  /////////////////////////////////
