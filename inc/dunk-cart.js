@@ -96,7 +96,6 @@ if ( $thisbutton.parent().find('.added_to_cart').size() == 0 )
 					});
 
 					// Trigger event so themes can refresh other areas
-					/* alert("trigger"); */
 					$('body').trigger( 'added_to_cart', [ fragments, cart_hash ] );
 				}
 			});

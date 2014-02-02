@@ -46,7 +46,8 @@ jQuery(document).ready(function($) {
 	$('body').on('wc_fragments_loaded', function() {
 		$('.custom-cart-icon').css({
 			"left": cartOffset
-		});		
+		});	
+
 	});
 	cartClasses = false;
 	$('body').on('added_to_cart', function(e, data) {
@@ -80,7 +81,24 @@ jQuery(document).ready(function($) {
 		});
 	});
 	
+	$('body').on('updated_checkout', function() {
+				Ladda.bind( '.ladda-button', {
+				timeout: 9000,
+				callback: function( instance ) {
+					var progress = 0;
+					var interval = setInterval( function() {
+						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						instance.setProgress( progress );
 
+						if( progress === 1 ) {
+							instance.stop();
+							clearInterval( interval );
+						}
+					}, 200 );
+				}
+			} );
+	
+	});
 	
 	
 	///////////////// NO TOCAR  /////////////////////////////////
