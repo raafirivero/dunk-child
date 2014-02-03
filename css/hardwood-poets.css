@@ -1,0 +1,32 @@
+/********************************************* HARDWOOD POETS *************/
+
+
+#hardwood-poets {
+	clear: both;
+	border-bottom: 9px solid white;
+	background: #eee;
+	
+	}
+
+#hardwood-poets .banner-bg {
+	box-shadow: inset 0px 10px 60px -8px #999,
+                0px -0px 0px -4px #333;
+    background: #bbb;
+	}
+
+#hardwood-poets .inner.center {
+	width: 100% !important;
+	left: 0;
+	right: 0;
+	}
+
+#hardwood-poets p {
+	padding: 4px 0;
+	margin-top: 20px;
+	font-size: 1.35em !important;
+	display: inline-block;
+	border-bottom: 9px solid #fff !important;
+	text-align: center;
+	color: #fff;
+/* 	text-transform: uppercase; */
+	}
