@@ -164,6 +164,10 @@ function dunk_body_classes($classes) {
 	} elseif (is_page()) {
    	   $page = $wp_query->query_vars["pagename"];
    	   $classes[] = $page;
+	} elseif (is_archive()) {
+   	   $page = post_type_archive_title('',false);
+   	   $page = strtolower($page);
+   	   $classes[] = $page;
 	}	
 	return $classes;
 }

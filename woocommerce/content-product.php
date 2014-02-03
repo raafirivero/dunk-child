@@ -76,7 +76,7 @@ $woocommerce_loop['loop']++;
       	<?php $product_cats = strip_tags($product->get_categories('|', '', '')); ?>
           <h5 class="category"><?php list($firstpart) = explode('|', $product_cats); echo $firstpart; ?></h5>
           <div class="tx-div small"></div>
-          <p class="name"><?php the_title(); ?></p>
+          <p class="name"><span class="dunklink"><?php the_title(); ?></span></p>
           <?php do_action( 'woocommerce_after_shop_loop_item_title' ); ?>
 
            

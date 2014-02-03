@@ -1,2 +1,0 @@
-user:jonbo
-pass:jonbo

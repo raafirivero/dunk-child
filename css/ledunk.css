@@ -1,30 +1,16 @@
 #logo {
 	display: table-cell;
-	/* min-width: 150px; */
 	}
 
-/*
-a {
-	color: #555 !important;	
-}
-*/
-
-/*
-a:hover {
-	color: black !important;
-	}
-*/
 
 a.button {
 	color: white !important;
 	}
 
-a.dunklink {
-	border-bottom: 1px solid #ddd;
+.dunklink {
 	}
 
-a.dunklink:hover {
-	border-bottom: 1px solid transparent !important;
+.dunklink:hover {
 	}
 
 #compact-footer small, #dunk-footer small { font-size: 80%; }
@@ -61,12 +47,8 @@ form[role] {
 
 
 a.nav-top-link, ul.header-nav li a {
-/* font-family: "questrial" !important; */
-/* 	font-family: "Monda" !important; */
 	text-transform: uppercase;
-/* 	font-weight: 700; */
 	font-size: 100%;
-	
 	color: #222 !important;
 	}
 	
@@ -89,7 +71,6 @@ body p{
 
 .cart-icon {
 	vertical-align: middle;
-	/* border: 1px solid green; */
 	}
 
 .custom-cart-inner {
@@ -98,7 +79,6 @@ body p{
 	}
 
 .cart-icon-sprite {
-	/* border: 1px solid red; */
 	overflow: hidden;
 	height: 32px;
 	width: 32px;
@@ -166,7 +146,6 @@ body p{
 #aboutrow {
 	/* margin-bottom: 0 !important; */
 	height: 280px;
-	
 	}
 
 .jPanelMenu #aboutrow {
@@ -255,7 +234,6 @@ input.wpcf7-text {
 	}
 
 .le-big {
-	/* z-index: 1; */
 	top: -62px;
 	left: -45%;
 	position: absolute;
@@ -450,9 +428,7 @@ input.wpcf7-text {
 /******************** COMPACT FOOTER  ****************/
 
 .footer-wrapper.footer-compact {
-	/* border-top: 1px solid #ddd; */
 	background: white !important;
-	/* padding: 0; */
 	}
 
 .post-type-archive-product .category-page {
@@ -461,7 +437,6 @@ input.wpcf7-text {
 	}
 
 .footer-compact .logocont {
-	/* min-height: 60px; */
 	}
 
 .footer-compact .tx-div {
@@ -513,7 +488,6 @@ input.wpcf7-text {
 	height: 36px;
 	border: 6px solid transparent;
 	opacity: .9;
-	/* float: right; */
 	}
 
 .footer-compact .footer-1.light .blklogo:hover {
@@ -585,7 +559,6 @@ input.wpcf7-text {
 	top: -50px;
 	right: -25%;
 	
-	/* display: none !important; */
 	}
 
 .jPanelMenu .get-yours {
@@ -633,26 +606,9 @@ input.wpcf7-text {
 
 
 
-
-/* From Foundation CSS */
-/*
-.woocommerce-checkout .footer-1, .woocommerce-checkout .footer-2 {
-	display: none !important;
-	}
-
-*/
-
 .woocommerce-cart .footer-1, .woocommerce-cart .footer-2 {
 	display: none !important;
 	}
-
-.woocommerce-page .footer-wrapper {
-	
-	/*
-background-image: url('/img/footer-pattern-extratrans.png');
-	background-color: steelblue !important;
-*/
-}
 
 
 /********************************************* ABOUT PAGE  ****************/
@@ -745,10 +701,7 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	border: 3px solid transparent;
 	display: inline-block;
 	padding: -8px;
-/*
-	margin-right: 5px;
-	margin-bottom: 5px;
-*/
+
 	color: #ccc;
 	-webkit-border-radius: 99px;
 	border-radius: 99px;
@@ -829,6 +782,9 @@ background-image: url('/img/footer-pattern-extratrans.png');
 	margin-top: .5em;
 	}
 
+p.dunklink {
+	display: inline-block;
+	}
 	
 /********************************************* CHECKOUT FIX  ****************/
 
@@ -859,6 +815,10 @@ label[for=payment_method_stripe] img {
 	}
 .payment_box.payment_method_stripe select option {
 	font-size: 5em;
+	}
+
+.payment_box p {
+	margin-bottom: .25em;
 	}
 
 input#stripe_card_csc {
@@ -1006,13 +966,13 @@ body.jobs p {
 	
 	}
 
-body.jobs .accordion-inner a, a.dunklink {
+body.jobs .accordion-inner a, .dunklink {
 	color: #333 !important;
 	padding: 2px 4px;
 	margin: -2px -4px;
 	}
 
-body.jobs .accordion-inner a:hover,  body.privacy p a:hover, a.dunklink:hover {
+body.jobs .accordion-inner a:hover,  body.privacy p a:hover, .dunklink:hover {
 	color: #000 !important;
 	text-decoration: underline;
 	background: #eee !important;

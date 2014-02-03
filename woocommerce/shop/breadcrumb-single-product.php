@@ -29,10 +29,6 @@ if ( ( ! is_home() && ! is_front_page() && ! ( is_post_type_archive() && get_opt
 	echo $wrap_before;
 	if ( get_post_type() == 'product' ) {
 		   
-		   $storehome = $before . '<a href="' . get_permalink( $shop_page ) . '">' . $shop_page->post_title . '</a>' . $after . $delimiter;
-		   
-		   echo $storehome;
-		   
 		   
 			echo $prepend;
 

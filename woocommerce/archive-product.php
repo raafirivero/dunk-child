@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $flatsome_opt;
-get_header('shop'); ?>
+get_header(); ?>
 
 <div class="cat-header">
 <?php 

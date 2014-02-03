@@ -8,22 +8,20 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 
 
 ### Backend
-- confirm form submission *
-- easypost int'l shipments *
 - cart sprite animation on add
-- confirm ajax cart submission
 - images for tops club
-- "per season" on subscription prices *
-
+- minify + cdn
+- cache
 
 
 ### Design
-- interactive on landing pages
-- ninja form
 - finish design on item pages
 - product viewer on item pages
-- flipping links on landing -x
 - long-term: terminal style forms
+- Find home for slider "le squeeze play"
+- get YB tees uploaded, images formatted
+- email header
+
 
 
 ### Copy
@@ -32,7 +30,7 @@ Child theme with RR edits to enable passing unique class and ID variables to alm
 - lookbook
 
 ### Product
-- tick-tock pics
+- watch pics
 
 #### General Questions
 - blog vs tumblr?
