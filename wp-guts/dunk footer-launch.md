@@ -31,7 +31,7 @@
 <h3 class="widget-title">Site Map</h3>
 [divider]
 <ul>
-	<li><a href="/product/the-tops-club/">The Tops Club</a></li>
+	<li><a href="/shop/the-tops-club/">The Tops Club</a></li>
 
 	<li><em>Shop <small>(Coming Soon)</small></em></li>
 

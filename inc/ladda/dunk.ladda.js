@@ -3,11 +3,11 @@
 	 
 
 	Ladda.bind( '.progress-demo button, .progress-demo input, .ladda-button', {
-				timeout: 20000,
+				timeout: 10000,
 				callback: function( instance ) {
 					var progress = 0;
 					var interval = setInterval( function() {
-						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						progress = Math.min( progress + Math.random() * 0.05, 1 );
 						instance.setProgress( progress );
 
 						if( progress === 1 ) {
@@ -32,11 +32,11 @@ jQuery(document).ready(function($) {
 
 	$('body').on('updated_checkout', function() {
 				Ladda.bind( '.ladda-button', {
-				timeout: 20000,
+				timeout: 10000,
 				callback: function( instance ) {
 					var progress = 0;
 					var interval = setInterval( function() {
-						progress = Math.min( progress + Math.random() * 0.1, 1 );
+						progress = Math.min( progress + Math.random() * 0.05, 1 );
 						instance.setProgress( progress );
 
 						if( progress === 1 ) {
