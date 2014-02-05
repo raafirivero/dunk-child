@@ -142,8 +142,18 @@ function wpb_imagelink_setup() {
 }
 add_action('admin_init', 'wpb_imagelink_setup', 10);
 
+// create a larger image size for blog posts
+if ( function_exists( 'add_image_size' ) ) add_theme_support( 'post-thumbnails' );
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'dunk-blog-pic', 750, 1125 );
+}
 
-
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'dunk-blog-pic' => __('Dunk Blog Pic'),
+    ) );
+}
  
 function unhook_woo_stuff() {
 
