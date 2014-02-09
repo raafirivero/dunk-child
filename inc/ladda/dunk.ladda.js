@@ -46,6 +46,8 @@ jQuery(document).ready(function($) {
 					}, 200 );
 				}
 			} );
+			
+	$('#minqueue-helper').show();		
 	
 	});
 

@@ -111,6 +111,12 @@ function dunk_add_scripts() {
 	
 	}
 	
+	if ( is_page('about') ) {
+			wp_dequeue_script('contact-form-7');
+			wp_dequeue_script('comment-reply');
+			
+	    	wp_dequeue_style('contact-form-7');
+	}
         
     // Dunk Script/Style All Pages
 	wp_register_script('dunk', $themedir.'/inc/dunk.js', array('jquery'), 1.0);
