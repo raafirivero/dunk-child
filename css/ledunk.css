@@ -1051,7 +1051,7 @@ body.privacy .large-3.right {
 body.jobs .accordion-inner a, 
 .dunklink, 
 .posted_in a, 
-article a, 
+.blog article a, 
 .entry-title a, 
 .my-account a:not(.button) 
 	{
@@ -1064,13 +1064,16 @@ body.jobs .accordion-inner a:hover,
 body.privacy p a:hover, 
 .dunklink:hover,  
 .posted_in a:hover, 
-article a:hover, 
+.blog article a:hover, 
 .my-account a:not(.button):hover {
 	color: #000 !important;
 	text-decoration: underline;
 	background: #eee !important;
 	}
 
+.accordion-title a:hover {
+	color: #333;
+	}
 
 
 /********************************************* FOOTER ROW  ****************/
