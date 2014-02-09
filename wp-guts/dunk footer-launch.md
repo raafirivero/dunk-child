@@ -14,12 +14,12 @@
 	<li class="empty">&nbsp;</li>
 
 	<li>Stocklists or Wholesale<br />
-	<a href="#">biz@ledunk.com</a></li>
+	<a href="mailto:biz@ledunk.com">biz@ledunk.com</a></li>
 
 	<li class="empty">&nbsp;</li>
 
 	<li>Media Inquiries:<br />
-	<li><a href="#">pr@ledunk.com</a></li>
+	<li><a href="mailto:pr@ledunk.com">pr@ledunk.com</a></li>
 </ul>
 
 
