@@ -18,7 +18,6 @@ a.button {
 form[role] {
 	display: table-cell;
 	border: 1px solid transparent;
-	/* box-image-width: 0;  */
 	font-family: 'Pontano Sans';
 	
 	}
@@ -144,7 +143,6 @@ body p{
 	}
 
 #aboutrow {
-	/* margin-bottom: 0 !important; */
 	height: 280px;
 	}
 
@@ -542,6 +540,7 @@ input.wpcf7-text {
 	border-top: 9px solid white;
 	background: transparent !important;
 	color: white !important;
+	overflow: hidden;
 	}
 
 
@@ -599,12 +598,9 @@ input.wpcf7-text {
 	padding: 8px;
 	}
 
-
 .absolute-footer {
 	background: transparent !important;
 	}
-
-
 
 .woocommerce-cart .footer-1, .woocommerce-cart .footer-2 {
 	display: none !important;
