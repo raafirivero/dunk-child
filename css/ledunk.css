@@ -810,7 +810,7 @@ label[for=payment_method_stripe] img {
 	height: 1.5em;
 	}
 .payment_box.payment_method_stripe select option {
-	font-size: 5em;
+	font-size: 1.25em;
 	}
 
 .payment_box p {

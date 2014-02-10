@@ -12,14 +12,6 @@ global $flatsome_opt;
 	
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 
-
-<!-- turn off caching for dev purposes -->
-<!--
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
--->
-
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -78,11 +70,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	
 		wp_head();
 	 ?>
-	 <script>
-ga('create', 'UA-47654016-2', {
-  'cookieDomain': 'none'
-});
-</script>
     </head>
 <body  <?php body_class(); ?>>
 
