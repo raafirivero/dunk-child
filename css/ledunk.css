@@ -2,6 +2,9 @@
 	display: table-cell;
 	}
 
+body {
+	background: #fff;
+	}
 
 a.button {
 	color: white !important;
