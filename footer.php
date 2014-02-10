@@ -31,11 +31,13 @@ global $flatsome_opt;
 					 */
 					 
 					/* set smaller footer for footer-compact group */ 
+									
 					if($footerclass != "footer-compact") {
 							get_template_part( 'content-footer', get_post_format() );
 						} else {
 							get_template_part( 'compact-footer', get_post_format() );
 					}
+				
 				?>
 				   
 	</div><!-- end row -->

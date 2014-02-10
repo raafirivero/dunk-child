@@ -9,9 +9,16 @@ function dunk_add_scripts() {
 
 	$themedir = get_stylesheet_directory_uri('stylesheet_directory');
 	
-	/**
-	 * Check if WooCommerce is active
-	 **/
+	// Fix SSL content warnings for CDN fonts
+	if (  is_ssl() ) {
+    	wp_register_style('fonts-ssl', $themedir.'/css/fonts-ssl.css', array());
+	    wp_enqueue_style('fonts-ssl');
+    } else {
+    	wp_register_style('fonts', $themedir.'/css/fonts.css', array());
+	    wp_enqueue_style('fonts');
+    }
+	
+	//  Check if WooCommerce is active
 	if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
     
 	    if ( is_checkout() || is_page_template('page-ladda.php')  ) {
@@ -124,6 +131,7 @@ function dunk_add_scripts() {
     
     wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
     wp_enqueue_script('dunk-cart');
+    
 }
 
 add_action('wp_enqueue_scripts', 'dunk_add_scripts');

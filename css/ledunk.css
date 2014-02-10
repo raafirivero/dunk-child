@@ -977,7 +977,7 @@ body.jobs p {
 	}
 
 
-article .entry-title a:hover {
+.blog article .entry-title a:hover {
 	color: #000 !important;
 	background: transparent !important;
 	text-decoration: underline;
@@ -1053,7 +1053,8 @@ body.jobs .accordion-inner a,
 .posted_in a, 
 .blog article a, 
 .entry-title a, 
-.my-account a:not(.button) 
+.my-account a:not(.button),
+.order-received p a
 	{
 	color: #333 !important;
 	padding: 2px 4px;
@@ -1065,7 +1066,9 @@ body.privacy p a:hover,
 .dunklink:hover,  
 .posted_in a:hover, 
 .blog article a:hover, 
-.my-account a:not(.button):hover {
+.my-account a:not(.button):hover,
+.order-received p a:hover
+	 {
 	color: #000 !important;
 	text-decoration: underline;
 	background: #eee !important;

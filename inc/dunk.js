@@ -20,6 +20,7 @@ jQuery(document).ready(function($) {
 		'opacity': '0'
 	}).delay(600).fadeTo(1200, 1);
 	$(".about .tennis").attr("src", "http://media.ledunk.com/img/ledunk-tennis-blk.png");
+	
 
 	///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 	var origlabel = $('input.wpcf7-text').val();
