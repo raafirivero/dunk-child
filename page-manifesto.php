@@ -33,5 +33,6 @@ get_template_part('header','manifesto');
  </div>	
 </div>
 <?php wp_footer(); ?>
+<script type='text/javascript' src='https://js.stripe.com/v1/?ver=1.0'></script>
 </body>
 </html>

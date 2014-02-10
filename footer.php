@@ -30,12 +30,15 @@ global $flatsome_opt;
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
 					 
-					/* set smaller footer for footer-compact group */ 
-									
-					if($footerclass != "footer-compact") {
-							get_template_part( 'content-footer', get_post_format() );
-						} else {
-							get_template_part( 'compact-footer', get_post_format() );
+					// don't show logo in footer on checkout page
+					if( !is_checkout() )	{
+					
+						/* set smaller footer for footer-compact group */ 		
+						if($footerclass != "footer-compact") {
+								get_template_part( 'content-footer', get_post_format() );
+							} else {
+								get_template_part( 'compact-footer', get_post_format() );
+						}
 					}
 				
 				?>
