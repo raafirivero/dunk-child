@@ -35,6 +35,7 @@ global $flatsome_opt;
 		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
 
 <!-- Google Analytics Content Experiment code -->
+<!--
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='81659819-3',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -47,6 +48,7 @@ length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
 valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
+-->
 <!-- End of Google Analytics Content Experiment code -->
 
 

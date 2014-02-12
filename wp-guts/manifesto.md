@@ -18,7 +18,7 @@ They need to just send us the shit when it's ready.
 
 <strong>The Tops Club</strong> is for when you want that RAW, but don't have time to spend every waking hour searching it out. We do the work, you get the benefit.
 
-We scour the web for the best headwear every season. Then, you get an email from us. These are the dopest snapbacks and 5-panels that are out now, pick one. None of that wondering when it's gonna come out. None of that fake shit. We select the best stuff, you choose, and we send it to you. Boom.
+We scour the web for the best headwear every season. Then, you get an email from us. These are the dopest snapbacks and 5-panels that are out now, pick one. None of that wondering when it's gonna come out. None of that fake shit. We select the best stuff, you choose, then we ship it to you. Boom.
 
 [row class="manny-buy"]
 [col span=1/2]

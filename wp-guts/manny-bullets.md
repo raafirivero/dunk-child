@@ -37,11 +37,9 @@
  
 
 <img src="http://media.ledunk.com/img/the-tops-club.jpg" alt="the-tops-club" width="960" height="400" class="alignnone topsclub size-full wp-image-1521" />
-[button size="large" style="alt-button alert" text="Subscribe Now" link="http://dunk.site/?add-to-cart=1463"]
-[/col]
-[/row]
 
 
-<img src="http://media.ledunk.com/img/the-tops-club.jpg" alt="the-tops-club" width="960" height="400" class="alignnone topsclub size-full wp-image-1521" />
+<h5 class="bullet bottomlink" id="infosec"><span><a href="#infosec" class="moreinfo">** Click Here for more info **</a></span></h5>
+<div class="infobox"></div>
  
 <h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>

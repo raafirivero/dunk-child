@@ -101,7 +101,7 @@ small {
 	}
 
 .topsclub {
-	margin: 0 0 3em;
+	margin: 0 0 1.5em;
 	
 	max-width: 140% !important;
 	width: 140%;
@@ -127,7 +127,6 @@ small {
 	font-size: 1.25em;
 	}
 
-
 .manny-bullets p {
 	font-family: "nittilight", monospace !important;
 	color: #bdbdbd !important;
@@ -140,7 +139,7 @@ small {
 }
 
 .manny-buy div {
-	margin: 60px auto 100px auto;
+	margin: 60px auto 80px auto;
 	text-align: center;
 	}
 
@@ -189,4 +188,15 @@ color: #b20000 !important;
 
 .button.alert.alt-button:hover {
 	color: white !important;
+}
+
+.bullet.bottomlink {
+		margin-bottom: 4em !important;
+}
+
+.bullet a.moreinfo:hover {
+	background: #333;
+}
+.manny-bullets .infobox p {
+		opacity: 1 !important;
 }

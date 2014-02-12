@@ -1,7 +1,5 @@
 jQuery(document).ready(function($) {
 
-console.log ( 'bullets' );
-
 	$('#bg').smartBackgroundResize({
 		image: 'http://media.ledunk.com/img/products/smokeloop-neue.gif' // path to background image file				
 	});
@@ -68,6 +66,31 @@ $('.eyeproh2')
 	.transition({ scale: .8 }, 400)
 	.transition({ rotate: '-180deg', scale: .3, x: 0, y:90}, 300)
 	.fadeOut(300);
+
+
+function urlofdoc ( jsfile ) {
+
+    var scriptElements = document.getElementsByTagName('script');
+    var i, element, myfile;
+ 
+        for( i = 0; element = scriptElements[i]; i++ ) {
+ 
+            myfile = element.src;
+ 
+            if( myfile.indexOf( jsfile ) >= 0 ) {
+                var myurl = myfile.substring( 0, myfile.indexOf( jsfile ) );
+            }
+        }
+    return myurl;
+}
+var myurl = urlofdoc ( "manny-bullets.js" );
+
+$('.moreinfo').click(function(){
+	$.get(myurl+"more-info.html",function(data){
+                $(".infobox").append(data);
+      });
+   $(this).delay(600).slideUp('slow'); 
+});
 
 
 /////////////////////////////// No Tocar

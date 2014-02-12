@@ -25,11 +25,11 @@ get_template_part('header','landing');
 				<div  class="yourname firsttry" >
 					<h3>What's your name?</h3>
 					
-					<input type="text" name="yourname" rel="welcome" /></input>
+					<input type="text" name="yourname" rel="welcome" />
 					<span class="error">Name, nickname, whatever...</span>
 					
 
-					<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>
+					<input type="submit" class="linkform hidden" rel="welcome" value="go" />
 
 				</div>
 					
@@ -38,15 +38,15 @@ get_template_part('header','landing');
 						<!-- <h4>You alright tho.</h4> -->
 						<h4>What's your name?</h4>
 						
-						<input type="text" name="cursename" /></input>
-						<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>
+						<input type="text" name="cursename" />
+						<input type="submit" class="linkform hidden" rel="welcome" value="go" />
 				</div>
 				
 				<div class="doublecurse">
 						<h3>Oh, you fancy, huh?</h3>
 						
-						<input type="text" name="curseresp" /></input>
-						<input type="submit" class="linkform hidden" rel="triplecurse" value="go"></input>
+						<input type="text" name="curseresp" />
+						<input type="submit" class="linkform hidden" rel="triplecurse" value="go" />
 				</div>
 				
 				<div class="triplecurse emailform">
@@ -58,7 +58,7 @@ get_template_part('header','landing');
 
 						<input type="text" name="pottyemail" rel="welcome" />
 						
-						<input type="submit" class="linkform hidden" rel="welcome" value="go"></input>
+						<input type="submit" class="linkform hidden" rel="welcome" value="go" />
 						<span class="error">not a valid email</span>
 				</div>
 
@@ -111,7 +111,7 @@ get_template_part('header','landing');
 						<span class="error">email not formatted properly</span>
 						
 
-						<input type="submit" class="linkform hidden" rel="outmsg" value="go"></input>
+						<input type="submit" class="linkform hidden" rel="outmsg" value="go" />
 				</div>	
 				
 				<div class="outmsg">
