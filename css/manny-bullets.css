@@ -68,7 +68,7 @@
 	font-family: "Nittilight", monospace !important;
 	margin: 1em 0;
 	}
-.bullet span {
+.bullet span, .bottomlink a {
 	display: inline-block;
 	padding: 0 8px;
 	background: rgb(22, 22, 22);

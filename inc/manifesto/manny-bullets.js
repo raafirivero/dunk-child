@@ -89,7 +89,7 @@ $('.moreinfo').click(function(){
 	$.get(myurl+"more-info.html",function(data){
                 $(".infobox").append(data);
       });
-   $(this).delay(600).slideUp('slow'); 
+   $(this).slideUp('slow'); 
 });
 
 
