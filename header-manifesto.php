@@ -17,6 +17,7 @@ global $flatsome_opt;
 	<link rel="dns-prefetch" href="//js.stripe.com" />
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<link rel="dns-prefetch" href="//ledunk.com" />
+	<link rel="prefetch" href="/?add-to-cart=<?php echo get_ID_by_slug('the-tops-club','product'); ?>" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

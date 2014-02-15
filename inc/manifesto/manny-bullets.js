@@ -11,7 +11,7 @@ var paras = $('p, .bullet, .spidertext'),
     i = 0;  
 
 paras.css("opacity",0).delay(5000);
-
+$('span.price').parent().css("opacity",1)
 $(function paraFade() {
 	
 	$(paras).each(function(i) 
@@ -86,10 +86,13 @@ function urlofdoc ( jsfile ) {
 var myurl = urlofdoc ( "manny-bullets.js" );
 
 $('.moreinfo').click(function(){
-	$.get(myurl+"more-info.html",function(data){
+	$.get(myurl+"more-info.php",function(data){
                 $(".infobox").append(data);
       });
    $(this).slideUp('slow'); 
+   $('html, body').animate({
+		scrollTop: $(".infobox").offset().top
+	}, 1200);
 });
 
 

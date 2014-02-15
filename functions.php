@@ -199,6 +199,17 @@ function unhook_woo_stuff() {
 add_action( 'init', 'unhook_woo_stuff');
 
 
+function get_ID_by_slug($page_slug,$post_type) {
+	// helps move from local to production server
+    $page = get_page_by_path($page_slug,OBJECT,$post_type);
+    if ($page) {
+        return $page->ID;
+    } else {
+        return null;
+    }
+}
+
+
 function dunk_body_classes($classes) {  
 	// add class to <body> tag	
 	global $wp_query;

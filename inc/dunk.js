@@ -21,6 +21,17 @@ jQuery(document).ready(function($) {
 	}).delay(600).fadeTo(1200, 1);
 	$(".about .tennis").attr("src", "http://media.ledunk.com/img/ledunk-tennis-blk.png");
 	
+	//// un-force ssl on logo link
+	if (document.location.protocol === 'https:') {
+	    $('#logo a').each(function() {
+	        var href = $(this).attr('href');
+	        if (href.indexOf('https:') > -1) {
+	            href = href.replace('https:', 'http:');
+	            $(this).attr('href', href);
+	        }
+	    });
+	}
+	
 
 	///////////////// FORM REMOVE TXT FUNCTIONS /////////////////////////////
 	var origlabel = $('input.wpcf7-text').val();
