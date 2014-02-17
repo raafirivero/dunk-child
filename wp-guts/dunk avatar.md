@@ -1,1 +1,1 @@
-<img src="http://dev.ledunk.com/wp-content/uploads/2014/01/dunk-8bit-sm-150x150.png" alt="dunk-8bit-sm" width="175" height="175" class="avatar avatar-60 wp-image-1383" />
+<img src="http://ledunk.com/wp-content/uploads/2014/01/dunk-8bit-sm-150x150.png" alt="dunk-8bit-sm" width="175" height="175" class="avatar avatar-60 wp-image-1383" />

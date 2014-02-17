@@ -1056,7 +1056,7 @@ body.jobs .accordion-inner a,
 .posted_in a, 
 .blog article a, 
 .entry-title a, 
-.my-account a:not(.button),
+.my-account .tabs-inner a:not(.button),
 .order-received p a
 	{
 	color: #333 !important;
@@ -1069,7 +1069,7 @@ body.privacy p a:hover,
 .dunklink:hover,  
 .posted_in a:hover, 
 .blog article a:hover, 
-.my-account a:not(.button):hover,
+.my-account .tabs-inner a:not(.button):hover,
 .order-received p a:hover
 	 {
 	color: #000 !important;

@@ -86,7 +86,7 @@ function urlofdoc ( jsfile ) {
 var myurl = urlofdoc ( "manny-bullets.js" );
 
 $('.moreinfo').click(function(){
-	$.get(myurl+"more-info.php",function(data){
+	$.get(myurl+"more-info.html",function(data){
                 $(".infobox").append(data);
       });
    $(this).slideUp('slow'); 
