@@ -20,12 +20,25 @@ jQuery(document).ready(function($) {
 	});
 	//set width and height of wrapper (same of current form)
 	setWrapperWidth();
+	
+	$("input").keypress(function(e) {
+		if(e.which == 13) {
+		// test for enter key submission
+		var $link = $(this);
+		machine(e,$link);
+		}
+	});
+	
 	$linkform.bind('click', function(e) {
 		var $link = $(this);
+		machine(e,$link);
+		});
+	
+	function machine(e,$link) {
 		var target = $link.attr('rel');
 		if ($link.parent().hasClass('yourname')) {
 			// validate name for cuss words
-			var sentName = $link.siblings('input').val();
+			var sentName = $link.val();
 			if (!sentName) {
 				$('.firsttry .error').css({
 					"visibility": "visible",
@@ -59,7 +72,7 @@ jQuery(document).ready(function($) {
 		$('#nameresp').text($fullname);
 		if (($link.parent().hasClass('emailform'))) {
 			// validate		
-			var testEmail = $link.siblings('input').val();
+			var testEmail = $link.val();
 			if (IsEmail(testEmail)) {
 				$('#bg').fadeOut();
 				if (!pottyMouth) {
@@ -100,7 +113,8 @@ jQuery(document).ready(function($) {
 			rollForm($currentForm);
 		});
 		e.preventDefault();
-	});
+	}
+	
 	// options for select form
 	$('#hatsizeform').change(function(e) {
 		var $form = $(this);
