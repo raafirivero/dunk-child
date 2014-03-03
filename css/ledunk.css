@@ -1057,7 +1057,8 @@ body.jobs .accordion-inner a,
 .blog article a, 
 .entry-title a, 
 .my-account .tabs-inner a:not(.button),
-.order-received p a
+.order-received p a,
+.starter-kit p a
 	{
 	color: #333 !important;
 	padding: 2px 4px;
@@ -1070,7 +1071,8 @@ body.privacy p a:hover,
 .posted_in a:hover, 
 .blog article a:hover, 
 .my-account .tabs-inner a:not(.button):hover,
-.order-received p a:hover
+.order-received p a:hover,
+.starter-kit p a:hover
 	 {
 	color: #000 !important;
 	text-decoration: underline;
