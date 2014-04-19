@@ -3,7 +3,7 @@
 	 
 
 	Ladda.bind( '.progress-demo button, .progress-demo input, .ladda-button', {
-				timeout: 23000,
+				timeout: 28000,
 				callback: function( instance ) {
 					var progress = 0;
 					var interval = setInterval( function() {

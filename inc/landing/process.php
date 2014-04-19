@@ -59,7 +59,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     
 
    $query = "INSERT INTO emails 
-             VALUES (NULL,'$yourname','$hatsize','$arttype','$emailform')";
+             VALUES (NULL,'$yourname','$hatsize','$arttype','$emailform', CURRENT_TIMESTAMP)";
               
 
     echo $query;
