@@ -1047,6 +1047,9 @@ body.privacy .large-3.right {
 	margin-bottom: 1.6em;
 	}
 
+.blog .entry-content strong, .single-post .entry-content strong {
+	color: #555;
+	}
 
 /********************************************* DUNK LINKS  ****************/
 
