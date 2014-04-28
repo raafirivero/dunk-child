@@ -24,8 +24,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 	  `hatsize` varchar(50) DEFAULT '',
 	  `arttype` varchar(50) DEFAULT '',
 	  `email` varchar(50) DEFAULT '',
+	  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	  PRIMARY KEY (`id`)
-	) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+	) ENGINE=MyISAM AUTO_INCREMENT=307 DEFAULT CHARSET=latin1;
 	*/
     
     
