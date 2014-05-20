@@ -13,7 +13,7 @@ global $flatsome_opt;
     // $handler->setCallOldHandlers(false); // disable passing errors & exceptions to prviously defined handlers
 	$handler->setHandleErrors(false);  // disable errors handling
 	$handler->start(); // initialize handlers
-	PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
+	$connector = PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
 ?>
 
 <!DOCTYPE html>
