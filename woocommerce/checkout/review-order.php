@@ -4,13 +4,15 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * @version     2.1.8
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 ?>
 <div id="order_review">
+
+<button id="testbutton">TEST BUTTON</button>
 
 	<table class="shop_table">
 		<thead>
@@ -171,6 +173,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 			echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button ladda-button secondary large expand" data-style="zoom-out" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" ><span class="ladda-label">Place Order</span></button>' );
 			?>
+			
 
 			<?php if ( wc_get_page_id( 'terms' ) > 0 && apply_filters( 'woocommerce_checkout_show_terms', true ) ) { 
 				$terms_is_checked = apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) );

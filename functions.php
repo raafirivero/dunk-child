@@ -63,6 +63,9 @@ function dunk_add_scripts() {
 	    	wp_dequeue_style('contact-form-7');
 		    
 		    
+		    wp_register_script('cookie', $themedir.'/inc/jquery.cookie.js', array('jquery'));
+		    wp_enqueue_script('cookie');
+		    
 		    wp_register_script('landing', $themedir.'/inc/landing/machine.js', array('jquery'));
 		    wp_enqueue_script('landing');
 		    

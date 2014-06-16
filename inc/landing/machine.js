@@ -1,4 +1,17 @@
 jQuery(document).ready(function($) {
+	// cookie functions
+	// only show name/email cap on first once a year
+    if ($.cookie('nameDunk')) 	{
+    	$('.bigtxt h1 a').attr('href', '/manifesto/');
+    	$('.bigtxt h1 a').click(function(){
+    			location.href = '/manifesto/';
+    		});
+    	}
+    else {
+            $.cookie('nameDunk', true,  { expires: 365, path: '/' });    
+    }
+
+
 	$('#arttypeform input:radio').addClass('input_hidden');
 	//use to remove default selection on dropdown
 	$("#hatsize").attr("selectedIndex", -1);
