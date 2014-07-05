@@ -18,11 +18,7 @@ get_template_part('header','landing');
 				<div class="bigtxt active">
 					<h1><a href="#" class="linkform advance" rel="firsttry" >Advance</a> or <a href="#" class="retreat">Retreat<img src="http://media.ledunk.com/img/fanga.png" class="fanga" alt="pixelated middle finger" /></a></h1>
 					
-<<<<<<< HEAD
-					<img class="namlogo" src="http://media.ledunk.com/img/logo-curve-drop.png" alt="Le Dunk logo" />
-=======
 					<img class="namlogo" src="http://media.ledunk.com/img/logo-curve-blk.png" alt="Le Dunk logo" />
->>>>>>> FETCH_HEAD
 				</div>
 			
 		
