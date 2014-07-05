@@ -8,65 +8,52 @@ echo "landed at form handler<br>";
 if($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     echo "here goes POST processing<br>";
-    $host = 'localhost';
+    
+    $host = 'dunk.site';
     $username = 'root';
     $pass = '';
-
-    mysql_connect($host,$username,$pass);
-    mysql_select_db('emailsubs');
     
-    // database emailsubs should have a table called "emails"
-    // the columns after ID are yourname hatsize arttype email
-	/*
-	CREATE TABLE `emails` (
-	  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-	  `yourname` varchar(100) DEFAULT '',
-	  `hatsize` varchar(50) DEFAULT '',
-	  `arttype` varchar(50) DEFAULT '',
-	  `email` varchar(50) DEFAULT '',
-	  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	  PRIMARY KEY (`id`)
-	) ENGINE=MyISAM AUTO_INCREMENT=307 DEFAULT CHARSET=latin1;
-	*/
+    $db = new mysqli($host, $username, $pass, 'emailsubs');
     
+    if($db->connect_errno > 0){
+    	die('Unable to connect to database [' . $db->connect_error . ']');
+	}
     
-
     // all strings should be escaped
     // and it should be done after connecting to DB
     if(isset($_POST['yourname'])){ 
-    	$yourname = mysql_real_escape_string($_POST['yourname']); 
+    	$yourname = mysqli_real_escape_string($db, $_POST['yourname']); 
     	}
     	
     if(!empty($_POST["cursename"])){ 
-    	$yourname = mysql_real_escape_string($_POST['cursename']); 
+    	$yourname = mysqli_real_escape_string($db, $_POST['cursename']); 
     	// pass empty name parameter if they've been cursin';
     	}
     	
-    if(isset($_POST['hatsize'])){ 
-    	$hatsize = mysql_real_escape_string($_POST['hatsize']); 
+    if(!empty($_POST['hatsize'])){ 
+    	$hatsize = mysqli_real_escape_string($db, $_POST['hatsize']); 
     	}
     	
     if(isset($_POST['tribe'])){ 
-    	$arttype = mysql_real_escape_string($_POST['tribe']); 
+    	$arttype = mysqli_real_escape_string($db, $_POST['tribe']); 
     	}
     	
     if(isset($_POST['email'])){ 
-    	$emailform = mysql_real_escape_string($_POST['email']); 
+    	$emailform = mysqli_real_escape_string($db, $_POST['email']); 
     	}
     
     if(!empty($_POST["pottyemail"])){
-    	$emailform = mysql_real_escape_string($_POST['pottyemail']); 
+    	$emailform = mysqli_real_escape_string($db, $_POST['pottyemail']); 
     	}
     
 
-   $query = "INSERT INTO emails 
+   $sql = "INSERT INTO emails 
              VALUES (NULL,'$yourname','$hatsize','$arttype','$emailform', CURRENT_TIMESTAMP)";
               
-
-    echo $query;
-    // always run your queries this way to be notified in case of error
-    $result = mysql_query($query) or trigger_error(mysql_error().". Query: ".$query);
-    var_dump($result);
+    if(!$db->query($sql)){
+    	die('There was an error running the query [' . $db->error . ']');
+	}
+    
 }
 
 
