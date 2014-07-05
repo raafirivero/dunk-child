@@ -66,10 +66,8 @@ function dunk_add_scripts() {
 		    wp_register_script('cookie', $themedir.'/inc/jquery.cookie.js', array('jquery'));
 		    wp_enqueue_script('cookie');
 		    
-/*
 		    wp_register_script('landing', $themedir.'/inc/landing/machine.js', array('jquery'));
 		    wp_enqueue_script('landing');
-*/
 		    
 		    wp_register_script('landing-crown', $themedir.'/inc/landing/machine-crown.js', array('jquery'));
 		    wp_enqueue_script('landing-crown');
@@ -131,6 +129,34 @@ function dunk_add_scripts() {
 		    
 		    wp_register_style('manifeststyle', $themedir.'/css/manifesto.css', array());
 			wp_enqueue_style('manifeststyle');
+			
+			
+			// Parallax items
+			wp_register_script('modernizr', $themedir.'/llel/vendor/modernizr-2.7.1.min.js', false, 2.7, false);
+			wp_enqueue_script('modernizr');
+			
+			wp_register_script('imagesloaded', $themedir.'/llel/imagesloaded.js', false, 3.0, true);
+			wp_enqueue_script('imagesloaded');
+			
+			wp_register_script('enquire', $themedir.'/llel/enquire.min.js', false, 1.5, true);
+			wp_enqueue_script('enquire');
+			
+			wp_register_script('skrollr', $themedir.'/llel/skrollr.js', false, 0.6, true);
+			wp_enqueue_script('skrollr');
+			
+			wp_register_script('lleljs', $themedir.'/llel/_main.js',  array('jquery'), 1.0, true);
+			wp_enqueue_script('lleljs');
+			
+			
+			wp_register_style('normalize', $themedir.'/llel/normalize.css', array());
+			wp_enqueue_style('normalize');
+			
+			wp_register_style('llelmain', $themedir.'/llel/main.css', array());
+			wp_enqueue_style('llelmain');
+			
+			wp_register_style('crownstee', $themedir.'/css/crown.css', array());
+			wp_enqueue_style('crownstee');
+			
 		}
 	
 	}
