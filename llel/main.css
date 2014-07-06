@@ -235,10 +235,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
 
 	/* Slide 4 */
 	#slide-4 {
-			background: #101010;
+			background: #191919;
 		}
 	#slide-4 .bcg {
-	    background-image:url('/img/ebbets/vandyke.jpg');
+	    background-image:url('/img/ebbets/garage.jpg');
 	    background-position: center center;
 	}
 	#slide-4 .hsContent {}

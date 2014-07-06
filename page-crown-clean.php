@@ -89,7 +89,7 @@ get_template_part('header','crown');
 	
 			<div class="row">
 				<div class="small-12 large-8 small-centered columns eb-copy">
-				We’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom BK lettering was inspired by the original Dodgers insignia, but we added sexy curves. The crown on the side takes a cue from the art of Jean-Michel Basquiat, a Brooklyn native, and 42 is for the most iconic athlete ever to play in the borough, Jackie Robinson.
+				We’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom BK lettering was inspired by the original Dodgers insignia, but we added sexy curves. The crown on the side takes a cue from the art of Jean-Michel Basquiat, a Brooklyn native, and 42 is for the most iconic athlete ever to play in the borough, Jackie Robinson.<br />
 			
 			You’re going to love wearing this hat.
 				</div>
@@ -112,12 +112,18 @@ get_template_part('header','crown');
 </section>
 			
 <section id="slide-4" class="homeSlide">
-<div class="bcag" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-4">
+<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-4">
 	<div class="hsContainer">
 		<div >
 		<div class="row">
 				
 				<div class="small-8 small-centered columns">
+				<p>Brownsville, Brooklyn, is the area with the highest percentage of public housing residents in the country. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
+
+<p>I’ve known rivers:<br>
+Ancient, dusky rivers.</p>
+
+<p>My soul has grown deep like the rivers.</p>
 				<h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>
 				</div>
 			</div>
