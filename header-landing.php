@@ -12,6 +12,7 @@ global $flatsome_opt;
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="prefetch" href="/manifesto/" />
 	<link rel="prefetch" href="/crown/" />
+	<link rel="prefetch" href="/shop/" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
