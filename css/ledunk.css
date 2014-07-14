@@ -304,8 +304,9 @@ input.wpcf7-text {
 	}
 
 .footer ul li a:hover {
-	background-color: #49B1EB;
-	color: #fff;
+	background: #eee;
+	color: #000 !important;
+	text-decoration: underline;
 	}
 	
 .footer ul li a {
@@ -313,74 +314,18 @@ input.wpcf7-text {
 	}
 	
 .footer .tennis {
-	background: url(/img/ledunk-tennis.png) no-repeat;
+
+	background: url(/img/sticker-blog.png) no-repeat;
 	display: block;
-	width: 188px;
-	height: 60px;
-	background-position: 6px 6px;
+	width: 216px;
+	height: 216px;
+
 	}
 	
 .footer .tennis:hover {
 	text-indent: -10000px;
-	background: url(/img/ledunk-tennis.png) no-repeat;
-	background-position: 6px 6px;
 	}
 	
-/***************************  ORANGE 49B1EB  ****************/
-
-.footer-wrapper.footer-orange {
-	background-image: url('/img/footer-pattern-gray.png');
-	background-color: #49B1EB !important;	
-	}
-
-.footer-wrapper.footer-orange ul li a:hover, .footer-wrapper.footer-gray ul li a:hover  {
-	background-color: #fff;
-	color: #444 !important;
-	}
-
-.footer-wrapper.footer-orange .tennis, .footer-wrapper.footer-gray .tennis  {
-	background: url(/img/ledunk-tennis-white.png) no-repeat;
-	background-position: 6px 6px;
-	}
-.footer-wrapper.footer-orange .tennis:hover, .footer-wrapper.footer-gray .tennis:hover {
-	background: #eee url(/img/ledunk-tennis-blk.png) no-repeat;
-	background-position: 6px 6px;
-	}
-
-.footer-orange .footer .social-icons .icon, .footer-gray .footer .social-icons .icon { 
-	border-color: #fff !important;
-	color: #fff;
-	}
-.footer-orange .absolute-footer {
-	color: white !important;
-	}
-/***************************  BLUE  3382be ****************/
-
-.footer-wrapper.footer-blue {
-	background-image: url('/img/footer-pattern-trans.png');
-	background-color: #3382be !important;	
-	}
-.footer-blue ul li a:hover, .footer-blue .tennis:hover {
-	background-color: #3382be;
-	}
-
-/***************************  Gray  3382be ****************/
-
-.footer-wrapper.footer-gray {
-	background-image: url('/img/footer-pattern-gray.png');
-	background-size: 100% 60px !important; 
-	background-color: #A8B4BD !important;	
-	}
-
-.footer-wrapper.footer-gray .tennis  {
-	background: url(/img/ledunk-tennis-white.png) no-repeat;
-	background-position: 6px 6px;
-	}
-
-.footer-wrapper.footer-gray .tennis:hover {
-	background-color: #fff;
-	opacity: .9;
-	}
 
 /***************************  WHITE   ****************/
 
@@ -406,22 +351,19 @@ input.wpcf7-text {
 	text-decoration: none;
 	}
 
-.footer-white .footer-1.light a:hover {
-	background: #eee;
-	color: #000 !important;
-	text-decoration: underline;
-	}
 
 .footer-white .tennis {
-	background: url(/img/ledunk-tennis-blk.png) no-repeat;
-	background-position: 6px 6px;
+
+
+/*
+	background: url(/img/sticker-smm.png) no-repeat;
+	display: block;
+	width: 216px;
+	height: 216px;
+*/
+
 	}
 
-.footer-white .footer-1.light .tennis:hover {
-	color: red;
-	background: #eee url(/img/ledunk-tennis-blk.png) no-repeat;
-	background-position: 6px 6px;
-	}
 
 .footer-white .footer .tx-div {
 	background: #444;
@@ -479,8 +421,6 @@ input.wpcf7-text {
 	
 .footer .tennis:hover {
 	text-indent: -10000px;
-	background: url(/img/ledunk-tennis.png) no-repeat;
-	background-position: 6px 6px;
 	}
 
 
