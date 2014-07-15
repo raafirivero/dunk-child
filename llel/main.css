@@ -417,6 +417,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
         top: 70%;
     }
 */
+
+	
     #slide-3 .hsContent {
         margin-left: -300px;
     }
@@ -427,6 +429,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
     #slide-4 h2 {
         background: none;
     }
+
 
 }
 

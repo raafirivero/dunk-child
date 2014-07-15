@@ -7,12 +7,20 @@ body {
 
 
 .crown-clean .imgtop {
-	margin-top: 1.5em;
+	margin-top: 3em;
 	margin-bottom: .75em;
+	}
+
+.crowntitle {
+	margin: .75em 0;
 	}
 
 .center {
 	text-align: center;
+	}
+
+.labeldiv {
+	display: block;
 	}
 
 .linebg {
@@ -26,11 +34,16 @@ body {
 	}
 
 .twins {
-	padding: 0 !important;
+	/* padding: 0 !important; */
 	}
 
+img.twinspic {
+	/* border-bottom: 2px solid #444; */
+}
+
 .capimg {
-	margin-left: 2.5%;
+	margin-left: -10%;
+	margin-top: 1.75em;
 	}
 
 .crown .eb-name {
@@ -67,7 +80,7 @@ body {
 .spidertext {
 	text-align: center;
 	position: absolute;
-	bottom: 5px;
+	bottom: 0;
 	width: 100%;
 	
 	font-size: .8em !important;
@@ -76,22 +89,15 @@ body {
 	color: #4e4e4e;
 	}
 
+.spidertext span {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #090909;
+	}
+
 .jPanelMenu-panel #ebbets-buy h4 {
 	font-size: 1.25em;
 	}
-
-/*
-.manny-bullets p {
-	font-family: "nittilight", monospace !important;
-	color: #bdbdbd !important;
-	font-weight: bold;
-	opacity: 0;
-	}
-
-.manny-bullets p strong {
-		border-bottom: 1px solid #bdbdbd;
-}
-*/
 
 .ebbets-buy div {
 	margin: 2em auto 1em;
@@ -112,6 +118,13 @@ body {
 	margin-bottom: 0 !important;
 	}
 
+.caprow {
+	text-align: center;
+	}
+
+.caprow-pic {
+	width: 32%;
+	}
 
 .drop{
     display:block;
@@ -155,12 +168,12 @@ body.crown a.button:hover {
 	
 .crown blockquote {
 	border: 0;
-	padding: 30px 0 .5em 5em;
+	padding: 30px 0 1em 5em;
 	background: url(/img/ebbets/quote-dunk.png) 0 40px no-repeat;
 	}
 	
 .crown .seal {
-	width: 140px;
+	width: 150px;
 	height: auto;
 	}
 
@@ -190,3 +203,44 @@ body.crown a.button:hover {
 .crown .bottomrow a:hover {
 	background: #444;
 	}
+	
+
+@media only screen and (max-width: 768px) {
+	
+	
+	.capimg {
+	margin-left: 0;
+	}
+	
+	#slide-2 .cap-clear {
+		background: none;;	
+	
+	}
+
+	.ebbets-buy .price {
+		margin: 0;
+	}
+	
+	.caprow-pic {	
+		width: 100%;
+		margin: .25em 0;
+	}
+
+	
+	.brownsville a {
+		text-align: center;
+	}
+	
+	.seallink {
+		position: relative;	
+	}
+	
+	.sealdiv {
+		width: 100%;
+		text-align: right;
+		padding-bottom: 72px;
+	}
+
+}
+
+

@@ -30,24 +30,28 @@ get_template_part('header','crown');
 	
 	<div class="hsContainer">
 		<div class="row">
-		  <div class="small-3 small-centered columns"><img src="/img/logo-curve-drop.png" class="imgtop" alt="Le Dunk" /></div>
+		  <div class="small-5 large-3 small-centered center columns">
+		  	<img src="/img/logo-curve-drop.png" class="imgtop" alt="Le Dunk" />
+		  </div>
 		</div>
 		<div class="row">
-		  <div class="small-6 small-centered columns"><img src="/img/ebbets/ebbets-crown.png" class="crowntitle" alt="The Ebbets Crown" /></div>
+		  <div class="small-12 large-7 small-centered center columns">
+		  	<img src="/img/ebbets/ebbets-crown.png" class="crowntitle" alt="The Ebbets Crown" />
+		  </div>
 		</div>
 
 		<h4 class="center"><span class="label linebg center">Inspired by Brooklyn Legends</span></span></h4>
 		        	
 
 		<div class="row heroes" data-center="bottom: 150px; opacity: 1" data-top-bottom="bottom: 120px; opacity: 0">
-		<div class="small-2 columns">&nbsp;</div>
-			<div class="small-4 columns center twins">
+		<div class="small-1 large-2 columns">&nbsp;</div>
+			<div class="small-10 large-4 columns small-centered large-uncentered center twins">
 				<img src="/img/ebbets/pic-jr-bw.jpg" class="twinspic" alt="Jackie Robinson" />
-				<span class="label linebg center">Jackie Robinson</span>
+				<div class="labeldiv"><span class="label linebg center">Jackie Robinson</span></div>
 			</div>
-			<div class="small-4 columns center twins">
+			<div class="small-10 large-4 columns small-centered large-uncentered center twins">
 				<img src="/img/ebbets/pic-basq-bw.jpg" class="twinspic" alt="Jean-Michel Basquiat" />
-				<span class="label linebg center">Jean-Michel Basquiat</span>
+				<div class="labeldiv"><span class="label linebg center">Jean-Michel Basquiat</span></div>
 			</div>
 		<div class="small-2 columns">&nbsp;</div>
 		
@@ -73,7 +77,7 @@ get_template_part('header','crown');
 	            data-bottom-top="opacity: 0;"
 	            data-anchor-target="#slide-2">
 	            <div class="cap-clear" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -60px;" data-bottom-top="background-position: 50% 80px;">
-	            	<img class="capimg" src="/img/ebbets/ec-graphic-cap.png">
+	            	<img class="capimg" src="/img/ebbets/ec-bk-cap.png">
 	            </div>
             </div>
         </div>
@@ -103,9 +107,11 @@ get_template_part('header','crown');
 		
 			<div class="row">
 				
-				<div class="small-8 small-centered columns" data-center="opacity: 1" data-top-bottom="opacity: 0" data-bottom-top="opacity: 0">
+				<div class="small-8 small-centered columns caprow" data-center="opacity: 1" data-top-bottom="opacity: 0" data-bottom-top="opacity: 0">
 					<hr />
-					<img src="/img/ebbets/caprow.png" alt="other cap pics" />
+					<img class="caprow-pic" src="/img/ebbets/caprow-a.jpg" alt="cap pics" />
+					<img class="caprow-pic" src="/img/ebbets/caprow-b.jpg" alt="cap pics" />
+					<img class="caprow-pic" src="/img/ebbets/caprow-c.jpg" alt="cap pics" />
 					<hr />
 				</div>
 			</div>
@@ -123,7 +129,7 @@ get_template_part('header','crown');
 				
 				<h4 class="center"><span class="label linebg center">Dedicated to Brooklyn Streets</span></span></h4>
 				
-				<div class="small-8 small-centered columns brownsville">
+				<div class="small-10 large-8 small-centered columns brownsville">
 				<p>Brownsville, Brooklyn is the area with the highest percentage of public housing residents in the country. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
 
 				<blockquote>
@@ -133,14 +139,14 @@ get_template_part('header','crown');
 					<p class="serif">My soul has grown deep like the rivers.</p>
 				</blockquote>
 			
-				<a href="/shop/" class="seallink"><img class="seal" src="/img/sticker-blog.png" 
+				<div class="sealdiv"><a href="/shop/" class="seallink center"><img class="seal" src="/img/sticker-blog.png" 
 				data-bottom-top="opacity: 0;" 
 				data--106-bottom="opacity: 1"
-				width="160" height="160" alt="le dunk seal" /></a>
+				width="160" height="160" alt="le dunk seal" /></a></div>
 				</div>
 			</div>
 		
-		<h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>
+		<h5 class="spidertext"><span>&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</span></h5>
 	</div>
 </div>
 </section>
