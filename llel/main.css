@@ -168,13 +168,16 @@ main {
         color: #b2b2b2;
     }
 	.hsContent a {
+/*
 		color: #b2b2b2;
 		text-decoration: underline;
+*/
 	}
 
 	/* Slide 1 */
 	#slide-1 {
-		height: 95%;
+		/* height: 95%; */
+		min-height: 760px;
 		}
 	
 	#slide-1 .bcg {
@@ -210,7 +213,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
 	}
 	
 	#slide-2 .cap-clear {
-		background: url(/img/ebbets/edition-1k.png) 0 0px no-repeat;	
+		background: url(/img/ebbets/eb-edition-1k.png) 0 0px no-repeat;	
 	
 	}
 	
@@ -224,7 +227,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
 		
 	#slide-3 {
 		background: #191919;
-		max-height: 540px !important;
+		min-height: 860px !important;
 
 		}
 	#slide-3 .hsContent {}
@@ -235,11 +238,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', end
 
 	/* Slide 4 */
 	#slide-4 {
-			background: #191919;
+			background: #000;
+			min-height: 900px;
 		}
 	#slide-4 .bcg {
-	    background-image:url('/img/ebbets/garage.jpg');
-	    background-position: center center;
+	    background-image:url('/img/ebbets/garage-crop.jpg');
+	    background-position: center bottom;
 	}
 	#slide-4 .hsContent {}
 	    #slide-4 h2 {

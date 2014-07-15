@@ -18,7 +18,6 @@ get_template_part('header','crown');
 	       	<img src="/img/ebbets/bldg-bw.jpg">
 	       	<img src="/img/ebbets/ec-graphic-bg.jpg">
 	       	<img src="/img/ebbets/bg-ebbets.png">
-	       	<img src="/img/ebbets/vandyke.jpg">
 	       	<img src="/img/ebbets/ec-graphic-cap.png">
        	</div>
 
@@ -40,7 +39,7 @@ get_template_part('header','crown');
 		<h4 class="center"><span class="label linebg center">Inspired by Brooklyn Legends</span></span></h4>
 		        	
 
-		<div class="row" data-center="bottom: 150px; opacity: 1" data-top-bottom="bottom: 120px; opacity: 0">
+		<div class="row heroes" data-center="bottom: 150px; opacity: 1" data-top-bottom="bottom: 120px; opacity: 0">
 		<div class="small-2 columns">&nbsp;</div>
 			<div class="small-4 columns center twins">
 				<img src="/img/ebbets/pic-jr-bw.jpg" class="twinspic" alt="Jackie Robinson" />
@@ -54,6 +53,7 @@ get_template_part('header','crown');
 		
 		
 		</div>
+		<div class="clear">&nbsp;</div>
 	</div>
 </div>
 </section>
@@ -72,8 +72,8 @@ get_template_part('header','crown');
 	            data-top="opacity: 1" 
 	            data-bottom-top="opacity: 0;"
 	            data-anchor-target="#slide-2">
-	            <div class="cap-clear" data-center="background-position: 70% -20px;" data-top-bottom="background-position: 70% -40px;" data-bottom-top="background-position: 50% 20px;">
-	            	<img src="/img/ebbets/ec-graphic-cap.png">
+	            <div class="cap-clear" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -60px;" data-bottom-top="background-position: 50% 80px;">
+	            	<img class="capimg" src="/img/ebbets/ec-graphic-cap.png">
 	            </div>
             </div>
         </div>
@@ -89,17 +89,21 @@ get_template_part('header','crown');
 	
 			<div class="row">
 				<div class="small-12 large-8 small-centered columns eb-copy">
-				We’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom BK lettering was inspired by the original Dodgers insignia, but we added sexy curves. The crown on the side takes a cue from the art of Jean-Michel Basquiat, a Brooklyn native, and 42 is for the most iconic athlete ever to play in the borough, Jackie Robinson.<br />
+				<p><span class="drop w">W</span>e’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom lettering was inspired by the original Dodgers insignia, but we added the sexy curves. The crown on the side takes a cue from the art of <a href="http://en.wikipedia.org/wiki/Jean-Michel_Basquiat">Jean-Michel Basquiat</a>, a BK native, and 42 is for the most iconic athlete ever to play in the borough, <a href="http://en.wikipedia.org/wiki/Jackie_Robinson">Jackie Robinson</a>.</p>
 			
-			You’re going to love wearing this hat.
+			<p>You’re going to love wearing this hat.</p>
 				</div>
 			</div>
 			
-			<?php echo do_shortcode( '[block id="ebbets-buy"]' ); ?>
+			<div class="row">
+				<div class="small-12 large-8 small-centered columns">
+				<?php echo do_shortcode( '[block id="ebbets-buy"]' ); ?>
+				</div>
+			</div>
 		
 			<div class="row">
 				
-				<div class="small-8 small-centered columns">
+				<div class="small-8 small-centered columns" data-center="opacity: 1" data-top-bottom="opacity: 0" data-bottom-top="opacity: 0">
 					<hr />
 					<img src="/img/ebbets/caprow.png" alt="other cap pics" />
 					<hr />
@@ -112,23 +116,31 @@ get_template_part('header','crown');
 </section>
 			
 <section id="slide-4" class="homeSlide">
-<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-4">
+<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -40px;" data-bottom-top="background-position: 50% 200px;" data-anchor-target="#slide-4">
 	<div class="hsContainer">
-		<div >
-		<div class="row">
+
+		<div class="row bottomrow" data-center="opacity: 1" data-bottom-top="opacity: 0">
 				
-				<div class="small-8 small-centered columns">
-				<p>Brownsville, Brooklyn, is the area with the highest percentage of public housing residents in the country. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
+				<h4 class="center"><span class="label linebg center">Dedicated to Brooklyn Streets</span></span></h4>
+				
+				<div class="small-8 small-centered columns brownsville">
+				<p>Brownsville, Brooklyn is the area with the highest percentage of public housing residents in the country. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
 
-<p>I’ve known rivers:<br>
-Ancient, dusky rivers.</p>
-
-<p>My soul has grown deep like the rivers.</p>
-				<h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>
+				<blockquote>
+					<p class="serif">I’ve known rivers:<br>
+					Ancient, dusky rivers.</p>
+					
+					<p class="serif">My soul has grown deep like the rivers.</p>
+				</blockquote>
+			
+				<a href="/shop/" class="seallink"><img class="seal" src="/img/sticker-blog.png" 
+				data-bottom-top="opacity: 0;" 
+				data--106-bottom="opacity: 1"
+				width="160" height="160" alt="le dunk seal" /></a>
 				</div>
 			</div>
 		
-		</div>
+		<h5 class="spidertext">&copy; Le Dunk - Brooklyn, NYC - "All Day Son."</h5>
 	</div>
 </div>
 </section>

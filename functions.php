@@ -127,10 +127,6 @@ function dunk_add_scripts() {
 	    	wp_register_script('crown-home', $themedir.'/inc/crown/crown-home.js', array('jquery'), 1.0, true);
 			wp_enqueue_script('crown-home');
 		    
-		    /*
-wp_register_style('manifeststyle', $themedir.'/css/manifesto.css', array());
-			wp_enqueue_style('manifeststyle');
-*/
 			
 			
 			// Parallax items
