@@ -96,7 +96,7 @@ get_template_part('header','crown');
 	
 			<div class="row">
 				<div class="small-12 large-8 small-centered columns eb-copy">
-				<p><span class="drop w">W</span>e’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom lettering was inspired by the original Dodgers insignia, but we added the sexy curves. The crown on the side takes a cue from the art of <a href="http://en.wikipedia.org/wiki/Jean-Michel_Basquiat">Jean-Michel Basquiat</a>, a BK native, and 42 is for the most iconic athlete ever to play in the borough, <a href="http://en.wikipedia.org/wiki/Jackie_Robinson">Jackie Robinson</a>.</p>
+				<p><span class="drop w">W</span>e’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom lettering was inspired by the original Dodgers insignia, but we added the sexy curves. The crown on the side takes a cue from the art of <a href="http://www.google.com/images?q=basquiat">Jean-Michel Basquiat</a>, a BK native, and 42 is for the most iconic athlete ever to play in the borough, <a href="http://en.wikipedia.org/wiki/Jackie_Robinson">Jackie Robinson</a>.</p>
 			
 			<p>You’re going to love wearing this hat.</p>
 				</div>
@@ -146,7 +146,7 @@ get_template_part('header','crown');
 				<h4 class="center"><span class="label linebg center">Dedicated to Brooklyn Streets</span></span></h4>
 				
 				<div class="small-10 large-8 small-centered columns brownsville">
-				<p>Brownsville, Brooklyn is the area with the highest percentage of public housing residents in the country. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
+				<p>Brownsville, Brooklyn has the highest concentration of public housing projects in the country. Social problems associated with poverty continue to plague the area. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
 
 				<blockquote>
 					<p class="serif">I’ve known rivers:<br>
