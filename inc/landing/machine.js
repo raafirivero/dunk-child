@@ -1,17 +1,15 @@
 jQuery(document).ready(function($) {
 	// cookie functions
 	// only show name/email cap on first once a year
-/*
     if ($.cookie('nameDunk')) 	{
-    	$('.bigtxt h1 a').attr('href', '/manifesto/');
+    	$('.bigtxt h1 a').attr('href', '/shop/');
     	$('.bigtxt h1 a').click(function(){
-    			location.href = '/manifesto/';
+    			location.href = '/shop/';
     		});
     	}
     else {
             $.cookie('nameDunk', true,  { expires: 365, path: '/' });    
     }
-*/
 
 
 	$('#arttypeform input:radio').addClass('input_hidden');
@@ -201,7 +199,7 @@ jQuery(document).ready(function($) {
 		if ($currentForm.hasClass('outmsg')) {
 			setInterval(type, 550);
 			setTimeout(function() {
-				location.href = '/manifesto/'
+				location.href = '/the-bk-crown/'
 			}, 2300);
 		}
 	}

@@ -6,9 +6,10 @@ body {
 	}
 
 
-.crown-clean .imgtop {
+.crown .imgtop {
 	margin-top: 3em;
 	margin-bottom: .75em;
+	width: 85%;
 	}
 
 .crowntitle {
@@ -136,10 +137,10 @@ img.twinspic {
     text-indent: -9000px;
     }
 .w{
-    background: url(/img/ebbets/walbaum-w.png) 0 0 no-repeat;
+    background: url(http://media.ledunk.com/img/ebbets/snell-w.png) 0 0 no-repeat;
     }
 .b{
-    background: url(/img/ebbets/walbaum-b.png) 0 0 no-repeat;
+    background: url(http://media.ledunk.com/img/ebbets/snell-b.png) 0 0 no-repeat;
     }
 
 .crown a.button {
@@ -169,7 +170,7 @@ body.crown a.button:hover {
 .crown blockquote {
 	border: 0;
 	padding: 30px 0 1em 5em;
-	background: url(/img/ebbets/quote-dunk.png) 0 40px no-repeat;
+	background: url(http://media.ledunk.com/img/ebbets/quote-dunk.png) 0 40px no-repeat;
 	}
 	
 .crown .seal {
@@ -207,9 +208,11 @@ body.crown a.button:hover {
 
 @media only screen and (max-width: 768px) {
 	
-	
+	.crown .imgtop {
+		width: 100%;
+	}
 	.capimg {
-	margin-left: 0;
+		margin-left: 0;
 	}
 	
 	#slide-2 .cap-clear {

@@ -19,6 +19,7 @@ global $flatsome_opt;
 	<link rel="dns-prefetch" href="//ledunk.com" />
 	<link rel="prefetch" href="/?add-to-cart=<?php echo get_ID_by_slug('the-ebbets-crown-bk-cap','product'); ?>" />
 	<link rel="prefetch" href="//checkout/" />
+	<link rel="prefetch" href="/shop/" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

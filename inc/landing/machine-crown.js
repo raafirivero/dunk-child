@@ -2,9 +2,9 @@ jQuery(document).ready(function($) {
 	// cookie functions
 	// only show name/email cap on first once a year
     if ($.cookie('nameDunk')) 	{
-    	$('.bigtxt h1 a').attr('href', '/crown/');
+    	$('.bigtxt h1 a').attr('href', '/shop/');
     	$('.bigtxt h1 a').click(function(){
-    			location.href = '/crown/';
+    			location.href = '/shop/';
     		});
     	}
     else {
@@ -199,7 +199,7 @@ jQuery(document).ready(function($) {
 		if ($currentForm.hasClass('outmsg')) {
 			setInterval(type, 550);
 			setTimeout(function() {
-				location.href = '/crown/'
+				location.href = '/the-bk-crown/'
 			}, 2300);
 		}
 	}
@@ -282,9 +282,14 @@ jQuery(window).load(function($) {
 		jQuery(function($) {
 			$.preload([
 			// preload images on crown page
-			"http://media.ledunk.com/img/products/smokeloop-neue.gif", 
-			"http://media.ledunk.com/img/topsclub-flat.png", 
-			"http://media.ledunk.com/img/eye-pro.png"
+			"http://media.ledunk.com/img/ebbets/bldg-bw.jpg", 
+			"http://media.ledunk.com/img/ebbets/ec-bk-cap.png", 
+			"http://media.ledunk.com/img/ebbets/ebbets-crown.png", 
+			"http://media.ledunk.com/img/ebbets/logo-curve-drop.png", 
+			"http://media.ledunk.com/img/ebbets/eb-edition-1k.png", 
+			"http://media.ledunk.com/img/ebbets/pic-jr-bw.jpg", 
+			"http://media.ledunk.com/img/ebbets/pic-basq-bw.jpg", 
+			"http://media.ledunk.com/img/garage-crop.jpg"
 			], {
 				// no callbacks
 			});

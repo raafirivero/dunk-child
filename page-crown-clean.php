@@ -15,10 +15,8 @@ get_template_part('header','crown');
 				<?php /* the_content(); */ ?>
 				
 		<div id="preload">
-	       	<img src="/img/ebbets/bldg-bw.jpg">
-	       	<img src="/img/ebbets/ec-graphic-bg.jpg">
-	       	<img src="/img/ebbets/bg-ebbets.png">
-	       	<img src="/img/ebbets/ec-graphic-cap.png">
+	       	<img src="http://media.ledunk.com/img/ebbets/bldg-bw.jpg">
+	       	<img src="http://media.ledunk.com/img/ebbets/ec-bk-cap.png">
        	</div>
 
 
@@ -31,33 +29,30 @@ get_template_part('header','crown');
 	<div class="hsContainer">
 		<div class="row">
 		  <div class="small-5 large-3 small-centered center columns">
-		  	<img src="/img/logo-curve-drop.png" class="imgtop" alt="Le Dunk" />
+		  	<img src="http://media.ledunk.com/img/logo-curve-drop.png" class="imgtop" alt="Le Dunk" />
 		  </div>
 		</div>
 		<div class="row">
 		  <div class="small-12 large-7 small-centered center columns">
-		  	<img src="/img/ebbets/ebbets-crown.png" class="crowntitle" alt="The Ebbets Crown" />
+		  	<img src="http://media.ledunk.com/img/ebbets/ebbets-crown.png" class="crowntitle" alt="The Ebbets Crown" />
 		  </div>
 		</div>
-
-		<h4 class="center"><span class="label linebg center">Inspired by Brooklyn Legends</span></span></h4>
-		        	
+		
+		<div class="row">
+			<h4 class="center"><span class="label linebg center">Inspired by Brooklyn Legends</span></span></h4>
+		</div>    	
 
 		<div class="row heroes" data-center="bottom: 150px; opacity: 1" data-top-bottom="bottom: 120px; opacity: 0">
-		<div class="small-1 large-2 columns">&nbsp;</div>
+			<div class="small-1 large-2 columns">&nbsp;</div>
 			<div class="small-10 large-4 columns small-centered large-uncentered center twins">
-				<img src="/img/ebbets/pic-jr-bw.jpg" class="twinspic" alt="Jackie Robinson" />
+				<img src="http://media.ledunk.com/img/ebbets/pic-jr-bw.jpg" class="twinspic" alt="Jackie Robinson" />
 				<div class="labeldiv"><span class="label linebg center">Jackie Robinson</span></div>
 			</div>
 			<div class="small-10 large-4 columns small-centered large-uncentered center twins">
-				<img src="/img/ebbets/pic-basq-bw.jpg" class="twinspic" alt="Jean-Michel Basquiat" />
+				<img src="http://media.ledunk.com/img/ebbets/pic-basq-bw.jpg" class="twinspic" alt="Jean-Michel Basquiat" />
 				<div class="labeldiv"><span class="label linebg center">Jean-Michel Basquiat</span></div>
-			</div>
-		<div class="small-2 columns">&nbsp;</div>
-		
-		
+			</div>		
 		</div>
-		<div class="clear">&nbsp;</div>
 	</div>
 </div>
 </section>
@@ -77,7 +72,7 @@ get_template_part('header','crown');
 	            data-bottom-top="opacity: 0;"
 	            data-anchor-target="#slide-2">
 	            <div class="cap-clear" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -60px;" data-bottom-top="background-position: 50% 80px;">
-	            	<img class="capimg" src="/img/ebbets/ec-bk-cap.png">
+	            	<img class="capimg" src="http://media.ledunk.com/img/ebbets/ec-bk-cap.png">
 	            </div>
             </div>
         </div>
@@ -87,9 +82,17 @@ get_template_part('header','crown');
 
 		    
 <section id="slide-3" class="homeSlide">
-<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-3">
+<div class="bcg" 
+	data-center="background-position: 50% 0px;" 
+	data-top-bottom="background-position: 50% -100px;" 
+	data-bottom-top="background-position: 50% 100px;" data-anchor-target="#slide-3"
+	>
 	<div class="hsContainer">
-		<div class="hsContent" data-bottom-top="opacity: 0;" data-center="opacity: 1" data-anchor-target="#slide-3">
+		<div class="hsContent" 
+			data-bottom-top="opacity: 0;" 
+			data-center="opacity: 1" 
+			data-anchor-target="#slide-3"
+			>
 	
 			<div class="row">
 				<div class="small-12 large-8 small-centered columns eb-copy">
@@ -107,11 +110,16 @@ get_template_part('header','crown');
 		
 			<div class="row">
 				
-				<div class="small-8 small-centered columns caprow" data-center="opacity: 1" data-top-bottom="opacity: 0" data-bottom-top="opacity: 0">
+				<div class="small-8 small-centered columns caprow" 
+					data-center="opacity: 1" 
+					data--180-bottom="opacity: 1"
+					data-top-bottom="opacity: 0" 
+					data-bottom-top="opacity: 0"
+					>
 					<hr />
-					<img class="caprow-pic" src="/img/ebbets/caprow-a.jpg" alt="cap pics" />
-					<img class="caprow-pic" src="/img/ebbets/caprow-b.jpg" alt="cap pics" />
-					<img class="caprow-pic" src="/img/ebbets/caprow-c.jpg" alt="cap pics" />
+					<img class="caprow-pic" src="http://media.ledunk.com/img/ebbets/caprow-a.jpg" alt="cap pics" />
+					<img class="caprow-pic" src="http://media.ledunk.com/img/ebbets/caprow-b.jpg" alt="cap pics" />
+					<img class="caprow-pic" src="http://media.ledunk.com/img/ebbets/caprow-c.jpg" alt="cap pics" />
 					<hr />
 				</div>
 			</div>
@@ -122,10 +130,18 @@ get_template_part('header','crown');
 </section>
 			
 <section id="slide-4" class="homeSlide">
-<div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -40px;" data-bottom-top="background-position: 50% 200px;" data-anchor-target="#slide-4">
+<div class="bcg" 
+	data-center="background-position: 50% 0px;" 
+	data-top-bottom="background-position: 50% -40px;" 
+	data-bottom-top="background-position: 50% 200px;" 
+	data-anchor-target="#slide-4"
+	>
 	<div class="hsContainer">
 
-		<div class="row bottomrow" data-center="opacity: 1" data-bottom-top="opacity: 0">
+		<div class="row bottomrow" 
+			data-center="opacity: 1" 
+			data-bottom-top="opacity: 0"
+			>
 				
 				<h4 class="center"><span class="label linebg center">Dedicated to Brooklyn Streets</span></span></h4>
 				
@@ -139,10 +155,14 @@ get_template_part('header','crown');
 					<p class="serif">My soul has grown deep like the rivers.</p>
 				</blockquote>
 			
-				<div class="sealdiv"><a href="/shop/" class="seallink center"><img class="seal" src="/img/sticker-blog.png" 
-				data-bottom-top="opacity: 0;" 
-				data--106-bottom="opacity: 1"
-				width="160" height="160" alt="le dunk seal" /></a></div>
+					<div class="sealdiv">
+					<a href="/shop/" class="seallink center">
+						<img class="seal" src="http://media.ledunk.com/img/sticker-blog.png" width="160" height="160" alt="le dunk seal" 
+							data-bottom-top="opacity: 0;" 
+							data--106-bottom="opacity: 1"
+							/>
+					</a>
+					</div>
 				</div>
 			</div>
 		

@@ -66,11 +66,12 @@ function dunk_add_scripts() {
 		    wp_register_script('cookie', $themedir.'/inc/jquery.cookie.js', array('jquery'));
 		    wp_enqueue_script('cookie');
 		    
-		    wp_register_script('landing', $themedir.'/inc/landing/machine.js', array('jquery'));
-		    wp_enqueue_script('landing');
+		    // wp_register_script('machine', $themedir.'/inc/landing/machine.js', array('jquery'));
+		    // wp_enqueue_script('machine');
 		    
-		    wp_register_script('landing-crown', $themedir.'/inc/landing/machine-crown.js', array('jquery'));
-		    wp_enqueue_script('landing-crown');
+		    wp_register_script('machine-crown', $themedir.'/inc/landing/machine-crown.js', array('jquery'));
+		    wp_enqueue_script('machine-crown');
+		    
 		    
 		    //background resize in footer
 		    wp_register_script('backgroundresize', $themedir.'/inc/smartBackgroundResize.js', array('jquery'), '1.1', true);
@@ -81,8 +82,8 @@ function dunk_add_scripts() {
 	    }
 	    
 	    
-	    // Manifesto + Manny Bullets + Crown
-	    if ( is_page_template('page-manifesto.php') || is_page_template('page-manny-bullets.php') || is_page_template('page-crown.php') ) {
+	    // Manifesto + Manny Bullets
+	    if ( is_page_template('page-manifesto.php') || is_page_template('page-manny-bullets.php')) {
 	    	wp_dequeue_script('ladda');
 	    	wp_dequeue_script('laddaspin');
 	    	wp_dequeue_script('dunk');
