@@ -1,6 +1,6 @@
 #logo {
 	display: table-cell;
-	width: 180px !important;
+	width: 175px !important;
 	}
 
 body {
@@ -17,60 +17,97 @@ a.button {
 .dunklink:hover {
 	}
 
-#compact-footer small, #dunk-footer small { font-size: 80%; }
-
-form[role] {
-	display: table-cell;
-	border: 1px solid transparent;
-	font-family: 'Pontano Sans';
-	
-	}
-	
-#yith-ajaxsearchform, #yith-ajaxsearchform input, #yith-ajaxsearchform button {
-	border: 1px solid transparent;
-	background: transparent;
-	box-shadow: inset 0 0 0 0 transparent;
-	-moz-box-shadow:    inset 0 0 0 0 transparent;
-   -webkit-box-shadow: inset 0 0 0 0 transparent;  
-   font-family: 'Pontano Sans';
-   font-size: 13px;
-   letter-spacing: 1px;
-   
-	}
-
-#yith-ajaxsearchform {
-	border-left: 1px solid rgba(0, 0, 0, 0.1);
-	padding-left: 20px;
-	}
-	
-#yith-ajaxsearchform input {
-	font-size: 16px;
-	font-weight: normal;
-	}
-
-
-a.nav-top-link, ul.header-nav li a {
-	text-transform: uppercase;
-	font-size: 100%;
-	color: #222 !important;
-	}
-	
-.ux_banner:not(.aboutbanner) h1, .dunk_banner h1{
-	font-family: "matchup" !important;	
-	text-transform: uppercase;
-}
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
-font-family: "haymaker",helvetica,arial,sans-serif!important;
+font-family: "haymaker","Rajdhani", helvetica,arial,sans-serif!important;
 }
 
 body p{
 	font-size: 1.25em;
 }
 
-.price {
-	font-family: "Pontano Sans" !important;
+a {
+	color: #666;
 	}
+
+
+/********************************************* NAVIGATION ROW ****************/
+
+
+ul.header-nav li a {
+	text-transform: uppercase;
+	font-size: 100%;
+	color: #222 !important;
+	
+	}
+
+ul#site-navigation li a {
+	font-family: 'Rajdhani', 'Chivo', sans-serif !important;
+	font-size: 120%;
+	letter-spacing: 1px;
+	font-weight: 500;
+	}
+
+.sliding-u-l-r {
+	display: inline-block;
+	}
+	
+.sliding-u-l-r:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .25s ease, background-color .25s ease;
+	}
+	
+.sliding-u-l-r:hover:after {
+	width: 100%;
+	background: #ccc;
+	}
+
+.jPanelMenu .sliding-u-l-r:after {
+	height: 0;
+	}
+
+.jPanelMenu .icon-menu::before {
+	content: '' !important;
+	}
+.jPanelMenu .icon-menu {
+	display: block;
+	width: 32px !important;
+	height: 32px;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iMzJweCIgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIzMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cGF0aCBkPSJNNCwxMGgyNGMxLjEwNCwwLDItMC44OTYsMi0ycy0wLjg5Ni0yLTItMkg0QzIuODk2LDYsMiw2Ljg5NiwyLDhTMi44OTYsMTAsNCwxMHogTTI4LDE0SDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDIgIHMwLjg5NiwyLDIsMmgyNGMxLjEwNCwwLDItMC44OTYsMi0yUzI5LjEwNCwxNCwyOCwxNHogTTI4LDIySDRjLTEuMTA0LDAtMiwwLjg5Ni0yLDJzMC44OTYsMiwyLDJoMjRjMS4xMDQsMCwyLTAuODk2LDItMiAgUzI5LjEwNCwyMiwyOCwyMnoiLz48L3N2Zz4=);
+	}
+
+.jPanelMenu .mini-cart .cart-name, .jPanelMenu .mini-cart .cart-price {
+	display: none !important;
+	}
+
+.jPanelMenu #jPanelMenu-menu .custom-cart-count {
+	right: 5px;
+	}
+	
+.jPanelMenu #jPanelMenu-menu .custom-cart-inner {
+	padding-left: 0;
+	}
+
+.le-small {
+	display: none;
+	width: 0;
+	}
+
+.jPanelMenu #jPanelMenu-menu .le-small {
+	display: block;
+	border-bottom: 0;
+	}
+
+.jPanelMenu #jPanelMenu-menu .le-small img {
+	position: relative;
+	right: -10%;
+	}
+	
+/***************************  cart items   ****************/
 
 .cart-icon {
 	vertical-align: middle;
@@ -79,6 +116,10 @@ body p{
 .custom-cart-inner {
 	padding-left: 16px;
 	width: 48px;
+	}
+
+.cart-inner a strong {
+	font-weight: 500 !important;
 	}
 
 .cart-icon-sprite {
@@ -90,7 +131,14 @@ body p{
 	}
 .custom-cart-count {
 	top: -4px;
+	padding-top: 1px;
 	}
+	
+#jPanelMenu-menu .custom-cart-count {
+	font-family: "Rajdhani" !important;
+	font-size: 1em;
+	}
+	
 .cart-icon-sprite img {
 	position: absolute;
 	max-width: 128px;
@@ -118,7 +166,7 @@ body p{
 
 
 .jPanelMenu-panel .right-links li.menu-item {
-	display: none !important;
+	/* display: none !important; */
 	}
 .jPanelMenu-panel .right-links li.mini-cart {
 	position: relative;
@@ -134,10 +182,159 @@ body p{
 	pointer-events: auto;
 }
 
-#homepage-slides, #banner-1st-3rd, #hardwood-poets {
+#homepage-slides, #banner-1st-3rd {
 	opacity: 0;
 	}
 
+
+/***************************  search box   ****************/
+form[role] {
+	display: table-cell;
+	border: 1px solid transparent;
+	font-family: 'Chivo';
+	
+	}
+	
+#yith-ajaxsearchform, #yith-ajaxsearchform input, #yith-ajaxsearchform button {
+	border: 1px solid transparent;
+	background: transparent;
+	box-shadow: inset 0 0 0 0 transparent;
+	-moz-box-shadow:    inset 0 0 0 0 transparent;
+   -webkit-box-shadow: inset 0 0 0 0 transparent;  
+   font-family: 'Chivo', sans-serif;
+   letter-spacing: 1px;
+   
+	}
+
+#yith-ajaxsearchform {
+	border-left: 1px solid rgba(0, 0, 0, 0.1);
+	padding-left: 20px;
+	}
+	
+#yith-ajaxsearchform input {
+	font-size: 16px;
+	font-weight: normal;
+	}
+
+
+/********************************************* MID SLIDER  ****************/
+
+.ux_banner:not(.aboutbanner) h1, .dunk_banner h1{
+	text-transform: uppercase;
+}
+
+.dunk_vid {
+	}
+
+.dunk_vid .banner-bg {
+	/* background-image: none !important; */
+	}
+
+.ux_banner video {
+	height: 100%;
+	}
+.jPanelMenu .ux_banner video {
+	z-index: 10;
+	width: 100%;
+	}
+
+.ux_banner.light h2 {
+	color: #222;
+	}
+
+#slider-le-mid {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+	}
+
+#slider-le-mid .lemidslider {
+	overflow: hidden;
+	height: 400px;
+	
+	}
+
+.slider h1.lemid {
+	font-size: 650%;
+	font-family: "Haymaker" !important;
+	}
+
+.le-wrap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+	}
+
+.le-big, .le-big-minus, .le-big-midi {
+	top: -65px;
+	left: -45%;
+	position: absolute;
+	}
+.le-big-midi {
+	top: -40px;
+	}
+
+.jPanelMenu .le-big, .jPanelMenu .text-right .le-big {
+	width: 80%;
+	height: auto;
+	position: absolute;
+	top: -58%;
+	}
+.jPanelMenu .le-big-minus, .jPanelMenu .text-right .le-big-minus {
+	width: 80%;
+	height: auto;
+	position: absolute;
+	left: -42%;
+	top: 20%;
+	}
+.jPanelMenu .le-big-midi, .jPanelMenu .text-right .le-big-midi {
+	width: 40%;
+	height: auto;
+	position: absolute;
+	left: -90px;
+	top: 45px;
+	}
+.text-right .le-big, .text-right .le-big-minus, .text-right .le-big-midi {
+	left: -20%;
+	float: right;
+	}
+
+.jolly-roger {
+	position: relative;
+	left: -34px;
+	}
+
+.text-right .jolly-roger {
+	left: 48px;
+	}
+
+.jolly-roger.alignright {
+	position: relative;
+	left: 12px;
+	top: -36px;
+	}
+
+.jolly-roger + .midcredit {
+	display: inline-block;
+	position: absolute;
+	top: 276px;
+	left: 16px;
+	font-size: 1em;
+	font-weight: bold;
+	}
+
+.midgrad {
+	vertical-align: top;
+	opacity: .2;
+	width: 100%;
+	height: 50%;
+	}
+
+.saymini {
+	position: relative;
+	left: -6px;
+	}
 
 /********************************************* ABOUT ROW  ****************/
 
@@ -205,97 +402,14 @@ input.wpcf7-text {
 
 
 
-/********************************************* MID SLIDER  ****************/
 
-#slider-le-mid {
-	clear: both;
-	height: 0px;
-	overflow: hidden;
-	}
+/********************************************* FOOTER   ****************/
 
-#slider-le-mid .lemidslider {
-	overflow: hidden;
-	height: 400px;
-	
-	}
-.lemidslider {
-	margin-bottom: 0 !important;
-	position: relative;
-	}
-
-.slider h1.lemid {
-	font-size: 650%;
-	font-family: "Haymaker" !important;
-	}
-
-.le-wrap {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	border: 1px solid red;
-	}
-
-.le-big {
-	top: -62px;
-	left: -45%;
-	position: absolute;
-	}
-
-.jPanelMenu .le-big, .jPanelMenu .text-right .le-big {
-	width: 50%;
-	height: auto;
-	}
-
-.text-right .le-big {
-	left: -20%;
-	float: right;
-	}
+#compact-footer small, #dunk-footer small { font-size: 80%; }
 
 
-.jolly-roger {
-	position: relative;
-	left: -34px;
-	}
-
-.text-right .jolly-roger {
-	left: 48px;
-	}
-
-.jolly-roger.alignright {
-	position: relative;
-	left: 12px;
-	top: -36px;
-	}
-
-.jolly-roger + .midcredit {
-	display: inline-block;
-	position: absolute;
-	top: 276px;
-	left: 16px;
-	font-size: 1em;
-	font-weight: bold;
-	}
-
-.midgrad {
-	vertical-align: top;
-	opacity: .2;
-	width: 100%;
-	height: 50%;
-	}
-
-.saymini {
-	position: relative;
-	left: -6px;
-	}
-
-
-
-/********************************************* FOOTER COLORS  ****************/
-/***************************  dark colors   ****************/
-
-
-.footer h3.widget-title {
-	color: white;
+.footer-tall .footer-1.light, .absolute-footer, .footer-tall ul li a, .footer-compact ul li a {
+	color: #666 !important;
 	}
 
 
@@ -309,63 +423,20 @@ input.wpcf7-text {
 	text-decoration: underline;
 	}
 	
-.footer ul li a {
-	color: white;
-	}
-	
-.footer .tennis {
 
-	background: url(/img/sticker-blog.png) no-repeat;
-	display: block;
-	width: 216px;
-	height: 216px;
-
-	}
-	
-.footer .tennis:hover {
-	text-indent: -10000px;
-	}
-	
-
-/***************************  WHITE   ****************/
-
-.footer-wrapper.footer-white {
-	background: transparent !important;
+.footer-tall .footer .social-icons .icon { 
+	border-color: #666 !important;
+	color: #666;
+	line-height: 34px;
 	}
 
-.footer-white .get-yours {
-	display: none;
-	}
-
-.footer-white .footer-1.light, .footer-white .widget-title, .footer-white .absolute-footer, .footer-white ul li a {
-	color: #444 !important;
-	}
-
-.footer-white .footer .social-icons .icon { 
-	border-color: #444 !important;
-	color: #444;
-	}
-
-.footer-white .footer .social-icons .icon:hover {
+.footer-tall .footer .social-icons .icon:hover {
 	background: #eee !important;
 	text-decoration: none;
 	}
 
 
-.footer-white .tennis {
-
-
-/*
-	background: url(/img/sticker-smm.png) no-repeat;
-	display: block;
-	width: 216px;
-	height: 216px;
-*/
-
-	}
-
-
-.footer-white .footer .tx-div {
+.footer-tall .footer .tx-div {
 	background: #444;
 	}
 
@@ -394,21 +465,18 @@ input.wpcf7-text {
 	font-size: 13px;
 	}
 
-.footer-compact ul li a, .footer-compact .widget-title {
+.footer-compact .widget-title {
 	color: #666 !important;
 	font-weight: normal !important;
 	font-size: 13px !important;
 	line-height: .8em;
+	/* font-family: "Haymaker", sans-serif; */
 	}
 
 .footer-compact.footer-wrapper .widget-title {
 	margin-top: 12px !important;
-	color: #bbb !important;
 	letter-spacing: 1px;
-	border-bottom: 0px solid #ddd;
 	padding-bottom: .5em;
-	font-weight: bold !important;
-	font-family: "Arimo" !important;
 		
 	}
 
@@ -418,10 +486,6 @@ input.wpcf7-text {
 	text-decoration: underline;
 	}
 
-	
-.footer .tennis:hover {
-	text-indent: -10000px;
-	}
 
 
 .footer-compact .blklogo {
@@ -438,17 +502,12 @@ input.wpcf7-text {
 	}
 .footer-compact .absolute-footer {
 	color: #bbb;
-	
+	/* background: #222 !important; */
 	}
 	
 /********************************************* FOOTER ROW  ****************/
 
 .footer-wrapper {
-	background-repeat: repeat-x;
-	background-size: 100% 100%;
-	background-color: #999 !important;
-	display: block;
-	position: relative;
 
 	/* opacity zero for jquery animation */
 	opacity: 0;
@@ -458,8 +517,8 @@ input.wpcf7-text {
 .footer h3.widget-title {
 	font-weight: bold;
 	margin-top: 64px;
-	font-family: "Pontano Sans" !important;
 	font-size: 1.1em;
+	color: #333 !important;
 	}
 
 
@@ -476,7 +535,8 @@ input.wpcf7-text {
 .footer ul li a {
 	padding: 4px 6px;
 	margin: -4px -6px;
-	font-weight: bold;
+	font-family: "Chivo","Rajdhani", sans-serif;
+	letter-spacing: 1px;
 	}
 
 
@@ -497,18 +557,9 @@ input.wpcf7-text {
 .footer ul li.empty {
 	}
 
-.footer .get-yours {
-	position: absolute;
-	top: -50px;
-	right: -25%;
-	
-	}
 
-.jPanelMenu .get-yours {
-	
-	}
 .jPanelMenu .footer .logocont {
-	min-height: 80px;
+	min-height: 180px;
 	}
 
 .footer .logocont {
@@ -521,7 +572,7 @@ input.wpcf7-text {
 .logocont .social-icons {
 	position: absolute;
 	bottom: 7px;
-	right: 0;
+	right: 14px;
 	}
 
 .logocont .social-icons .icon.icon_twitter:hover {
@@ -544,24 +595,64 @@ input.wpcf7-text {
 
 .absolute-footer {
 	background: transparent !important;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	}
+
+.jPanelMenu .absolute-footer {
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 0;
 	}
 
 .woocommerce-cart .footer-1, .woocommerce-cart .footer-2 {
 	display: none !important;
 	}
 
+.jPanelMenu .compact.logo { display: none; }
+
+/********************************************* PRODUCT PAGES  ****************/
+
+.breadcrumb-small h3.breadcrumb,h4.breadcrumb,h5.breadcrumb { display: none; }
+
+.price::first-letter {
+	font-family: sans-serif !important;
+	}
+
+.price {
+	font-family: "Haymaker" !important;
+	}
+
+.single-product .price {
+	font-size: 300% !important;
+	}
+	
+.product p a, .blog p a {
+	color: #666;
+	text-decoration: underline;
+	margin: -2px -4px;
+	padding: 2px 4px;
+	}
+
+.product p a:hover {
+	background: #eee;
+	}
+
+.post-type-archive-product .star-rating {
+	display: none;
+	}
 
 /********************************************* ABOUT PAGE  ****************/
 
-.about p, .about .bodytext, .about #content, .about #content a {
-	font-family: "Pontano Sans", sans-serif !important;
-	color: #222;
+.bodytext {
+	font-family: 'Chivo', sans-serif !important;
+	color: #444;
 	}
 
 .about #content { margin-bottom: -30px; }
 
 .about p.bigtext {
-	font-size: 220%;
+	font-size: 210%;
 	line-height: 1.5em;
 	}
 .about p.midtext  {
@@ -610,6 +701,14 @@ input.wpcf7-text {
 .jPanelMenu-panel .about-top .share-gif {
 	display: none;
 	}
+.jPanelMenu-panel .about-top .mort {
+	width: 100%;
+	}
+
+.jPanelMenu-panel .about-top .all-day {
+	width: 100%;
+	font-size: 125%;
+	}
 
 .about .share-gif a {
 	display: inline-block;
@@ -618,10 +717,12 @@ input.wpcf7-text {
 	margin: -6px;
 	letter-spacing: .5px;
 	border-bottom: 1px solid #eee;
+	color: #666;
 	}
 
 .about .share-gif a:hover {
 	background: #eee;
+	color: #444;
 	border-bottom: 1px solid transparent !important;
 	}
 
@@ -673,13 +774,13 @@ input.wpcf7-text {
 
 .about .ninja-forms-form {
 	padding: 2em;
-	font-family: "Arimo" !important;
+	font-family: "Exo 2" !important;
 	}
 
 
 .about div.ninja-forms-field-description p {
 	font-size: .85em;
-	font-family: "Arimo" !important;
+	font-family: "Exo 2" !important;
 	}
 
 
@@ -721,16 +822,38 @@ input.wpcf7-text {
 .post-type-archive-product h5.category {
 	margin-top: .5em;
 	}
+/*
+.post-type-archive-product p.name {
+	color: #666;
+	}
+*/
 
 p.dunklink {
 	display: inline-block;
 	}
-	
+
+.jPanelMenu .small-block-grid-2 > li:nth-of-type(2n+1) {
+	width: 100%;
+	}
+
+
+/********************************************* NEWSLETTER  ****************/
+
+.label-left label {
+	margin: .5em 0;
+	display: inline-table !important;
+	}
+
 /********************************************* CHECKOUT FIX  ****************/
+
+h3#ship-to-different-address {
+	font-family: "Chivo", sans-serif !important;
+	text-transform: none;
+	}
 
 .payment_method_Striper .input-text {
 	width: 100% !important;
-}
+	}
 
 .payment-errors {
 	color: red;
@@ -815,7 +938,9 @@ img.fatty {
 	width: 75%;
 	}
 
-
+.jPanelMenu img.fatty {
+	width: 100%;
+	}
 
 
 /********************************************* MY ACCOUNT PAGE  ****************/
@@ -870,7 +995,7 @@ img.fatty {
 
 .my-account h3 {
 	color: #555;
-	font-family: 'Pontano-Sans', sans-serif !important;
+	/* font-family: 'Pontano-Sans', sans-serif !important; */
 	text-transform: uppercase;
 	font-size: 100%;
 	}
@@ -906,24 +1031,32 @@ img.fatty {
 /********************************************* JOBS PAGE  ****************/
 
 body.jobs .entry-content {
-	padding-right: 18.5%;
+	padding-right: 29.5%;
+	}
+
+.jPanelMenu .jobs .entry-content {
+	padding-right: 0;
 	}
 
 body.jobs p {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	}
 
 .accordion .accordion-inner {
 	
 	line-height: 1.5em;
-	font-size: 1.5em;
+	/* font-size: 1.5em; */
 	
 	}
 
-
+.blog article .entry-title a:link {
+	text-decoration: none;
+	padding: 8px;
+	margin: -8px;
+	}
 .blog article .entry-title a:hover {
 	color: #000 !important;
-	background: transparent !important;
+	/* background: transparent !important; */
 	text-decoration: underline;
 }
 	
@@ -935,7 +1068,7 @@ body.privacy p a {
 	
 
 body.privacy .large-3.right {
-	background-image: url(/img/angry-dudes-bottom.jpg);
+	background-image: url(http://media.ledunk.com/img/angry-dudes-bottom.jpg);
 	background-position: -50px bottom;
 	min-height: 620px;
 	background-repeat: no-repeat;
@@ -1007,6 +1140,7 @@ body.jobs .accordion-inner a,
 	color: #333 !important;
 	padding: 2px 4px;
 	margin: -2px -4px;
+	text-decoration: underline;
 	}
 
 body.jobs .accordion-inner a:hover,  

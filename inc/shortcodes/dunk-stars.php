@@ -9,10 +9,10 @@ function dunk_stars($params = array(), $content = null) {
     
 	$star_row = '';
 	if ($stars == '0'){$star_row = '<div class="star-rating"><span style="width:0%"><strong class="rating"></strong></span></div>';}
-	else if ($stars == '1'){$star_row = '<div class="star-rating"><span style="width:18%"><strong class="rating"></strong></span></div>';}
-	else if ($stars == '2'){$star_row = '<div class="star-rating"><span style="width:35%"><strong class="rating"></strong></span></div>';}
-	else if ($stars == '3'){$star_row = '<div class="star-rating"><span style="width:57%"><strong class="rating"></strong></span></div>';}
-	else if ($stars == '4'){$star_row = '<div class="star-rating"><span style="width:78%"><strong class="rating"></strong></span></div>';}
+	else if ($stars == '1'){$star_row = '<div class="star-rating"><span style="width:23%"><strong class="rating"></strong></span></div>';}
+	else if ($stars == '2'){$star_row = '<div class="star-rating"><span style="width:40%"><strong class="rating"></strong></span></div>';}
+	else if ($stars == '3'){$star_row = '<div class="star-rating"><span style="width:60%"><strong class="rating"></strong></span></div>';}
+	else if ($stars == '4'){$star_row = '<div class="star-rating"><span style="width:75%"><strong class="rating"></strong></span></div>';}
 	else if ($stars == '5'){$star_row = '<div class="star-rating"><span style="width:100%"><strong class="rating"></strong></span></div>';}
 
 

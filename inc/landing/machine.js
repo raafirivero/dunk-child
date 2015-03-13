@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 	// cookie functions
 	// only show name/email cap on first once a year
+	
     if ($.cookie('nameDunk')) 	{
     	$('.bigtxt h1 a').attr('href', '/shop/');
     	$('.bigtxt h1 a').click(function(){
@@ -8,7 +9,13 @@ jQuery(document).ready(function($) {
     		});
     	}
     else {
-            $.cookie('nameDunk', true,  { expires: 365, path: '/' });    
+            $.cookie('nameDunk', true,  { expires: 365, path: '/' });  
+            
+            // skip the whole email cap section altogether
+            $('.bigtxt h1 a').attr('href', '/shop/');
+    		$('.bigtxt h1 a').click(function(){
+    			location.href = '/shop/';
+    		});  
     }
 
 

@@ -11,7 +11,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $flatsome_opt;
-get_header(); ?>
+get_header('shop'); ?>
 
 <div class="cat-header">
 <?php 
@@ -30,7 +30,25 @@ if(function_exists('get_term_meta')){
 	}
 }
 ?>
+<?php if(isset($flatsome_opt['html_shop_page']) && is_shop()) {
+	// Add Custom HTML for shop page header
+	if($wp_query->query_vars['paged'] == 1 || $wp_query->query_vars['paged'] < 1){
+		echo do_shortcode($flatsome_opt['html_shop_page']);
+	}
+} ?>
 </div>
+
+
+<?php if($flatsome_opt['masonry_grid']) { ?>
+<style> 
+	/* Masonery Grid style */
+	.products li:nth-child(even) .front-image{ margin-top: -30px;}
+	.products li:nth-child(4) .front-image, 
+	.products li:nth-child(8) .front-image, 
+	.products li:nth-child(12) .front-image{ margin-top: -50px;}
+</style>
+<?php  } ?>
+
 
 <div class="row category-page">
 
@@ -46,6 +64,8 @@ if(function_exists('get_term_meta')){
     <div class="left">
 	<?php 
 	/** Output the WooCommerce Breadcrumb  */
+	/** RR turned off the WooCommerce Breadcrumb  */
+/*
     $defaults = array(
         'delimiter'  => '<span>/</span>',
         'wrap_before'  => '<h3 class="breadcrumb">',
@@ -55,12 +75,13 @@ if(function_exists('get_term_meta')){
         'home'    => 'Home'
     );
     $args = wp_parse_args(  $defaults  );
-    woocommerce_get_template( 'shop/breadcrumb.php', $args );
+    woocommerce_get_template( 'global/breadcrumb.php', $args );
+*/
     ?>
     </div><!-- .left -->
 
     <div class="right">
-    <?php /* if ( have_posts() ) : do_action( 'woocommerce_before_shop_loop' ); ?><?php endif; */ ?>
+    	<?php /* do_action( 'ux_woocommerce_navigate_products'); */ ?>    	
     </div><!-- .right -->
 </div><!-- .breadcrumb-row -->
 </div><!-- .large-12 breadcrumb -->
@@ -75,7 +96,7 @@ if(function_exists('get_term_meta')){
 		<div class="large-12 columns">
 <?php } ?>
 
-
+	<?php if ( have_posts() ) : do_action( 'woocommerce_before_shop_loop' ); ?><?php endif; ?>
     <?php do_action( 'woocommerce_archive_description' ); ?>
 
 		<?php if ( have_posts() ) : ?>
@@ -83,12 +104,15 @@ if(function_exists('get_term_meta')){
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
+				
+				<?php if (is_shop()) { /* do noting because edits were made in wordpress */ } else { ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php woocommerce_get_template_part( 'content', 'product' ); ?>
-
-				<?php endwhile; // end of the loop. ?>
+					<?php while ( have_posts() ) : the_post(); ?>
+	
+						<?php woocommerce_get_template_part( 'content', 'product' ); ?>
+					<?php endwhile; // end of the loop. ?>
+				
+				<?php }; /* end if-shop question */ ?>
 
 			<?php woocommerce_product_loop_end(); ?>
 
@@ -128,7 +152,7 @@ if(function_exists('get_term_meta')){
       while ( have_posts() ) : the_post();
         $wc_page = false;
         if($post->post_type == 'page'){
-          foreach (array('myaccount', 'edit_address', 'change_password', 'lost_password', 'shop', 'cart', 'checkout', 'pay', 'view_order', 'thanks', 'terms') as $wc_page_type) {
+          foreach (array('shop', 'cart', 'checkout', 'view_order', 'terms') as $wc_page_type) {
             if( $post->ID == woocommerce_get_page_id($wc_page_type) ) $wc_page = true;
           }
         }
@@ -140,23 +164,67 @@ if(function_exists('get_term_meta')){
       wp_reset_query();
     ?>
   <?php endif; ?>
+
+
                       
  </div><!-- .large-12 -->
 
 <?php if($flatsome_opt['category_sidebar'] == 'right-sidebar') { ?>
 <!-- Right Shop sidebar -->
         <div class="large-3 right columns">
-            <?php dynamic_sidebar('shop-sidebar'); ?>
+        	<div class="sidebar-inner">
+            	<?php dynamic_sidebar('shop-sidebar'); ?>
+       		</div>
         </div>            
 <?php } else if ($flatsome_opt['category_sidebar'] == 'left-sidebar') { ?>
 <!-- Left Shop sidebar -->
 		<div class="large-3 left columns">
-            <?php dynamic_sidebar('shop-sidebar'); ?>
+			<div class="sidebar-inner">
+           		<?php dynamic_sidebar('shop-sidebar'); ?>
+            </div>
         </div>
 <?php } ?>
 
 
-
 </div><!-- end row -->
+
+<?php 
+// GET CUSTOM HEADER CONTENT FOR CATEGORY
+if(function_exists('get_term_meta')){
+	$queried_object = get_queried_object();
+	
+	if (isset($queried_object->term_id)){
+
+		$term_id = $queried_object->term_id;  
+		$content = get_term_meta($term_id, 'cat_meta');
+
+		if(isset($content[0]['cat_footer'])){
+			echo '<div class="row"><div class="large-12 column"><div class="cat-footer"><hr/>';
+			echo do_shortcode($content[0]['cat_footer']);
+			echo '</div></div></div>';
+		}
+	}
+}
+?>
+
+
+<?php if($flatsome_opt['masonry_grid']) { 
+// Script for creating pinterest grid
+?>
+<script>
+jQuery(document).ready(function ($) {
+    imagesLoaded( document.querySelector('.products'), function( instance, container ) {
+    	var $container = $(".products");
+	    // initialize
+	    $container.packery({
+	      itemSelector: ".product-small",
+	      gutter: 0,
+	    });
+		$container.packery('layout');
+	});
+ });
+</script>
+<?php } ?> 
+
 
 <?php get_footer('shop'); ?>

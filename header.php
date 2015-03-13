@@ -66,7 +66,7 @@ global $flatsome_opt;
 									'link_after' => '',
 									'depth' => 2,
 									'fallback_cb' => false,
-									'walker' => new FlatsomeNavDropdown
+									'walker' => new LeNavDropdown
 								));
 						?>
 						 <?php else: ?>
@@ -133,7 +133,7 @@ global $flatsome_opt;
 										'items_wrap'      => '%3$s',
 										'depth'           => 0,
 										/* 'walker'          => new leNav */
-										'walker'		  => new FlatsomeNavDropdown
+										'walker'		  => new LeNavDropdown
 									));
 								?>
 							
@@ -175,6 +175,7 @@ global $flatsome_opt;
 							</div><!-- .nav-dropdown -->
 						</div><!-- .cart-inner -->
 					</li><!-- .mini-cart -->
+					<li class="le-small hide-for-large"><img src="http://media.ledunk.com/img/le-big.png" /></li>
 					<?php } else {echo '<li>WooCommerce not installed!</li>';} ?>
 				</ul><!-- .header-nav -->
 				<?php } else { ?>

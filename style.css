@@ -1,7 +1,7 @@
 /*
-Theme Name: LeDunk Flatsome
+Theme Name: Le Dunk
 Theme URI: http://www.ledunk.com
-Description: This is a child theme for Flatsome
+Description: a child theme based on Flatsome
 Author: UX Themes
 Author URI: http://www.ledunk.com
 Template: flatsome
@@ -13,3 +13,4 @@ Version: 1.3
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 
 @import url("css/ledunk.css");
+@import url("css/debug.css");

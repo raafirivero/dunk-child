@@ -230,7 +230,14 @@ function my_custom_sizes( $sizes ) {
         'dunk-blog-pic' => __('Dunk Blog Pic'),
     ) );
 }
- 
+
+add_filter( 'avatar_defaults', 'dunkgravatar' );
+function dunkgravatar ($avatar_defaults) {
+    $myavatar = 'http://media.ledunk.com.s3.amazonaws.com/img/dunk-gravatar.jpg';
+    $avatar_defaults[$myavatar] = "Own";
+    return $avatar_defaults;
+}
+
 function unhook_woo_stuff() {
 
     // remove woocommerce ajax functions, replace with dunk ajax functions in dunk-ajax.php
@@ -269,6 +276,45 @@ function dunk_body_classes($classes) {
 	return $classes;
 }
 add_filter( 'body_class', 'dunk_body_classes' );
+
+
+// Dunk Walker   /// /////////////////////////////
+
+if ( ! function_exists( 'dunk_setup' ) ) :
+function dunk_setup() {
+
+	/* Custom template tags */
+	require( get_stylesheet_directory() . '/inc/template-tags.php' );
+
+}
+endif; // flatsome_setup
+add_action( 'after_setup_theme', 'dunk_setup' );
+
+
+// Remove T-shirts   /// /////////////////////////////
+add_action( 'pre_get_posts', 'custom_pre_get_posts_query' );
+
+function custom_pre_get_posts_query( $q ) {
+
+	if ( ! $q->is_main_query() ) return;
+	if ( ! $q->is_post_type_archive() ) return;
+	
+	if ( ! is_admin() && is_shop() ) {
+
+		$q->set( 'tax_query', array(array(
+			'taxonomy' => 'product_cat',
+			'field' => 'slug',
+			'terms' => array( 't-shirts-men' ), // Don't display products in the t-shirts category on the shop page
+			'operator' => 'NOT IN'
+		)));
+	
+	}
+
+	remove_action( 'pre_get_posts', 'custom_pre_get_posts_query' );
+
+}
+
+
 
 
 // AJAX   /// /////////////////////////////

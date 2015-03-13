@@ -5,6 +5,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-47654016-1', 'ledunk.com');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
 </script>

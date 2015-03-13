@@ -28,14 +28,19 @@ get_template_part('header','crown');
 	
 	<div class="hsContainer">
 		<div class="row">
-		  <div class="small-5 large-3 small-centered center columns">
+		  <div class="small-3 large-5 columns">&nbsp;</div>
+		  <div class="small-6 small-centered large-2 large-centered columns">
 		  	<img src="http://media.ledunk.com/img/logo-curve-drop.png" class="imgtop" alt="Le Dunk" />
 		  </div>
+		  <div class="small-3 large-5 columns">&nbsp;</div>
 		</div>
+		
 		<div class="row">
-		  <div class="small-12 large-7 small-centered center columns">
+		  <div class="hide-for-small large-2 columns">&nbsp;</div>
+		  <div class="small-12 small-centered large-8 center columns">
 		  	<img src="http://media.ledunk.com/img/ebbets/ebbets-crown.png" class="crowntitle" alt="The Ebbets Crown" />
 		  </div>
+		   <div class="hide-for-small large-2 columns">&nbsp;</div>
 		</div>
 		
 		<div class="row">
@@ -48,10 +53,11 @@ get_template_part('header','crown');
 				<img src="http://media.ledunk.com/img/ebbets/pic-jr-bw.jpg" class="twinspic" alt="Jackie Robinson" />
 				<div class="labeldiv"><span class="label linebg center">Jackie Robinson</span></div>
 			</div>
-			<div class="small-10 large-4 columns small-centered large-uncentered center twins">
+			<div class="small-10 large-4 columns small-centered large-uncentered center twins basq">
 				<img src="http://media.ledunk.com/img/ebbets/pic-basq-bw.jpg" class="twinspic" alt="Jean-Michel Basquiat" />
 				<div class="labeldiv"><span class="label linebg center">Jean-Michel Basquiat</span></div>
-			</div>		
+			</div>
+			<div class="small-1 large-2 columns">&nbsp;</div>	
 		</div>
 	</div>
 </div>
@@ -95,21 +101,25 @@ get_template_part('header','crown');
 			>
 	
 			<div class="row">
+				<div class="hide-for-small large-2 columns">&nbsp;</div>
 				<div class="small-12 large-8 small-centered columns eb-copy">
-				<p><span class="drop w">W</span>e’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom lettering was inspired by the original Dodgers insignia, but we added the sexy curves. The crown on the side takes a cue from the art of <a href="http://www.google.com/images?q=basquiat">Jean-Michel Basquiat</a>, a BK native, and 42 is for the most iconic athlete ever to play in the borough, <a href="http://en.wikipedia.org/wiki/Jackie_Robinson">Jackie Robinson</a>.</p>
+				<p><span class="drop w">W</span>e’ve spent a year perfecting every aspect of this cap and believe it is the best Brooklyn snapback in the world. The custom lettering was inspired by the original Dodgers insignia, but we added the sexy curves. The crown on the side takes a cue from the art of <a href="http://www.google.com/images?q=basquiat" target="_blank">Jean-Michel Basquiat</a>, a BK native, and 42 is for the most iconic athlete ever to play in the borough, <a href="http://en.wikipedia.org/wiki/Jackie_Robinson" target="_blank">Jackie Robinson</a>.</p>
 			
 			<p>You’re going to love wearing this hat.</p>
 				</div>
+				<div class="hide-for-small large-2 columns">&nbsp;</div>
 			</div>
 			
 			<div class="row">
+				<div class="hide-for-small large-2 columns">&nbsp;</div>
 				<div class="small-12 large-8 small-centered columns">
-				<?php echo do_shortcode( '[block id="ebbets-buy"]' ); ?>
+					<?php echo do_shortcode( '[block id="ebbets-buy"]' ); ?>
 				</div>
+				<div class="hide-for-small large-2 columns">&nbsp;</div>
 			</div>
 		
 			<div class="row">
-				
+				<div class="small-2 columns">&nbsp;</div>
 				<div class="small-8 small-centered columns caprow" 
 					data-center="opacity: 1" 
 					data--180-bottom="opacity: 1"
@@ -122,6 +132,7 @@ get_template_part('header','crown');
 					<img class="caprow-pic" src="http://media.ledunk.com/img/ebbets/caprow-c.jpg" alt="cap pics" />
 					<hr />
 				</div>
+				<div class="small-2 columns">&nbsp;</div>
 			</div>
 		
 		</div>
@@ -145,24 +156,28 @@ get_template_part('header','crown');
 				
 				<h4 class="center"><span class="label linebg center">Dedicated to Brooklyn Streets</span></span></h4>
 				
-				<div class="small-10 large-8 small-centered columns brownsville">
-				<p>Brownsville, Brooklyn has the highest concentration of public housing projects in the country. Social problems associated with poverty continue to plague the area. Rising above the neighborhood, the Langston Hughes Apartments stand at 22 stories. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
-
-				<blockquote>
-					<p class="serif">I’ve known rivers:<br>
-					Ancient, dusky rivers.</p>
-					
-					<p class="serif">My soul has grown deep like the rivers.</p>
-				</blockquote>
-			
-					<div class="sealdiv">
-					<a href="/shop/" class="seallink center">
-						<img class="seal" src="http://media.ledunk.com/img/sticker-blog.png" width="160" height="160" alt="le dunk seal" 
-							data-bottom-top="opacity: 0;" 
-							data--106-bottom="opacity: 1"
-							/>
-					</a>
+				<div class="row">
+					<div class="small-1 large-2 columns">&nbsp;</div>
+					<div class="small-10 large-8 small-centered columns brownsville">
+						<p>The Langston Hughes Tower, one of the tallest public housing buildings in Brooklyn, stands in the Brownsville neighborhood. A line from one of Hughes’ famous poems is printed on the underside of the cap.</p>
+	
+						<blockquote>
+							<p class="serif">I’ve known rivers:<br>
+							Ancient, dusky rivers.</p>
+							
+							<p class="serif">My soul has grown deep like the rivers.</p>
+						</blockquote>
+				
+						<div class="sealdiv">
+							<a href="/shop/" class="seallink center">
+								<img class="seal" src="http://media.ledunk.com/img/sticker-blog.png" width="160" height="160" alt="le dunk seal" 
+									data-bottom-top="opacity: 0;" 
+									data--106-bottom="opacity: 1"
+									/>
+							</a>
+						</div>	
 					</div>
+					<div class="small-1 large-2 columns">&nbsp;</div>
 				</div>
 			</div>
 		

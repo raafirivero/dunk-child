@@ -1,0 +1,17 @@
+.testvid-cont {
+	width: 400px;
+	box-sizing: border-box;
+	clear: both;
+	}
+
+.testvid {
+	width: 100% !important;
+	}
+
+
+
+.jPanelMenu .product-gallery-slider {
+	/* was trying to protect min-height, but it ended up */
+	/* cutting off the product slider on iOs. */
+	/* min-height: 405px !important; */
+	}

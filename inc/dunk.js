@@ -1,18 +1,32 @@
 jQuery(document).ready(function($) {
 	$('.hover-reveal').css("opacity", "0");
-	$('.ux_banner').has('.hover-reveal').css("border-radius", "90px");
-	$('.ux_banner').has('.hover-reveal').hover(
+	$('.jPanelMenu .hover-reveal').css("opacity", "1");
+	$('.ux_banner.aboutbanner').has('.hover-reveal').css("border-radius", "90px");
+	
+	$('.midtier .ux_banner').hover(
 		function() {
-			$('.hover-reveal').fadeTo(400, 1);
+			$('.hover-reveal', this).fadeTo(400, 1);
 		}, function() {
-			$('.hover-reveal').fadeTo(400, 0);
+			$('.hover-reveal', this).fadeTo(400, 0);
 	});
 	$('#homepage-slides').fadeTo(1800, 1);
 	$('#banner-1st-3rd').delay(900).fadeTo(800, 1).slideDown(1800);
+	
+	
+	var $window = $(window).on('resize', function(){		
+		if ( $('html').attr('class') ) {
+			// tests whether the <html> element has a class
+			// because jPanelMenu is set on that element.
+			// if yes then keep the video full width
+			$('.dunk_vid').width('100%');
+		} else {
+			// if not, then make the video the same height as the product image
+			var boxHold = $('.product-image').height();
+			$('.dunk_vid').height(boxHold);
+		}	
+	}).trigger('resize'); //on page load
+	
 
-	$('#slider-le-mid').css("height", "0").delay(2200).animate({
-		"height": "400px"
-	}, 700, "swing");
 	$('.home .footer-wrapper').hide().css({
 		'opacity': '0'
 	}).delay(1600).fadeTo(1800, 1);
@@ -99,3 +113,19 @@ jQuery(document).ready(function($) {
 	
 });
 
+$(window).load(function() 
+{
+   // executes when complete page is fully loaded, including all frames, objects and images
+	
+	if ( $('html').attr('class') ) {
+			// tests whether the <html> element has a class
+			// because jPanelMenu is set on that element.
+			// if yes then keep the video full width
+			$('.dunk_vid').width('100%');
+		} else {
+			// if not, then make the video the same height as the product image
+			var boxHold = $('.product-image').height();
+			$('.dunk_vid').height(boxHold);
+	}	
+	
+}); 
