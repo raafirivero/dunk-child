@@ -14,6 +14,11 @@ global $flatsome_opt;
 	$handler->setHandleErrors(false);  // disable errors handling
 	$handler->start(); // initialize handlers
 	$connector = PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
+	
+	// FireBug
+	require_once( $_SERVER['DOCUMENT_ROOT'].'/FirePHPCore/FirePHP.class.php');
+	$firephp = FirePHP::getInstance(true);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +45,8 @@ global $flatsome_opt;
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<?php if(is_page()) { $page_slug = 'page-'.$post->post_name; } ?>
+<body <?php body_class($page_slug); ?>>
 	<div id="wrapper">
 
 		<?php do_action( 'before' ); ?>

@@ -1,0 +1,20 @@
+[row]
+[col class="small-12 large-4"]
+[products id="977" columns="1"]
+[/col]
+[col class="small-12 large-8"]
+&nbsp;
+
+[/col]
+[/row]
+[row]
+[col class="small-4"]
+<div class="testvid-cont columns">
+       <video class="testvid" webkit-playsinline preload="auto" autoplay="" muted="muted" >
+            <source src="/img/cap-single540p.mp4" type="video/mp4">
+            <source src="/img/cap-single540p.webm" type="video/webm">
+            <source src="/img/cap-single540p.ogg" type="video/ogg">
+        </video>
+</div>
+[/col]
+[/row]

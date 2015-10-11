@@ -30,6 +30,7 @@ a {
 	color: #666;
 	}
 
+/* .alt-font { font-family: "haymaker" !important; } */
 
 /********************************************* NAVIGATION ROW ****************/
 
@@ -48,11 +49,11 @@ ul#site-navigation li a {
 	font-weight: 500;
 	}
 
-.sliding-u-l-r {
+.no-touch .sliding-u-l-r {
 	display: inline-block;
 	}
 	
-.sliding-u-l-r:after {
+.no-touch .sliding-u-l-r:after {
 	content: '';
 	display: block;
 	height: 3px;
@@ -61,7 +62,7 @@ ul#site-navigation li a {
 	transition: width .25s ease, background-color .25s ease;
 	}
 	
-.sliding-u-l-r:hover:after {
+.no-touch .sliding-u-l-r:hover:after {
 	width: 100%;
 	background: #ccc;
 	}
@@ -242,6 +243,7 @@ form[role] {
 	color: #222;
 	}
 
+/*  **************** Not working after update
 #slider-le-mid {
 	clear: both;
 	height: 0px;
@@ -251,8 +253,8 @@ form[role] {
 #slider-le-mid .lemidslider {
 	overflow: hidden;
 	height: 400px;
-	
 	}
+*/
 
 .slider h1.lemid {
 	font-size: 650%;
@@ -1125,6 +1127,10 @@ body.privacy .large-3.right {
 	color: #555;
 	}
 
+.blog article .gallery-item a:hover { background: transparent !important; }
+
+.blog  .mfp-container img.mfp-img { max-height: 90%; }
+
 /********************************************* DUNK LINKS  ****************/
 
 
@@ -1132,6 +1138,7 @@ body.jobs .accordion-inner a,
 .dunklink, 
 .posted_in a, 
 .blog article a, 
+.archive article a, 
 .entry-title a, 
 .my-account .tabs-inner a:not(.button),
 .order-received p a,
@@ -1172,6 +1179,11 @@ body.privacy p a:hover,
 
 
 
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}
 
 
 

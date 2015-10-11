@@ -324,10 +324,15 @@ include_once('inc/dunk-ajax.php');
 
 include_once('inc/shortcodes/dunk-blocks.php');
 include_once('inc/shortcodes/dunk-grid.php');
-include_once('inc/shortcodes/dunk-banners.php');
-include_once('inc/shortcodes/dunk-slider.php');
 include_once('inc/shortcodes/dunk-share.php');
 include_once('inc/shortcodes/dunk-stars.php');
+
+
+/*
+these ones don't work anymore
+include_once('inc/shortcodes/dunk-banners.php');
+include_once('inc/shortcodes/dunk-slider.php');
+*/
 
 
 // NO TOCAR /////////////////////////////

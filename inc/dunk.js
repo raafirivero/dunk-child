@@ -129,3 +129,8 @@ $(window).load(function()
 	}	
 	
 }); 
+
+// add class-name no-touch to desktop documents, leave it off for iOS, etc
+if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
+}
