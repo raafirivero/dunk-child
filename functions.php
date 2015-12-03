@@ -1,5 +1,4 @@
 <?php
-require( get_stylesheet_directory() . '/inc/dunk-tags.php' );
 
 @ini_set( 'upload_max_size' , '64M' );
 @ini_set( 'post_max_size', '64M');
@@ -11,6 +10,8 @@ function dunk_add_scripts() {
 	
 	// Fix SSL content warnings for CDN fonts
 	if (  is_ssl() ) {
+		wp_dequeue_style('fonts');
+		
     	wp_register_style('fonts-ssl', $themedir.'/css/fonts-ssl.css', array());
 	    wp_enqueue_style('fonts-ssl');
     } else {
@@ -23,6 +24,7 @@ function dunk_add_scripts() {
     
 	    if ( is_checkout() || is_page_template('page-ladda.php')  ) {
 		    // Ladda for submit button
+			/*
 		    wp_register_script('laddaspin', $themedir.'/inc/ladda/spin.min.js', false, '1.0', true);
 		    wp_enqueue_script('laddaspin');
 		    
@@ -34,6 +36,7 @@ function dunk_add_scripts() {
 		    
 		    wp_register_style('laddastyle', $themedir.'/inc/ladda/ladda.min.css', array());
 		    wp_enqueue_style('laddastyle');
+			*/
 		    
 		    // speed this thang up
 			wp_dequeue_script('smae.js');
@@ -170,9 +173,11 @@ function dunk_add_scripts() {
     // Dunk Script/Style All Pages
 	wp_register_script('dunk', $themedir.'/inc/dunk.js', array('jquery'), 1.0);
     wp_enqueue_script('dunk');
-    
-    wp_register_script('dunk-cart', get_stylesheet_directory_uri('stylesheet_directory').'/inc/dunk-cart.js', array('jquery'));
+	
+/*
+	wp_register_script('dunk-cart', $themedir.'/inc/dunk-cart.js', array('jquery'));
     wp_enqueue_script('dunk-cart');
+*/
     
 }
 
@@ -238,14 +243,18 @@ function dunkgravatar ($avatar_defaults) {
     return $avatar_defaults;
 }
 
-function unhook_woo_stuff() {
-
-    // remove woocommerce ajax functions, replace with dunk ajax functions in dunk-ajax.php
-    remove_action('wp_ajax_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
-	remove_action('wp_ajax_nopriv_woocommerce_add_to_cart', 'woocommerce_ajax_add_to_cart');
-	// file dunk-ajax inlcuded below
+ 
+function remove_parent_theme_features() {
+    // remove dropdown cart function, replace with Dunk version
+    if (function_exists( 'flatsome_add_to_cart_dropdown' ) ) :
+    	remove_filter('add_to_cart_fragments', 'flatsome_add_to_cart_dropdown');
+    endif;
+    
+    remove_action('woocommerce_single_product_summary','ProductShowReviews', 15);
+    
 }
-add_action( 'init', 'unhook_woo_stuff');
+add_action( 'after_setup_theme', 'remove_parent_theme_features', 15 );
+
 
 
 function get_ID_by_slug($page_slug,$post_type) {
@@ -280,14 +289,12 @@ add_filter( 'body_class', 'dunk_body_classes' );
 
 // Dunk Walker   /// /////////////////////////////
 
-if ( ! function_exists( 'dunk_setup' ) ) :
 function dunk_setup() {
 
-	/* Custom template tags */
-	require( get_stylesheet_directory() . '/inc/template-tags.php' );
+	/* Custom template tags */	
+	require( get_stylesheet_directory() . '/inc/dunk-tags.php' );
 
 }
-endif; // flatsome_setup
 add_action( 'after_setup_theme', 'dunk_setup' );
 
 
@@ -316,10 +323,6 @@ function custom_pre_get_posts_query( $q ) {
 
 
 
-
-// AJAX   /// /////////////////////////////
-include_once('inc/dunk-ajax.php');
-
 // SHORTCODES /////////////////////////////
 
 include_once('inc/shortcodes/dunk-blocks.php');
@@ -327,12 +330,6 @@ include_once('inc/shortcodes/dunk-grid.php');
 include_once('inc/shortcodes/dunk-share.php');
 include_once('inc/shortcodes/dunk-stars.php');
 
-
-/*
-these ones don't work anymore
-include_once('inc/shortcodes/dunk-banners.php');
-include_once('inc/shortcodes/dunk-slider.php');
-*/
 
 
 // NO TOCAR /////////////////////////////

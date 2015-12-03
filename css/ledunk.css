@@ -30,7 +30,7 @@ a {
 	color: #666;
 	}
 
-/* .alt-font { font-family: "haymaker" !important; } */
+.alt-font { font-family: "haymaker" !important; }
 
 /********************************************* NAVIGATION ROW ****************/
 
@@ -140,38 +140,29 @@ ul#site-navigation li a {
 	font-size: 1em;
 	}
 	
-.cart-icon-sprite img {
+.cart-icon-sprite .custom-cart-icon {
 	position: absolute;
 	max-width: 128px;
 	top: 0;
-	left: 0;
+	}
+
+.cart-icon-sprite .1item {
+	left: -32px !important;
+	right: 15px;
+	}
+
+.cart-icon-sprite .2item {
+	left: -64px !important;
 	right: auto;
 	}
 
-.custom-cart-icon.1item {
-	left: -32px !important;
-	}
-
-
-.custom-cart-icon.2item {
-	left: -64px !important;
-	}
-
-.custom-cart-icon.3item {
+.cart-icon-sprite .3item {
 	left: -96px !important;
+	right: auto;
 	}
 
-.custom-cart-icon.emptycart {
+.cart-icon-sprite .emptycart {
 	left: 0;
-	}
-
-
-.jPanelMenu-panel .right-links li.menu-item {
-	/* display: none !important; */
-	}
-.jPanelMenu-panel .right-links li.mini-cart {
-	position: relative;
-	top: -4px;
 	}
 
 .cart .loading {
@@ -179,12 +170,19 @@ ul#site-navigation li a {
 	border-radius: 0;
 	}
 
-.jPanelMenu [data-menu-position="open"] .cart-link {
-	pointer-events: auto;
-}
-
 #homepage-slides, #banner-1st-3rd {
 	opacity: 0;
+	}
+	
+.mobile-menu span.icon-menu:before {	
+	opacity: 0;
+	}
+	
+.mobile-menu span.icon-menu {	
+	background-image: url('http://media.ledunk.com/img/hamburger-menu.png');
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
 	}
 
 
@@ -231,30 +229,19 @@ form[role] {
 	/* background-image: none !important; */
 	}
 
-.ux_banner video {
-	height: 100%;
-	}
-.jPanelMenu .ux_banner video {
-	z-index: 10;
-	width: 100%;
-	}
-
 .ux_banner.light h2 {
 	color: #222;
 	}
 
-/*  **************** Not working after update
-#slider-le-mid {
-	clear: both;
-	height: 0px;
-	overflow: hidden;
+#slider-le-front a.button, #slider-le-mid a.button {	
+	font-weight: bold;
+	border: white;
 	}
 
-#slider-le-mid .lemidslider {
-	overflow: hidden;
-	height: 400px;
+#slider-le-front a.button:hover, #slider-le-mid a.button:hover {
+	background-color: white !important;
+	color: black !important
 	}
-*/
 
 .slider h1.lemid {
 	font-size: 650%;
@@ -615,6 +602,10 @@ input.wpcf7-text {
 
 /********************************************* PRODUCT PAGES  ****************/
 
+div.breadcrumb-row {
+	display: none;
+	}
+
 .breadcrumb-small h3.breadcrumb,h4.breadcrumb,h5.breadcrumb { display: none; }
 
 .price::first-letter {
@@ -739,7 +730,7 @@ input.wpcf7-text {
 	}
 
 
-.about p a{
+.about p.donutcenter a{
 	font-size: 16px;
 	border: 3px solid transparent;
 	display: inline-block;
@@ -754,7 +745,7 @@ input.wpcf7-text {
 	
 	}
 
-.about p a:hover, .order-received a:hover {
+.about p.donutcenter a:hover, .order-received a:hover {
 	border-color: #bbb;
 	background: transparent !important;
 	}
@@ -838,6 +829,32 @@ p.dunklink {
 	width: 100%;
 	}
 
+.small-block-grid-2 > li, .small-block-grid-2 > div > div > li {
+	width: 100%;
+	}
+
+.products .product-small .inner-wrap a {
+	width: 100%;
+	
+	}
+
+.products .product-small .inner-wrap .style-grid1 {
+	width: 100%;
+	}
+
+.products .shop-side {
+	width: 100%;
+	height: auto;
+
+	/* scale bg image proportionately */
+	background-size: cover;
+	}
+	
+.shop .callout .inner, .single .callout .inner {
+	/* crimson */
+	background-color: #dc143c;
+
+	}
 
 /********************************************* NEWSLETTER  ****************/
 
@@ -876,10 +893,10 @@ label[for=payment_method_stripe] img {
 	}
 
 .payment_box.payment_method_stripe select {
-	height: 1.5em;
+	/* height: 1.5em; */
 	}
 .payment_box.payment_method_stripe select option {
-	font-size: 1.25em;
+	/* font-size: 1.25em; */
 	}
 
 .payment_box p {
@@ -930,6 +947,10 @@ input#stripe_card_csc {
 
 .checkout #shipping_method li input {
 	margin: 0 7px 0 0 !important;
+	}
+
+.checkout .shop_table .shipping th {	
+	width: 35%;
 	}
 
 /********************************************* SIGNUP PAGE  ****************/
@@ -1118,6 +1139,11 @@ body.privacy .large-3.right {
 	text-indent: 10px;
 	}
 
+.star-rating:before, .woocommerce-page .star-rating:before, .star-rating span:before  {	
+	/* star outline */
+	color: #696969 !important;
+	}
+	
 
 .lastrating {
 	margin-bottom: 1.6em;
@@ -1129,7 +1155,9 @@ body.privacy .large-3.right {
 
 .blog article .gallery-item a:hover { background: transparent !important; }
 
-.blog  .mfp-container img.mfp-img { max-height: 90%; }
+/* ********** gallery items *********** */
+
+.blog .mfp-container img.mfp-img, .archive .mfp-container img.mfp-img { max-height: 100%; }
 
 /********************************************* DUNK LINKS  ****************/
 
@@ -1182,7 +1210,33 @@ body.privacy p a:hover,
 @media only screen and (max-width: 48em) {
 /*************** ADD MOBILE ONLY CSS HERE  ***************/
 
+#midtier .ux_banner a {
 
+}
+
+.about #about-top {
+	margin: 0;
+}
+
+#about-top .columns {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#about-top .columns:first-child {
+	display: none;
+	}
+
+#about-top .columns:last-child {
+	padding-top: 1.5em;
+	}
+
+.hide-mobile {
+	display: none;
+	}
+
+/* NO TOCAR */
 }
 
 

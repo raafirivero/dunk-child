@@ -4,6 +4,7 @@ global $woocommerce;
 global $flatsome_opt;
 ?>
 <?php 
+/*
 	// PHP logging console
 	require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
 
@@ -18,6 +19,8 @@ global $flatsome_opt;
 	// FireBug
 	require_once( $_SERVER['DOCUMENT_ROOT'].'/FirePHPCore/FirePHP.class.php');
 	$firephp = FirePHP::getInstance(true);
+	require_once ( $_SERVER['DOCUMENT_ROOT'].'/chromephp/ChromePhp.php');
+*/
 
 ?>
 
@@ -32,7 +35,8 @@ global $flatsome_opt;
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	
-
+	<!-- Content Experiments (not necessary on local site) -->
+	<?php /* do_action( 'wpe_gce_head' ); */ ?>
 
 	<!-- Custom favicon-->
 	<link rel="shortcut icon" href="<?php if ($flatsome_opt['site_favicon']) { echo $flatsome_opt['site_favicon']; ?>
@@ -45,7 +49,10 @@ global $flatsome_opt;
 	<?php wp_head(); ?>
 </head>
 
-<?php if(is_page()) { $page_slug = 'page-'.$post->post_name; } ?>
+<?php 
+	if(is_page()) { $page_slug = 'page-'.$post->post_name; }
+	if(is_shop()) { $page_slug = 'shop shop-'.$post->post_name; }
+ ?>
 <body <?php body_class($page_slug); ?>>
 	<div id="wrapper">
 
@@ -90,7 +97,9 @@ global $flatsome_opt;
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row"> 
 				<div class="large-12 columns header-container">
-					<div class="mobile-menu show-for-small"><a href="#open-menu"><span class="icon-menu"></span></a></div><!-- end mobile menu -->
+					<div class="mobile-menu show-for-small">
+					<a href="#jPanelMenu" class="off-canvas-overlay" data-pos="left" data-color="light"><span class="icon-menu"></span></a>
+					</div><!-- end mobile menu -->
 					
 
 					<div id="logo" class="logo-left">
@@ -138,7 +147,6 @@ global $flatsome_opt;
 										'container'       => false,
 										'items_wrap'      => '%3$s',
 										'depth'           => 0,
-										/* 'walker'          => new leNav */
 										'walker'		  => new LeNavDropdown
 									));
 								?>
@@ -181,7 +189,6 @@ global $flatsome_opt;
 							</div><!-- .nav-dropdown -->
 						</div><!-- .cart-inner -->
 					</li><!-- .mini-cart -->
-					<li class="le-small hide-for-large"><img src="http://media.ledunk.com/img/le-big.png" /></li>
 					<?php } else {echo '<li>WooCommerce not installed!</li>';} ?>
 				</ul><!-- .header-nav -->
 				<?php } else { ?>
@@ -209,7 +216,7 @@ global $flatsome_opt;
 									'container'       => false,
 									'items_wrap'      => '%3$s',
 									'depth'           => 3,
-									'walker'          => new FlatsomeNavDropdown
+									'walker'          => new LeNavDropdown
 								));
 							?>
 

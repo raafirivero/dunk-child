@@ -1,24 +1,345 @@
 @import url("http://media.ledunk.com/fonts/nitti.css");
 
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+
 body {
 	font-family: "nittilight", monospace !important;
 	color: #bdbdbd;
+	background-color: goldenrod !important;
 	}
 
+body #wrapper {
+	background-color: unset !important;
+	}
+
+.no-js {
+	padding-top: 106px;
+}
+h2 {
+	margin-top: 0;
+}
+.loading {
+	background: url('../img/ico_loading.gif') no-repeat center center;
+}
+section {
+
+}
+.loaded section,
+.no-js section {
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
+}
+main {
+	overflow-x: hidden;
+}
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bcg {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.hsContainer {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+    .hsContent {
+        max-width: 80%;
+        margin: -150px auto 0 auto;
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0 8%;
+        text-align: center;
+        position: relative;
+    }
+    .hsContent h2  {
+        color: #fff8de;
+        background-color: rgba(0,0,0,0.5);
+        padding: 10px 5px;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 12px;
+    }
+    .hsContent p {
+        width: 80%;
+        color: #b2b2b2;
+    }
+	.hsContent a {
+
+	}
+
+	/* Slide 1 */
+	#slide-1 {
+		background-color: #222;
+		min-height: 720px;
+		}
+	
+	#slide-1 .bcg {
+		background-image:url('http://media.ledunk.com/img/ledunk-bk42-front-butter.jpg');
+		/* background-image:url('/img/ledunk-bk42-front-butter.jpg'); */
+		min-height: 720px;
+		
+		}
+	#slide-1 .hsContainer #top-headline {
+		position: absolute;
+		bottom: 3em;
+		}
+
+	/* Slide 2 */
+	#slide-2 {
+		min-height: 700px;
+		}
+	
+	#slide-2 .bcg {
+		/* background-image:url('/img/temp/smokebg-bw.jpg'); */
+		background-image:url('http://media.ledunk.com/img/ebbets/bldg-bw.jpg');
+		}
+	#slide-2 .hsContainer {
+			display: table;			 	
+		}
+
+
+	#slide-2 .twins-container {
+			display: table-cell;
+    		vertical-align: middle;
+		}
+
+	#slide-2 .twins-cont {
+			/* background: blue; */
+		}
+	
+	
+	/* Slide 3 */
+
+	
+	#slide-3 {
+		max-height: 540px !important;
+		overflow: hidden;
+	}
+	
+	#slide-3 .bcg {
+
+background: #1c1310; /* Old browsers */
+background: -moz-linear-gradient(top,  #1c1310 0%, #3a2114 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1c1310), color-stop(100%,#3a2114)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1c1310 0%,#3a2114 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1c1310 0%,#3a2114 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1c1310 0%,#3a2114 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1c1310 0%,#3a2114 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1310', endColorstr='#3a2114',GradientType=0 ); /* IE6-9 */
+	
+	
+	}
+	
+	#slide-3 .cap-clear {
+		background: url(http://media.ledunk.com/img/ebbets/eb-edition-1k.png) 0 0px no-repeat;	
+	
+	}
+	
+	#slide-3 .hsContent {
+	}
+	#slide-3 h2 {}
+
+	/* Slide 4 */
+	#slide-4 .bcg {
+		}
+		
+	#slide-4 {
+		background: #191919;
+		min-height: 860px !important;
+
+		}
+	#slide-4 .hsContent {}
+	    #slide-3 h2 {
+	        color: #f2ead6;
+	        background-color: rgba(0,0,0,0.6);
+	    }
+
+	/* Slide 5 */
+	#slide-5 {
+			background: #000;
+			min-height: 900px;
+		}
+	#slide-5 .bcg {
+	    background-image:url('http://media.ledunk.com/img/ebbets/garage-crop.jpg');
+	    /* background-image:url('/img/cap-bias.jpg'); */
+	    background-position: center bottom;
+	    background-repeat: no-repeat;
+	}
+	#slide-5 .hsContent {}
+	    #slide-5 h2 {
+	        padding-left: 0;
+	        padding-right: 0;
+	    }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   RR styles
+   ========================================================================== */
 
 .crown .imgtop {
-	margin-top: 3em;
+	margin-top: 2em;
 	margin-bottom: .75em;
-	width: 85%;
+	width: 150%;
 	}
 
 .crowntitle {
-	margin: .75em 0;
+	margin: 2em 0 .75em 0;
 	}
 
 .center {
 	text-align: center;
 	/* width: 100%; */
+	}
+
+.top-buy {
+	position: absolute;
+	bottom: 1em;
+	}
+
+.top-buy .nothingshort {
+	position: absolute;
+	bottom: 0;
+	}
+
+
+.top-buy .nothingshort h1 {
+	background: #000;
+	color: rgb(119, 119, 119) !important;
+	display: inline-block !important;
+	font-family: "nittilight", monospace !important;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 16px !important;
+	padding: .5em;
+	}
+
+.top-buy .buy-corner {
+	position: absolute;
+	right: 25%;
+	bottom: 0 !important;
 	}
 
 .labeldiv {
@@ -27,7 +348,7 @@ body {
 
 .linebg {
 	font-family: "nittilight", monospace !important;
-	background: #333;
+	background: #222;
 	padding: 1px 6px;
 	color: #bdbdbd;
 	display: inline-block;
@@ -43,10 +364,6 @@ img.twinspic {
 	/* border-bottom: 2px solid #444; */
 }
 
-.no-skrollr .basq {
-	/* border: 2px solid red; */
-	margin-left: 10%;
-	}
 
 .capimg {
 	margin-left: -10%;
@@ -81,7 +398,7 @@ img.twinspic {
 	}
 
 .heroes {
-	min-height: 500px;
+	/* min-height: 500px; */
 	}
 
 .spidertext {
@@ -107,7 +424,7 @@ img.twinspic {
 	}
 
 .ebbets-buy div {
-	margin: 2em auto 1em;
+	margin: 2em auto 0em;
 	text-align: center;
 	}
 
@@ -116,12 +433,11 @@ img.twinspic {
 	font-size: 36px;
 	display: block;
 	height: 67px;
-	margin-bottom: 1.25em;
 	line-height: 67px;
 	margin-left: 25%;
 	}
 
-#ebbets-buy.row.container {
+.ebbets-buy.row.container {
 	margin-bottom: 0 !important;
 	}
 
@@ -156,9 +472,17 @@ img.twinspic {
 	font-family: "Pontano Sans", "Helvetica Neue", Helvetica, sans-serif;
 	}
 
-body.crown a.button:hover {
+.crown .top-buy a.button {
+	margin-bottom: 0;
+	}
+
+.no-touch body.crown a.button:hover {
 	color: black !important;
 	background-color: gold !important;
+	}
+
+.no-touch .crown a.toplink:hover {	
+	background: transparent;
 	}
 	
 .crown p a {
@@ -168,7 +492,7 @@ body.crown a.button:hover {
 	margin: -2px -5px;
 	}
 	
-.crown a:hover {
+.no-touch .crown a:hover {
 	color: #B2B2B2;
 	background: #333;
 	}	
@@ -207,27 +531,129 @@ body.crown a.button:hover {
 	right: 0;
 	}
 
-.crown .bottomrow a:hover {
+.no-touch .crown .bottomrow a:hover {
 	background: #444;
 	}
 	
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+
+/* Medium devices (tablets) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    body, html {
+        height: auto;
+    }
+    .bcg {
+
+    }
+
+    section {
+    
+    }
+    
+    .hsContainer {
+
+    }
+    .hsContent {
+		padding: 0;
+    }
+    .hsContent h2  {
+
+    }
+    .hsContent p {
+    
+    }
+    
+	#slide-1 .bcg {
+		background-position: center;
+		
+	}
+    
+
+	.top-buy {
+		left: initial;
+		right: initial;
+	}
+ 
+    #slide-2 {
+    	min-height: initial;
+    	max-height: 720px;
+    }
+    
+    #slide-3 .hsContent {
+
+    }
+    
+    #slide-3 .cap-clear {
+    	background-size: 100% auto;
+		background-position: 0 50px;
+
+    }
+	
+    #slide-4 .hsContent {
+
+    }
+    
+    #slide-5 .hsContent {
+
+    }
+
+
+.heroes {
+	/* min-height: initial; */
+	}
+	
+}
+
+
+/* Small devices (phones, 768px and under) */
+@media only screen and (max-width: 600px) {
+	
+	#slide-1 {
+		min-height: 600px;	
+    	max-height: 600px;
+    	
+		}
+	
+    #slide-1 .bcg {
+    	background-color: #222;
+    	background-position: center top;
+    	background-size: 100% auto;
+    	background-repeat: no-repeat;
+    }
+
 	
 	.crown .imgtop {
 		width: 100%;
+		margin-top: 1em;
 	}
+	
+	.top-buy .buy-corner {
+		position: relative;
+		right: initial;
+		bottom: initial;
+	}
+	
 	.capimg {
 		margin-left: 0;
 	}
 	
-	#slide-2 .cap-clear {
-		background: none;;	
+	.no-skrollr .basq {
+		margin-left: 8.3%;
+	}
+	
+	#slide-3 .cap-clear {
+		background: none;	
 	
 	}
-
+	
 	.ebbets-buy .price {
-		margin: 0;
+		margin: 0;	
 	}
 	
 	.caprow-pic {	
@@ -248,6 +674,41 @@ body.crown a.button:hover {
 		width: 100%;
 		text-align: right;
 		padding-bottom: 72px;
+	}
+	
+	.toplogo {
+		height: 100px;	
+	}
+	
+	#slide-1 .hsContainer {
+		overflow: visible;	
+	}
+	
+	.top-buy {
+		/* display: none;	 */
+		position: relative;
+		left: initial;
+		right: initial;
+		bottom: initial;
+		height: 500px;
+	}
+	
+	.top-buy .smallholder {
+		position: absolute;
+		bottom: 4px;	
+	}
+	
+	.top-buy .nothingshort {
+		position: relative;	
+	}
+	
+	.top-buy .nothingshort h1 {
+		height: initial;	
+	}
+	
+	.crown a.button {	
+		margin: 0 auto;
+		display: table;
 	}
 
 }

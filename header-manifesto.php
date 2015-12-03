@@ -13,7 +13,7 @@ global $flatsome_opt;
 	<link rel="dns-prefetch" href="//ajax.googleapis.com.com" />
 	<link rel="dns-prefetch" href="//www.google-analytics.com" />
 	<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
-	<link rel="dns-prefetch" href="//dmdtrecbrfzyi.cloudfront.net" />
+	<link rel="dns-prefetch" href="//media.ledunk.com" />
 	<link rel="dns-prefetch" href="//js.stripe.com" />
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<link rel="dns-prefetch" href="//ledunk.com" />

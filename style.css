@@ -13,4 +13,5 @@ Version: 1.3
 /*************** ADD YOUR CUSTOM CSS IN THIS AREA ***************/
 
 @import url("css/ledunk.css");
+@import url("css/print.css");
 @import url("css/debug.css");

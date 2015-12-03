@@ -1,22 +1,11 @@
 <?php
+global $flatsome_opt;
+
+/*  Add to Cart Dropdown (Gets inserted via Ajax) */
+// Dunk changes: adds sprite support for custom shopping cart icon
 
 
-add_action( 'after_setup_theme', 'remove_parent_theme_features', 15 );
- 
-function remove_parent_theme_features() {
-    // remove dropdown cart function, replace with Dunk version
-    if (function_exists( 'flatsome_add_to_cart_dropdown' ) ) :
-    	remove_filter('add_to_cart_fragments', 'flatsome_add_to_cart_dropdown');
-    endif;
-    
-    remove_action('woocommerce_single_product_summary','ProductShowReviews', 15);
-    
-}
-
-
-
-/*  ADD TO CART DROPDOWN (gets inserted with ajax) */
-add_filter('add_to_cart_fragments', 'dunk_add_to_cart_dropdown'); 
+add_filter('woocommerce_add_to_cart_fragments', 'dunk_add_to_cart_dropdown'); 
 function dunk_add_to_cart_dropdown( $fragments ) {
 	global $woocommerce;
     global $flatsome_opt;
@@ -24,16 +13,16 @@ function dunk_add_to_cart_dropdown( $fragments ) {
 	?>
 	<div class="cart-inner">
 	<a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="cart-link">
-					<strong class="cart-name hide-for-small"><?php _e('Cart', 'flatsome'); ?></strong> 
-					<span class="cart-price hide-for-small">/ <?php echo $woocommerce->cart->get_cart_total(); ?></span> 
+                    <strong class="cart-name hide-for-small"><?php _e('Cart', 'woocommerce'); ?></strong> 
+					<span class="cart-price hide-for-small">/ <?php echo $woocommerce->cart->get_cart_subtotal(); ?></span> 
                         
 					<!-- cart icon -->
 					<div class="cart-icon">
                         <?php if ($flatsome_opt['custom_cart_icon']){ ?> 
                         <div class="custom-cart-inner">
-                        <div class="custom-cart-count<?php $cartcount = $woocommerce->cart->cart_contents_count; if ($cartcount < 1) {echo " emptycart";}; ?>"><?php echo $cartcount; ?></div>
+                        <?php $cartcount = $woocommerce->cart->cart_contents_count; ?>
+                        <div class="custom-cart-count<?php if ($cartcount < 1) {echo " countzero";}; ?>"><?php echo $cartcount; ?></div>
                         <div class="cart-icon-sprite">
-                        <?php /* $cartclass = "emptycart"; */ ?>
                         <?php if ($cartcount < 1) {$cartclass = "emptycart";}; ?>
                         <?php if ($cartcount === 1) {$cartclass = "1item";}; ?>
                         <?php if ($cartcount === 2) {$cartclass = "2item";}; ?>
@@ -49,47 +38,14 @@ function dunk_add_to_cart_dropdown( $fragments ) {
 					</div><!-- end cart icon -->
 
 					</a>
-							<div class="nav-dropdown">
-                                <div class="nav-dropdown-inner">
-                                <div class="cart_list">
+							<div  class="nav-dropdown">
+                                <div id="mini-cart-content" class="nav-dropdown-inner widget_shopping_cart widget_shopping_cart_content">
                                 <?php                                    
-                                    if (sizeof($woocommerce->cart->cart_contents)>0) : foreach ($woocommerce->cart->cart_contents as $cart_item_key => $cart_item) :
-                                        $_product = $cart_item['data'];                                            
-                                        if ($_product->exists() && $cart_item['quantity']>0) :  ?>  
-
-                                      	<div class="row mini-cart-item collapse">
-                                      		<div class="small-2 large-2 columns">
-                                      			<?php echo apply_filters( 'woocommerce_cart_item_remove_link', sprintf('<a href="%s" class="remove" title="%s"><span class="icon-close"></span></a>', esc_url( $woocommerce->cart->get_remove_url( $cart_item_key ) ), __('Remove this item', 'woocommerce') ), $cart_item_key ); ?>
-                                      		</div>
-                                      		<div class="small-7 large-7 columns"><?php 
-                                      			 $product_title = $_product->get_title();
-                                                 echo '<a class="cart_list_product_title" href="'.get_permalink($cart_item['product_id']).'">' . apply_filters('woocommerce_cart_widget_product_title', $product_title, $_product) . '</a>';
-                                                 echo '<div class="cart_list_product_price">'.woocommerce_price($_product->get_price()).' /</div>';
-                                                 echo '<div class="cart_list_product_quantity">'.__('Quantity', 'woocommerce').': '.$cart_item['quantity'].'</div>';
-
-                                      		?></div>
-                                      		<div class="small-3 large-3 columns">
-                                      			<?php   echo '<a class="cart_list_product_img" href="'.get_permalink($cart_item['product_id']).'">' . $_product->get_image().'</a>';                                                    ?>
-                                      		</div>
-                                      	</div><!-- end row -->
-
-                                <?php                                        
-                                    endif;                                        
-                                    endforeach;
-                                ?>
-
-                                </div><!-- Cart list -->
-                                            
-                                    <div class="minicart_total_checkout">                                        
-                                        <?php _e('Cart Subtotal', 'woocommerce'); ?><span><?php echo $woocommerce->cart->get_cart_total(); ?></span>                                   
-                                    </div>
-                                    
-                                    <a href="<?php echo esc_url( $woocommerce->cart->get_cart_url() ); ?>" class="button expand uppercase"><?php _e('View Cart', 'flatsome'); ?></a>   
-                                    
-                                    <a href="<?php echo esc_url( $woocommerce->cart->get_checkout_url() ); ?>" class="button secondary expand uppercase"><?php _e('Proceed to Checkout', 'flatsome'); ?></a>
-                                    
-                                    <?php                                        
-                                    else: echo '<p class="empty">'.__('No products in the cart.','woocommerce').'</p>'; endif;                                    
+                                    if (sizeof($woocommerce->cart->cart_contents)>0) {
+                                        echo woocommerce_mini_cart();
+                                    } else {
+                                        echo '<p class="empty">'.__('No products in the cart.','woocommerce').'</p>';
+                                    }                     
                                 ?>                                                                        
                             </div><!-- .nav-dropdown-inner -->
 						</div><!-- .nav-dropdown -->
@@ -100,6 +56,71 @@ function dunk_add_to_cart_dropdown( $fragments ) {
 	return $fragments;
 }
 
+
+
+// CONTENT
+//  - Custom dropdown for main menu (LeNavDropdown, replaces FlatsomeNavDropdown)
+//  only difference from the original is this one adds CSS for sliding hover menus
+
+class LeNavDropdown extends Walker_Nav_Menu
+
+{
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $display_depth = ($depth + 1); // because it counts the first submenu as 0
+        if($display_depth == '1'){$class_names = 'nav-dropdown';}
+        else {$class_names = 'nav-column-links';}
+        $indent = str_repeat("\t", $depth);
+             $output .= "\n$indent<div class=".$class_names."><ul>\n";
+    }
+
+    function end_lvl( &$output, $depth = 1, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent</ul></div>\n";
+    }
+
+    function start_el ( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+    // Most of this code is copied from original Walker_Nav_Menu
+    global $wp_query;
+    $indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+    $class_names = $value = '';
+
+    $classes = empty( $item->classes ) ? array() : (array) $item->classes;
+    $classes[] = 'menu-item-' . $item->ID;
+
+    $class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+    $class_names = ' class="' . esc_attr( $class_names ) . '"';
+
+    $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+    $id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
+
+    $output .= $indent . '<li' . $id . $value . $class_names .'>';
+
+    $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+    $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+    $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+    $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+
+    // Check if menu item is in main menu
+    if ( $depth == 0 ) {
+        // These lines adds your custom class and attribute
+        $attributes .= ' class="nav-top-link sliding-u-l-r"';
+    }
+
+    $description = '';
+    if(strpos($class_names,'image-column') !== false){$description = '<img src="'.$item->description.'" alt=" "/>';}
+
+    $item_output = $args->before;
+    $item_output .= '<a'. $attributes .'>';
+    $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+    $item_output .= $description;
+    $item_output .= '</a>';
+    $item_output .= $args->after;
+
+    $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+  } 
+
+}
 
 
 

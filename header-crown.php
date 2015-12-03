@@ -3,6 +3,26 @@ global $woo_options;
 global $woocommerce;
 global $flatsome_opt;
 ?>
+
+<?php 
+	// PHP logging console
+	require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
+
+	$handler = PhpConsole\Handler::getInstance();
+    // You can override default Handler behavior:
+    // $handler->setHandleExceptions(false); // disable exceptions handling
+    // $handler->setCallOldHandlers(false); // disable passing errors & exceptions to prviously defined handlers
+	$handler->setHandleErrors(false);  // disable errors handling
+	$handler->start(); // initialize handlers
+	$connector = PhpConsole\Helper::register(); // required to register PC class in global namespace, must be called only once
+	
+	// FireBug
+	require_once( $_SERVER['DOCUMENT_ROOT'].'/FirePHPCore/FirePHP.class.php');
+	$firephp = FirePHP::getInstance(true);
+	require_once ( $_SERVER['DOCUMENT_ROOT'].'/chromephp/ChromePhp.php');
+
+?>
+
 <!DOCTYPE html>
 <!--[if lte IE 9 ]><html class="ie lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html <?php language_attributes(); ?>> <!--<![endif]-->
@@ -13,12 +33,11 @@ global $flatsome_opt;
 	<link rel="dns-prefetch" href="//ajax.googleapis.com.com" />
 	<link rel="dns-prefetch" href="//www.google-analytics.com" />
 	<link rel="dns-prefetch" href="//ssl.google-analytics.com" />
-	<link rel="dns-prefetch" href="//dmdtrecbrfzyi.cloudfront.net" />
+	<link rel="dns-prefetch" href="//media.ledunk.com" />
 	<link rel="dns-prefetch" href="//js.stripe.com" />
 	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
 	<link rel="dns-prefetch" href="//ledunk.com" />
-	<link rel="prefetch" href="/?add-to-cart=<?php echo get_ID_by_slug('the-ebbets-crown-bk-cap','product'); ?>" />
-	<link rel="prefetch" href="//checkout/" />
+	<link rel="prefetch" href="/checkout/" />
 	<link rel="prefetch" href="/shop/" />
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />

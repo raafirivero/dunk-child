@@ -67,6 +67,10 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 			<h3 id="order_review_heading"><?php _e( 'Your order', 'woocommerce' ); ?></h3>
 			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
 		</div><!-- order-review -->
+		
+		<button name="shiptest" id="shiptest" type="button" class="button tester">tester</button>
+		<div id="shipresult"></div>
+
 
 		<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 	</div><!-- .large-5 -->
