@@ -5,6 +5,7 @@ global $flatsome_opt;
 ?>
 
 <?php 
+/*
 	// PHP logging console
 	require_once( $_SERVER['DOCUMENT_ROOT'].'/php-console/src/PhpConsole/__autoload.php'); 
 
@@ -20,6 +21,7 @@ global $flatsome_opt;
 	require_once( $_SERVER['DOCUMENT_ROOT'].'/FirePHPCore/FirePHP.class.php');
 	$firephp = FirePHP::getInstance(true);
 	require_once ( $_SERVER['DOCUMENT_ROOT'].'/chromephp/ChromePhp.php');
+*/
 
 ?>
 
@@ -42,6 +44,9 @@ global $flatsome_opt;
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+	<!-- Content Experiments (not necessary on local site) -->
+	<?php /* do_action( 'wpe_gce_head' ); */ ?>
 
 	<!-- Custom favicon-->
 	<link rel="shortcut icon" href="<?php if ($flatsome_opt['site_favicon']) { echo $flatsome_opt['site_favicon']; ?>

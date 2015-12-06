@@ -173,11 +173,6 @@ function dunk_add_scripts() {
     // Dunk Script/Style All Pages
 	wp_register_script('dunk', $themedir.'/inc/dunk.js', array('jquery'), 1.0);
     wp_enqueue_script('dunk');
-	
-/*
-	wp_register_script('dunk-cart', $themedir.'/inc/dunk-cart.js', array('jquery'));
-    wp_enqueue_script('dunk-cart');
-*/
     
 }
 

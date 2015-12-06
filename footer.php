@@ -70,7 +70,7 @@ global $flatsome_opt;
 </div><!-- #wrapper -->
 
 <!-- back to top -->
-<a href="#top" id="top-link"><span class="icon-angle-up"></span></a>
+<!-- <a href="#top" id="top-link"><span class="icon-angle-up"></span></a> -->
 
 <?php if(isset($flatsome_opt['html_scripts_footer'])){
 	// Insert footer scripts

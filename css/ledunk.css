@@ -324,6 +324,15 @@ form[role] {
 	position: relative;
 	left: -6px;
 	}
+	
+.midtier p:first-child::first-letter {
+	font-size: 200%;
+	font-family: "Haymaker";
+	}
+
+.midtier p {	
+	font-size: 1.10em;
+	}
 
 /********************************************* ABOUT ROW  ****************/
 
@@ -633,6 +642,14 @@ div.breadcrumb-row {
 
 .post-type-archive-product .star-rating {
 	display: none;
+	}
+
+.single-product .off-column {
+	position: absolute;
+    left: 100%;
+    width: 50%;
+    margin-bottom: 1em;
+    
 	}
 
 /********************************************* ABOUT PAGE  ****************/
@@ -1157,7 +1174,12 @@ body.privacy .large-3.right {
 
 /* ********** gallery items *********** */
 
-.blog .mfp-container img.mfp-img, .archive .mfp-container img.mfp-img { max-height: 100%; }
+.mfp-wrap { 
+	
+	}
+
+.mfp-container img.mfp-img
+ { max-height: 100%; }
 
 /********************************************* DUNK LINKS  ****************/
 
